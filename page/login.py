@@ -6,9 +6,6 @@ import traceback
 from selenium.webdriver.support import expected_conditions as EC
 
 class UPlusLogin:
-    def __init__(self, driver, logger):
-        self.driver = driver
-        self.logger = logger
 
     def login(self):
         try:
