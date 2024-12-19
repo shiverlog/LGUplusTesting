@@ -1,6 +1,5 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
 from utils.custom_logger import custom_logger
 from utils.exception_handler import handle_exception
 from config import IMPLICIT_WAIT, EXPLICIT_WAIT
@@ -21,8 +20,8 @@ from config import IMPLICIT_WAIT, EXPLICIT_WAIT
     is_element_visible: 요소 보이는 상태 확인
     is_element_enabled: 요소 활성화 여부 확인
     is_element_selected: 요소 선택 여부 확인
-    wait_for_element_to_appear: 요소가 사라질 때까지 대기
-    wait_for_element_to_disappear: 요소가 나타날때까지 대기
+    wait_for_element_to_appear: 요소가 나타날때까지 대기
+    wait_for_element_to_disappear: 요소가 사라질 때까지 대기
     wait_until_element_is_enabled: 요소가 활성화 될 때까지 대기
 """
 
@@ -193,6 +192,16 @@ def is_element_selected(driver, locator):
         return False
 
 # wait_for_element_to_appear
+def wait_for_element_to_appear(driver, locator, timeout=EXPLICIT_WAIT):
+    try:
+        WebDriverWait(driver, timeout).until(
+            EC.visibility_of_element_located(locator)
+        )
+        custom_logger.info(f"{locator} 요소가 나타날 때까지 기다렸습니다.")
+    except Exception as e:
+        handle_exception(driver, e, f"{locator} 요소가 {timeout}초 후에도 나타나지 않았습니다.")
+
+# wait_for_element_to_disappear
 def wait_for_element_to_disappear(driver, locator):
     try:
         WebDriverWait(driver, EXPLICIT_WAIT).until(
@@ -202,7 +211,7 @@ def wait_for_element_to_disappear(driver, locator):
     except Exception as e:
         handle_exception(driver, e, f"{locator} 요소가 {EXPLICIT_WAIT}초 후에도 사라지지 않음")
 
-# wait_for_element_to_disappear
+# wait_until_element_is_enabled
 def wait_until_element_is_enabled(driver, element):
     try:
         WebDriverWait(driver, EXPLICIT_WAIT).until(EC.element_to_be_clickable(element))
