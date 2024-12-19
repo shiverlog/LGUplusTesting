@@ -4,7 +4,10 @@ import json
 import re
 import os
 import sys
+import datetime
 from logging.handlers import TimedRotatingFileHandler, RotatingFileHandler
+from config import LOG_LEVEL, LOG_FILE, JSON_FILE, MAX_BYTES, BACKUP_COUNT
+from contextlib import suppress
 
 """ 
     automation.json: JSON 파일에 로그 기록
@@ -45,17 +48,17 @@ class ColoredFormatter(logging.Formatter):
         return super().format(record)
 
 class NoStacktraceFormatter(logging.Formatter):
-    def formatException(self):
-        return ''
+    def formatException(self, exc_info):
+        return str(exc_info[1])
 
     def format(self, record):
         record.exc_text = None
         return super().format(record)
 
 class Logger:
-    def __init__(self, logger_name="Logger", log_level=logging.DEBUG, log_to_console=True, 
-                 log_file='automation.log', json_file='automation.json',
-                 max_bytes=5*1024*1024, backup_count=3, when='midnight',
+    def __init__(self, logger_name="Logger", log_level=LOG_LEVEL, log_to_console=True, 
+                 log_file=LOG_FILE, json_file=JSON_FILE,
+                 max_bytes=MAX_BYTES, backup_count=BACKUP_COUNT, when='midnight',
                  fmt='%(asctime)s - %(name)s - %(levelname)s: %(message)s',
                  datefmt='%Y-%m-%d %H:%M:%S'):
         self.logger = logging.getLogger(logger_name)
@@ -78,7 +81,9 @@ class Logger:
         # 로그 파일 설정
         log_file = os.path.join(os.getcwd(), self.log_file)
         if self.when:
-            file_handler = TimedRotatingFileHandler(log_file, when=self.when, backupCount=self.backup_count, encoding='utf-8')
+            file_handler = TimedRotatingFileHandler(
+                log_file, when=self.when, backupCount=self.backup_count, encoding='utf-8', atTime=datetime.time(0, 0, 0)
+            )
         else:
             file_handler = RotatingFileHandler(log_file, mode='a', maxBytes=self.max_bytes, backupCount=self.backup_count, encoding='utf-8')
         file_handler.setLevel(self.logger.level)
@@ -108,14 +113,12 @@ class Logger:
     def log_execution_status(self, func):
         def wrapper(*args, **kwargs):
             self.logger.info(f"{func.__name__} 실행 시작")
-            try:
+            with suppress(Exception):
                 result = func(*args, **kwargs)
                 self.logger.info(f"{func.__name__} 실행 성공")
                 return result
-            except Exception as e:
-                self.logger.error(f"{func.__name__} 실행 중 오류발생: {str(e)}")
-                raise
+            self.logger.error(f"{func.__name__} 실행 중 오류 발생")
         return wrapper
 
 # Logger 인스턴스 생성
-custom_logger = Logger().get_logger()
+logger = logging.getLogger(__name__)
