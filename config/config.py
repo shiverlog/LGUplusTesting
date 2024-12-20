@@ -1,4 +1,5 @@
 import logging
+import os
 
 # 로그 레벨
 LOG_LEVEL = logging.DEBUG
@@ -18,3 +19,7 @@ BASE_URL = "https://www.lguplus.com"
 # 대기시간
 IMPLICIT_WAIT = 10  # 암묵적
 EXPLICIT_WAIT = 20  # 명시적
+
+# 테스트 계정 정보 sysdm.cpl
+USERNAME = os.getenv("UPLUS_ID")
+PASSWORD = os.getenv("UPLUS_PW")
