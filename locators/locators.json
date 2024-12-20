@@ -2,13 +2,23 @@
     "main": {
         "main_url": "https://lguplus.com",
         "logo": "#_uid_2",
-        "gnb": "header > div.header-gnb-wrap > div.header-inner > nav",
+        "gnb_section": "header > div.header-gnb-wrap",
+        "gnb_menu": "ul.header-gnb-list",
+        "icon_menu": "ul.header-menu-list-1",
         "myinfo": "ul.header-menu-list-1 > li:last-child",
         "myinfo_active": "a.icon-myInfo-1.is-active, div.myInfo-list.is-show",
         "main_login_btn": "a.btn-my.c-btn-solid-1-m[data-gtm-click-text=\"로그인\"]",
         "main_logout_btn": "a.btn-logout.c-btn-outline-2-s",
         "kv_section": "swiper-wrapper.bo-1108__list",
-        "benefit_section": ""
+        "benefit_section": ".benefits-section.active",
+        "device_section": ".device-section.active",
+        "blurb_section": ".blurb-section,active",
+        "payment_section": ".payment-section.active",
+        "promotion_section": ".promotion-section.active",
+        "custom_section": ".custom-section.active",
+        "footer": "footer-layout-wrap"
+
+
        
     },
     "login_el": {
