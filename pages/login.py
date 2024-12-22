@@ -11,7 +11,7 @@ class TestCase01(Base):
         self.logger = logger
         self.locators = LocatorLoader.load_locators('login')
 
-    def login_from_main(self):
+    def execute(self):
         try:
             # 마이메뉴 아이콘 찾기
             myinfo = find_element(self.driver, (By.CSS_SELECTOR, self.locators['myinfo']))
