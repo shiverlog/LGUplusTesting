@@ -53,3 +53,8 @@
 {"timestamp": "2024-12-22 13:49:59,678", "name": "Logger", "level": "INFO", "message": "상세 페이지 기기명: ", "pathname": "d:\\test-rpa\\pages\\main.py", "lineno": 101, "funcName": "execute"}
 {"timestamp": "2024-12-22 13:49:59,678", "name": "Logger", "level": "INFO", "message": "기기명이 일치하지 않습니다. 선택된 기기: iPhone 16 Pro 256GB, 상세 페이지 기기: ", "pathname": "d:\\test-rpa\\pages\\main.py", "lineno": 106, "funcName": "execute"}
 {"timestamp": "2024-12-22 13:49:59,678", "name": "Logger", "level": "INFO", "message": "테스트 케이스 실행 완료: TestCase03", "pathname": "d:\\test-rpa\\executor.py", "lineno": 42, "funcName": "run_tests"}
+{"timestamp": "2024-12-22 15:13:44,459", "name": "Logger", "level": "INFO", "message": "테스트 케이스 실행 시작: TestCase01", "pathname": "d:\\test-rpa\\executor.py", "lineno": 40, "funcName": "run_tests"}
+{"timestamp": "2024-12-22 15:13:44,762", "name": "Logger", "level": "INFO", "message": "마이메뉴 마우스오버시 드롭메뉴 활성화 성공", "pathname": "d:\\test-rpa\\pages\\login.py", "lineno": 30, "funcName": "execute"}
+{"timestamp": "2024-12-22 15:13:47,031", "name": "Logger", "level": "INFO", "message": "입력한 ID: tmk3602@naver.com 입력한 PW: rlaxorals1!", "pathname": "d:\\test-rpa\\pages\\login.py", "lineno": 47, "funcName": "execute"}
+{"timestamp": "2024-12-22 15:13:50,395", "name": "Logger", "level": "INFO", "message": "로그인 정보: ", "pathname": "d:\\test-rpa\\pages\\login.py", "lineno": 61, "funcName": "execute"}
+{"timestamp": "2024-12-22 15:13:50,395", "name": "Logger", "level": "INFO", "message": "테스트 케이스 실행 완료: TestCase01", "pathname": "d:\\test-rpa\\executor.py", "lineno": 42, "funcName": "run_tests"}

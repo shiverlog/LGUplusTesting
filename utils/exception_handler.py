@@ -3,7 +3,7 @@ from utils.custom_logger import custom_logger
 from utils.screenshot import Screenshot
 import traceback
 
-def handle_exception(driver, e, message="오류 발생"):
+def exception_handler(driver, e, message="오류 발생"):
     """예외 처리"""
     custom_logger.error(f"{message}: {str(e)}")
     custom_logger.error(traceback.format_exc())

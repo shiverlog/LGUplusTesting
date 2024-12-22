@@ -28,7 +28,7 @@ class TestCase02(Base):
                 else:
                     self.logger.info(f"이미지 {index + 1} src 속성이 없습니다.")
         except Exception as e:
-            eh.handle_exception(self.driver, e, "KV 영역 테스트 실패")
+            eh.exception_handler(self.driver, e, "KV 영역 테스트 실패")
 
 class TestCase03(Base):
     """기기 추천 영역 테스트 케이스"""
@@ -106,7 +106,7 @@ class TestCase03(Base):
                 self.logger.info(f"탭 텍스트에 해당하는 클래스가 없습니다: {self.random_tab_text}")
 
         except Exception as e:
-            eh.handle_exception(self.driver, e, "기기 추천 영역 테스트 실패")
+            eh.exception_handler(self.driver, e, "기기 추천 영역 테스트 실패")
             raise
 
     

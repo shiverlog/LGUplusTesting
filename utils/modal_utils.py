@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from utils.custom_logger import custom_logger
 from element_utils import *
 from custom_actionchains import *
-from exception_handler import ExceptionHandler
+from utils.exception_handler import handle_exception
 
 """
     class ModalHandler: 모달창 처리

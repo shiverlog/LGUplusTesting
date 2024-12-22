@@ -1,7 +1,4 @@
 from config.config import USERNAME, PASSWORD
-from utils import element_utils as eu
-from utils.page_handler import PageRedirectionHandler as ph
-from utils import custom_actionchains as ca
 from utils import exception_handler as eh
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -64,5 +61,5 @@ class TestCase01(Base):
             self.logger.info(f"로그인 정보: {login_info_text}")
 
         except Exception as e:
-            eh.handle_exception(self.driver, e, "로그인 테스트 실패")
+            eh.exception_handler(self.driver, e, "로그인 테스트 실패")
             raise

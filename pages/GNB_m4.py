@@ -1,4 +1,3 @@
-import json
 import time
 import traceback
 from selenium.webdriver.common.by import By
@@ -6,6 +5,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from base.base import Base, LocatorLoader
+from utils import exception_handler as eh
 
 class TestCase09(Base):
     """온라인 가입 할인 혜택 영역에서 '혜택 모두 보기' 클릭 후 온라인 구매 혜택 항목 텍스트 정상 노출 확인"""
@@ -65,9 +65,8 @@ class TestCase09(Base):
             time.sleep(5)
 
         except Exception as e:
-            self.logger.info(f"Test case failed: {e}")
-            traceback.print_stack()
-
+            eh.exception_handler(self.driver, e, "온라인 구매 혜택 항목 텍스트 정상 노출 실패")
+            raise
 
 class TestCase10(Base):
     """이벤트 영역에서 '이벤트 모두 보기' 클릭 후 이벤트 페이지 URL 정상 이동 확인"""
@@ -126,5 +125,5 @@ class TestCase10(Base):
             time.sleep(5)
 
         except Exception as e:
-            self.logger.info(f"Test case failed: {e}")
-            traceback.print_stack()
+            eh.exception_handler(self.driver, e, "이벤트 페이지 URL 정상 이동 실패")
+            raise

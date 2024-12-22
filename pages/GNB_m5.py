@@ -69,7 +69,7 @@ class TestCase11(Base):
                 self.logger.info(f"데이터가 불일치합니다")
 
         except Exception as e:
-            eh.handle_exception(self.driver, e, "검색어 테스트 실패")
+            eh.exception_handler(self.driver, e, "검색어 테스트 실패")
             raise
 
 class TestCase12(Base):
@@ -116,5 +116,5 @@ class TestCase12(Base):
                 self.logger.info("'검색 결과가 존재하지 않습니다.' 메시지를 찾을 수 없습니다.")
 
         except Exception as e:
-            eh.handle_exception(self.driver, e, "특수문자 검색 테스트 실패")
+            eh.exception_handler(self.driver, e, "특수문자 검색 테스트 실패")
             raise

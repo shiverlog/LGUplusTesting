@@ -5,6 +5,7 @@ from config.config import SCREENSHOT_DIR
 
 # screenshot.py
 class Screenshot:
+    """스크린샷 캡처 클래스"""
     def __init__(self, driver, directory=SCREENSHOT_DIR):
         self.driver = driver
         self.directory = directory

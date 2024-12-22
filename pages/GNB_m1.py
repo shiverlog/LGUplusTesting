@@ -105,7 +105,7 @@ class TestCase04(Base):
                 time.sleep(2)
 
         except Exception as e:
-            eh.handle_exception(self.driver, e, "테마배너 테스트 실패")
+            eh.exception_handler(self.driver, e, "테마배너 테스트 실패")
             raise
 
 class TestCase05(Base):
@@ -545,5 +545,5 @@ class TestCase06(Base):
             time.sleep(5)
 
         except Exception as e:
-            eh.handle_exception(self.driver, e, "인터넷/IPTV 결합 테스트 실패")
+            eh.exception_handler(self.driver, e, "인터넷/IPTV 결합 테스트 실패")
             raise

@@ -3,7 +3,7 @@ from base.webdriver_factory import WebDriverFactory
 from config.config import BASE_URL
 import os
 import json
-from utils.exception_handler import handle_exception as e
+from utils.exception_handler import exception_handler as eh
 
 class Base:
     """모든 테스트 케이스에서 상속받는 기본 클래스"""
@@ -55,5 +55,5 @@ class LocatorLoader:
             with open(locators_path, 'r', encoding='utf-8') as f:
                 return json.load(f)[section]
         except Exception as e:
-            e.handle_exception(None, e, "로케이터 파일 로드 실패")
+            eh.exception_handler(None, e, "로케이터 파일 로드 실패")
             raise

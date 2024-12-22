@@ -73,3 +73,8 @@ selenium.common.exceptions.TimeoutException: Message:
 2024-12-22 13:49:59 - Logger - INFO: 상세 페이지 기기명: 
 2024-12-22 13:49:59 - Logger - INFO: 기기명이 일치하지 않습니다. 선택된 기기: iPhone 16 Pro 256GB, 상세 페이지 기기: 
 2024-12-22 13:49:59 - Logger - INFO: 테스트 케이스 실행 완료: TestCase03
+2024-12-22 15:13:44 - Logger - INFO: 테스트 케이스 실행 시작: TestCase01
+2024-12-22 15:13:44 - Logger - INFO: 마이메뉴 마우스오버시 드롭메뉴 활성화 성공
+2024-12-22 15:13:47 - Logger - INFO: 입력한 ID: tmk3602@naver.com 입력한 PW: rlaxorals1!
+2024-12-22 15:13:50 - Logger - INFO: 로그인 정보: 
+2024-12-22 15:13:50 - Logger - INFO: 테스트 케이스 실행 완료: TestCase01
