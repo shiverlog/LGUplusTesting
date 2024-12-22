@@ -9,6 +9,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from base.base import Base, LocatorLoader
 from utils import exception_handler as eh
+from utils.element_utils import *
+from utils.custom_actionchains import *
 
 class TestCase11(Base):
     """자주 찾는 검색어 항목 텍스트 비교 및 검색 테스트"""
@@ -83,19 +85,25 @@ class TestCase12(Base):
     def execute(self):
         try:
             # 검색창 초기화
-            search_section = self.driver.find_element(By.CSS_SELECTOR, self.locators['search_section'])
-            clear_button = search_section.find_element(By.CSS_SELECTOR, self.locators['clear_button'])
-            search_input = search_section.find_element(By.CSS_SELECTOR, self.locators['search_input'])
-            search_button = search_section.find_element(By.CSS_SELECTOR, self.locators['search_button'])
-            
-            clear_button.click()
+            clear_button = find_element(self.driver, (By.CSS_SELECTOR, self.locators['clear_button']))
+            search_input = find_element(self.driver, (By.CSS_SELECTOR, self.locators['search_input']))
+            search_button = find_element(self.driver, (By.CSS_SELECTOR, self.locators['search_button']))
+            time.sleep(5)
+            click(self.driver, clear_button)
 
             # 특수문자 입력 및 검색
-            ActionChains(self.driver).move_to_element(search_input).click().perform()
-            search_input.send_keys(self.special_characters)
-            search_input.send_keys(Keys.ENTER)
-            search_button.click()
+            move_to_element(self.driver, search_input)
+            click(self.driver, search_input)
+            send_keys_to_element(self.driver, search_input, self.special_characters)
             time.sleep(5)
+            click(self.driver, search_button)
+            time.sleep(5)
+            # # ActionChains(self.driver).move_to_element(search_input).click().perform()
+            # search_input.send_keys(self.special_characters)
+            # # search_input.send_keys(Keys.ENTER)
+            # time.sleep(5)
+            # click(self.driver, search_button)
+
 
             # 검색 결과 확인
             input_value = self.driver.find_element(By.CSS_SELECTOR, self.locators['search_input']).get_attribute('value')

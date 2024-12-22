@@ -97,12 +97,9 @@ class TestCase03(Base):
                     )
                     time.sleep(10)
                     # 기기명 비교
-                    device_detail_name = self.driver.find_element(By.CSS_SELECTOR, 'div.device-info-area > h2.title-main').text
+                    device_detail_name = self.driver.find_element(By.CSS_SELECTOR, 'div.device-info-area > h2.title-main').get_attribute('textContent')
                     self.logger.info(f"상세 페이지 기기명: {device_detail_name}")
-                    # device_detail_name = get_text(self.driver, (By.CSS_SELECTOR, self.locators['device_detail_name']))
-                    # if device_detail_name:
-                    #     self.logger.info(f"상세 페이지 기기명: {device_detail_name}")                    
-
+                
                     if self.device_name in device_detail_name:
                         self.logger.info(f"기기명이 일치합니다: {device_detail_name}")
                     else:

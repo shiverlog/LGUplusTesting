@@ -103,22 +103,11 @@ def clear_text(driver, locator):
 def get_text(driver, locator):
     """요소의 텍스트를 가져오는 함수"""
     try:
-        # 요소가 보이는지 확인
-        element = find_visible_element(driver, locator)
+        element = find_element(driver, locator)
         if element:
-            # 요소가 화면에 표시될 때까지 대기
-            wait_for_element_to_appear(driver, locator)
-            
-            # 텍스트 가져오기
             text = element.text
-            if text:
-                custom_logger.info(f"{locator} 요소에서 텍스트 '{text}' 가져오기 성공")
-                return text
-            else:
-                # 텍스트가 없는 경우 textContent 속성 확인
-                text = element.get_attribute('textContent')
-                custom_logger.info(f"{locator} 요소에서 textContent '{text}' 가져오기 성공")
-                return text
+            custom_logger.info(f"{locator} 요소에서 텍스트 '{text}' 가져오기 성공")
+            return text
         return None
     except Exception as e:
         eh.exception_handler(driver, e, f"{locator} 요소의 텍스트 가져오기 실패")

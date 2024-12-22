@@ -20,12 +20,15 @@ class TestExecutor(Base):
             # 테스트 케이스 클래스 추가
             # TestCase01(self.driver, self.logger),
             # TestCase02(self.driver, self.logger),
-            TestCase03(self.driver, self.logger), 
+            # TestCase03(self.driver, self.logger), 
             # TestCase04(self.driver, self.logger),
-            # TestCase05(self.driver, self.logger),
+
+             TestCase05(self.driver, self.logger),
+
             # TestCase06(self.driver, self.logger),
             # TestCase07(self.driver, self.logger),
             # TestCase08(self.driver, self.logger),
+
             # TestCase09(self.driver, self.logger),
             # TestCase10(self.driver, self.logger),
             # TestCase11(self.driver, self.logger),

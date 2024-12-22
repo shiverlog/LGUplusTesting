@@ -7,6 +7,8 @@ from utils import exception_handler as eh
 from base.base import Base, LocatorLoader
 import random
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from utils.custom_actionchains import *
+from utils.element_utils import *
 
 class TestCase04(Base):
     """테마배너 항목 텍스트 정상 노출 확인"""
@@ -124,13 +126,13 @@ class TestCase05(Base):
             self.cart_redirection()
             self.order_delete()
         except Exception as e:
-            eh.handle_exception(self.driver, e, "휴대폰 주문 및 장바구니 테스트 실패")
+            eh.exception_handler(self.driver, e, "휴대폰 주문 및 장바구니 테스트 실패")
             raise
 
     def select_mobile_device(self):
         # 모바일 메뉴 클릭 및 기기 선택 로직
-        mobile_button = self.driver.find_element(By.CSS_SELECTOR, self.locators['mobile_menu'])
-        mobile_button.click()
+        mobile_menu = find_element(self.driver, (By.CSS_SELECTOR, self.locators['mobile_menu']))
+        click(self.driver, mobile_menu)
         time.sleep(5)
 
         # 디바이스 섹션 포커싱 및 탭 선택
@@ -139,7 +141,7 @@ class TestCase05(Base):
         )
         ActionChains(self.driver).move_to_element(device_section).perform()
 
-        tabs = device_section.find_elements(By.CSS_SELECTOR, self.locators['device_tabs'])
+        tabs = device_section.find_elements(By.CSS_SELECTOR, '.c-tabmenu-tab.c-tab-default ul li')
         random_tab = random.choice(tabs)
         random_tab.click()
         self.logger.info(f"선택한 탭: {random_tab.text}")
@@ -492,7 +494,7 @@ class TestCase06(Base):
 
             # 2. 인터넷/IPTV결합 섹션 포커싱
             mobile_combined_section = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, self.locators['theme_banner_section']))
+                EC.presence_of_element_located((By.CSS_SELECTOR, self.locators['device_section']))
             )
             ActionChains(self.driver).move_to_element(mobile_combined_section).perform()
             self.logger.info("인터넷/IPTV결합 섹션 포커싱 완료")
@@ -542,6 +544,32 @@ class TestCase06(Base):
                 self.logger.info(f"할인금액이 일치하지 않습니다. 총 할인금액: {total_discount}, 할인금액: {discount_text}")
             time.sleep(5)
 
+            # 5. 가입상담신청 버튼 클릭
+            consultation_button = find_element(self.driver , (By.CSS_SELECTOR, self.locators['consultation_button']))
+            time.sleep(5)
+            click(self.driver, consultation_button)
+
+            # 6. 상위 윈도우에서 하위 윈도우로 전환
+            self.driver.switch_to.window(self.driver.window_handles[1])
+            self.logger.info("상담신청 페이지로 이동")
+
+            consultation_modal = find_element(self.driver , (By.CSS_SELECTOR, self.locators['consultation_modal']))
+            if consultation_modal:
+                self.logger.info("상담신청 모달창이 나타남")
+            else:
+                self.logger.info("상담신청 모달창이 나타나지 않음")
+
+            # 7. 상담신청 페이지 내 할인 금액 데이터 추출
+            # 할인 금액 데이터 추출
+            calcutaor_value = find_element(self.driver , (By.CSS_SELECTOR, self.locators['calcutaor_value']))
+            total_amt = calcutaor_value.get_attribute("data-total-amt")
+            self.logger.info(f"상담신청 페이지 내 할인 금액: {total_amt}")
+
+            if total_discount == int(total_amt.replace(',', '')):
+                self.logger.info(f"{total_discount}원으로 할인금액이 일치합니다.")
+            else:
+                self.logger.info(f"할인금액이 일치하지 않습니다. 총 할인금액: {total_discount}, 할인금액: {total_amt}")
+            
         except Exception as e:
             eh.exception_handler(self.driver, e, "인터넷/IPTV 결합 테스트 실패")
             raise
