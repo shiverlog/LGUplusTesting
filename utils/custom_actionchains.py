@@ -1,4 +1,5 @@
-import utils.custom_logger as custom_logger
+from selenium.webdriver.common.action_chains import ActionChains
+from utils import custom_logger as cl
 
 """
     # 커스텀 함수 목록
@@ -20,17 +21,20 @@ import utils.custom_logger as custom_logger
     actions.send_keys(*keys_to_send): 현재 포커스된 요소에 키 입력
     actions.send_keys_to_element(element, *keys_to_send): 지정된 요소에 키 입력
 """
+custom_logger = cl.custom_logger
 
 # actions.click
 def click(self, element):
+    """요소를 클릭하는 함수"""
     try:
         self.click(element).perform()
         custom_logger.info(f"{element} 요소를 클릭")
     except Exception as e:
-        custom_logger.error(f"{element.text} 요소 클릭 실패 Error: {e}")
+        custom_logger.error(f"{element.text} 요소 클릭 실패 ERROR: {e}")
 
 # actions.click_and_hold
 def click_and_hold(self, element):
+    """요소를 클릭하고 누른 상태를 유지하는 함수"""
     try:
         super().click_and_hold(element).perform()
         custom_logger.info(f"{element} 요소를 클릭하고 누른 상태를 유지")
@@ -39,6 +43,7 @@ def click_and_hold(self, element):
 
 # actions.context_click
 def context_click(self, element):
+    """요소를 마우스 오른쪽 버튼으로 클릭하는 함수"""
     try:
         super().context_click(element).perform()
         custom_logger.info(f"{element} 요소를 마우스 오른쪽 버튼으로 클릭")
@@ -47,6 +52,7 @@ def context_click(self, element):
 
 # actions.double_click
 def double_click(self, element):
+    """요소를 더블 클릭하는 함수"""
     try:
         super().double_click(element).perform()
         custom_logger.info(f"{element} 요소를 더블 클릭")
@@ -55,6 +61,7 @@ def double_click(self, element):
 
 # actions.drag_and_drop
 def drag_and_drop(self, source, target):
+    """source 요소를 target 요소로 드래그 앤 드롭하는 함수"""
     try:
         super().drag_and_drop(source, target).perform()
         custom_logger.info(f"{source} 요소를 {target} 요소로 드래그 앤 드롭")
@@ -63,6 +70,7 @@ def drag_and_drop(self, source, target):
 
 # actions.drag_and_drop_by_offset
 def drag_and_drop_by_offset(self, source, xoffset, yoffset):
+    """source 요소를 지정된 offset만큼 드래그 앤 드롭하는 함수"""
     try:
         super().drag_and_drop_by_offset(source, xoffset, yoffset).perform()
         custom_logger.info(f"{source} 요소를 ({xoffset}, {yoffset}) 만큼 드래그 앤 드롭")
@@ -71,6 +79,7 @@ def drag_and_drop_by_offset(self, source, xoffset, yoffset):
 
 # actions.key_down
 def key_down(self, value, element=None):
+    """키를 누르는 함수"""
     try:
         super().key_down(value, element).perform()
         custom_logger.info(f"{element} 요소에 키 누름: {value}")
@@ -79,6 +88,7 @@ def key_down(self, value, element=None):
 
 # actions.key_up
 def key_up(self, value, element=None):
+    """키를 놓는 함수"""
     try:
         super().key_up(value, element).perform()
         custom_logger.info(f"{element} 요소에 키 놓음: {value}")
@@ -87,6 +97,7 @@ def key_up(self, value, element=None):
 
 # actions.move_by_offset
 def move_by_offset(self, xoffset, yoffset):
+    """마우스를 지정된 offset만큼 이동하는 함수"""
     try:
         super().move_by_offset(xoffset, yoffset).perform()
         custom_logger.info(f"마우스를 ({xoffset}, {yoffset}) 만큼 이동")
@@ -95,6 +106,7 @@ def move_by_offset(self, xoffset, yoffset):
 
 # actions.move_to_element
 def move_to_element(self, element):
+    """마우스를 지정된 요소로 이동하는 함수"""
     try:
         super().move_to_element(element).perform()
         custom_logger.info(f"{element} 요소로 마우스를 이동")
@@ -103,6 +115,7 @@ def move_to_element(self, element):
 
 # actions.move_to_element_with_offset
 def move_to_element_with_offset(self, to_element, xoffset, yoffset):
+    """마우스를 요소의 지정된 offset 위치로 이동하는 함수"""
     try:
         super().move_to_element_with_offset(to_element, xoffset, yoffset).perform()
         custom_logger.info(f"{to_element} 요소에서 ({xoffset}, {yoffset}) 만큼 떨어진 곳으로 마우스를 이동")
@@ -111,6 +124,7 @@ def move_to_element_with_offset(self, to_element, xoffset, yoffset):
 
 # actions.pause
 def pause(self, seconds):
+    """지정된 시간동안 일시중지하는 함수"""
     try:
         super().pause(seconds).perform()
         custom_logger.info(f"{seconds}초 동안 일시중지")
@@ -119,6 +133,7 @@ def pause(self, seconds):
 
 # actions.perform
 def perform(self):
+    """액션 체인을 실행하는 함수"""
     try:
         super().perform()
         custom_logger.info("액션 체인을 실행")
@@ -127,14 +142,16 @@ def perform(self):
 
 # actions.release
 def release(self, on_element=None):
+    """마우스 버튼을 놓는 함수"""
     try:
         super().release(on_element).perform()
         custom_logger.info(f"{on_element} 요소에서 마우스 버튼 놓기")
     except Exception as e:
         custom_logger.error(f"마우스 버튼 놓기 실패: {e}")
 
-# actions.reset_actions
+# actions.reset_actions 
 def reset_actions(self):
+    """액션 체인을 초기화하는 함수"""
     try:
         super().reset_actions()
         custom_logger.info("액션 체인을 초기화")
@@ -143,6 +160,7 @@ def reset_actions(self):
 
 # actions.send_keys
 def send_keys(self, *keys_to_send):
+    """키를 입력하는 함수"""
     try:
         super().send_keys(*keys_to_send).perform()
         custom_logger.info(f"키 입력: {keys_to_send}")
@@ -151,6 +169,7 @@ def send_keys(self, *keys_to_send):
 
 # actions.send_keys_to_element
 def send_keys_to_element(self, element, *keys_to_send):
+    """지정된 요소에 키를 입력하는 함수"""
     try:
         super().send_keys_to_element(element, *keys_to_send).perform()
         custom_logger.info(f"{element} 요소에 키 입력: {keys_to_send}")

@@ -2,10 +2,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.custom_logger import custom_logger
 from utils.exception_handler import handle_exception
-from config import IMPLICIT_WAIT, EXPLICIT_WAIT
+from config.config import IMPLICIT_WAIT, EXPLICIT_WAIT
 
 """
-    # 커스텀 함수 목록
+    # Selenium WebDriver를 위한 요소 조작 유틸리티 모듈
     find_element: 요소 찾기
     find_elements: 요소들 찾기
     find_visible_element: 보이는 요소 찾기
@@ -27,6 +27,7 @@ from config import IMPLICIT_WAIT, EXPLICIT_WAIT
 
 # find_element
 def find_element(driver, locator):
+    """요소를 찾아 반환"""
     try:
         element = WebDriverWait(driver, IMPLICIT_WAIT).until(
             EC.presence_of_element_located(locator)
@@ -39,6 +40,7 @@ def find_element(driver, locator):
 
 # find_elements
 def find_elements(driver, locator):
+    """여러 요소들을 찾아 리스트로 반환"""
     try:
         elements = WebDriverWait(driver, IMPLICIT_WAIT).until(
             EC.presence_of_all_elements_located(locator)
@@ -51,6 +53,7 @@ def find_elements(driver, locator):
 
 # find_visible_element
 def find_visible_element(driver, locator):
+    """화면에 보이는 요소를 찾아 반환"""
     try:
         element = WebDriverWait(driver, IMPLICIT_WAIT).until(
             EC.visibility_of_element_located(locator)
@@ -63,6 +66,7 @@ def find_visible_element(driver, locator):
 
 # find_clickable_element
 def find_clickable_element(driver, locator):
+    """클릭 가능한 요소를 찾아 반환"""
     try:
         element = WebDriverWait(driver, IMPLICIT_WAIT).until(
             EC.element_to_be_clickable(locator)
@@ -75,6 +79,7 @@ def find_clickable_element(driver, locator):
 
 # click_element
 def click_element(driver, locator):
+    """요소를 클릭"""
     try:
         element = find_clickable_element(driver, locator)
         if element:
@@ -85,6 +90,7 @@ def click_element(driver, locator):
 
 # enter_text
 def enter_text(driver, locator, text):
+    """요소에 텍스트 입력"""
     try:
         element = find_element(driver, locator)
         if element:
@@ -95,6 +101,7 @@ def enter_text(driver, locator, text):
 
 # clear_text
 def clear_text(driver, locator):
+    """요소의 텍스트 삭제"""
     try:
         element = find_element(driver, locator)
         if element:
@@ -105,6 +112,7 @@ def clear_text(driver, locator):
 
 # get_text
 def get_text(driver, locator):
+    """요소의 텍스트 값을 반환"""
     try:
         element = find_element(driver, locator)
         if element:
@@ -118,6 +126,7 @@ def get_text(driver, locator):
 
 # get_attribute
 def get_attribute(driver, locator, attribute_name):
+    """요소의 속성 값을 반환"""
     try:
         element = find_element(driver, locator)
         if element:
@@ -131,6 +140,7 @@ def get_attribute(driver, locator, attribute_name):
 
 # select_option
 def select_option(driver, locator, value):
+    """드롭다운에서 옵션 선택"""
     try:
         from selenium.webdriver.support.ui import Select
         element = find_element(driver, locator)
@@ -143,6 +153,7 @@ def select_option(driver, locator, value):
 
 # is_element_present
 def is_element_present(driver, locator):
+    """요소 존재 여부 확인"""
     try:
         WebDriverWait(driver, IMPLICIT_WAIT).until(
             EC.presence_of_element_located(locator)
@@ -155,6 +166,7 @@ def is_element_present(driver, locator):
 
 # is_element_visible
 def is_element_visible(driver, locator):
+    """요소가 화면에 보이는지 확인"""
     try:
         WebDriverWait(driver, IMPLICIT_WAIT).until(
             EC.visibility_of_element_located(locator)
@@ -167,6 +179,7 @@ def is_element_visible(driver, locator):
 
 # is_element_enabled
 def is_element_enabled(driver, locator):
+    """요소가 활성화 상태인지 확인"""
     try:
         element = find_element(driver, locator)
         if element:
@@ -180,6 +193,7 @@ def is_element_enabled(driver, locator):
 
 # is_element_selected
 def is_element_selected(driver, locator):
+    """요소가 선택 상태인지 확인"""
     try:
         element = find_element(driver, locator)
         if element:
@@ -193,6 +207,7 @@ def is_element_selected(driver, locator):
 
 # wait_for_element_to_appear
 def wait_for_element_to_appear(driver, locator, timeout=EXPLICIT_WAIT):
+    """요소가 나타날 때까지 대기"""
     try:
         WebDriverWait(driver, timeout).until(
             EC.visibility_of_element_located(locator)
@@ -203,6 +218,7 @@ def wait_for_element_to_appear(driver, locator, timeout=EXPLICIT_WAIT):
 
 # wait_for_element_to_disappear
 def wait_for_element_to_disappear(driver, locator):
+    """요소가 사라질 때까지 대기"""
     try:
         WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.invisibility_of_element_located(locator)
@@ -213,6 +229,7 @@ def wait_for_element_to_disappear(driver, locator):
 
 # wait_until_element_is_enabled
 def wait_until_element_is_enabled(driver, element):
+    """요소가 활성화될 때까지 대기"""
     try:
         WebDriverWait(driver, EXPLICIT_WAIT).until(EC.element_to_be_clickable(element))
         custom_logger.info(f"{element} 활성화될때까지 대기")
@@ -221,6 +238,7 @@ def wait_until_element_is_enabled(driver, element):
 
 # handle_alert
 def handle_alert(driver, action="accept"):
+    """알림창 처리 (확인/취소)"""
     try:
         alert = driver.switch_to.alert
         if action == "accept":

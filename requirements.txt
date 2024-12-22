@@ -1,4 +1,4 @@
-Python            3.13.1
+python            3.13.1
 java              11.0.24
 npm               10.9.0
 node              22.12.0

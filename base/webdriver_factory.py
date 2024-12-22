@@ -1,52 +1,41 @@
 import pyautogui
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from selenium.webdriver.edge.options import Options as EdgeOptions
 
 class WebDriverFactory:
-
+    """WebDriver 인스턴스 생성을 위한 팩토리 클래스"""
     def create_driver(self, browser_name="chrome", headless=False):
-        """
-        지정된 브라우저와 옵션으로 WebDriver 인스턴스를 생성
+        """ 지정된 브라우저와 옵션으로 WebDriver 인스턴스를 생성 """
+        browser_name = browser_name.lower()
+        options = self.get_browser_options(browser_name)
+        
+        if headless:
+            options.add_argument("--headless")
 
-        Args:
-            browser_name: 브라우저 이름 (chrome, firefox, edge 등)
-            headless: headless 모드 실행 여부 (True/False)
-        Returns:
-            WebDriver 인스턴스
-        """
-        if browser_name.lower() == "chrome":
-            options = self.get_screen_size(browser_name)
-            if headless:
-                options.add_argument("--headless")
-            driver = webdriver.Chrome(options=options)
-            return driver  # 바로 반환
-        elif browser_name.lower() == "firefox":
-            options = self.get_screen_size(browser_name)
-            if headless:
-                options.add_argument("--headless")
-            driver = webdriver.Firefox(options=options)
-            return driver  # 바로 반환
-        elif browser_name.lower() == "edge":
-            options = self.get_screen_size(browser_name)
-            if headless:
-                options.add_argument("--headless")
-            driver = webdriver.Edge(options=options)
-            return driver  # 바로 반환
+        if browser_name == "chrome":
+            return webdriver.Chrome(options=options)
+        elif browser_name == "firefox":
+            return webdriver.Firefox(options=options)
+        elif browser_name == "edge":
+            return webdriver.Edge(options=options)
         else:
             raise ValueError(f"지원하지 않는 브라우저입니다: {browser_name}")
 
-    def get_screen_size(self, browser_name="chrome"):
+    def get_browser_options(self, browser_name):
         screen_width, screen_height = pyautogui.size()
 
         # 윈도우 사이즈 90% 계산
         window_width = int(screen_width * 0.9)
         window_height = int(screen_height * 0.9)
 
-        if browser_name.lower() == "chrome":
-            options = webdriver.ChromeOptions()
-        elif browser_name.lower() == "firefox":
-            options = webdriver.FirefoxOptions()
-        elif browser_name.lower() == "edge":
-            options = webdriver.EdgeOptions()
+        if browser_name == "chrome":
+            options = ChromeOptions()
+        elif browser_name == "firefox":
+            options = FirefoxOptions()
+        elif browser_name == "edge":
+            options = EdgeOptions()
         else:
             raise ValueError(f"지원하지 않는 브라우저입니다: {browser_name}")
 

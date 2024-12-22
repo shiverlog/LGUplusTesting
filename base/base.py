@@ -1,45 +1,59 @@
-import logging
-import pytest
-from utils.screenshot import screenshot
 from utils import custom_logger as cl
-from base.webdriver_factory import *
+from base.webdriver_factory import WebDriverFactory
 from config.config import BASE_URL
+import os
+import json
+from utils.exception_handler import handle_exception as e
 
 class Base:
-    """
-    모든 테스트 케이스에서 상속받는 기본 클래스
-    """
-
+    """모든 테스트 케이스에서 상속받는 기본 클래스"""
     def __init__(self):
-        # Driver
-        self.driver = WebDriverFactory().create_driver()  # WebDriverFactory 사용
-        self.driver.get(BASE_URL) # 사이트 접속
-        # Logger
-        self.logger = cl.custom_logger(type(self).__name__)
-    
-    # 테스트 실행 전 환경을 설정하는 메서드
-    def setup_method(self, method):
-        from base.webdriver_factory import WebDriverFactory
-        self.driver = WebDriverFactory().create_driver()  # WebDriver 인스턴스 생성
-        self.logger = logging.getLogger(type(self).__name__)  # 로거 초기화
+        self.driver_factory = WebDriverFactory()
+        self.driver = None
+        self.logger = None
+        self.locators = None
+        self.initialize()
 
-    # 테스트 실행 후 환경을 정리하는 메서드
+    def initialize(self):
+        """WebDriver와 Logger를 초기화"""
+        if not self.driver:
+            self.driver = self.driver_factory.create_driver()
+            self.driver.get(BASE_URL)
+        if not self.logger:
+            self.logger = cl.Logger().get_logger()
+    
+    def load_locators(self, section):
+        """로케이터 JSON 파일 로드"""
+        self.locators = LocatorLoader.load_locators(section)
+
+    def setup_method(self, method):
+        """테스트 실행 전 환경 설정"""
+        if not self.driver:
+            self.initialize()
+
     def teardown_method(self, method):
+        """테스트 실행 후 환경 정리"""
         if self.driver:
-            try:
-                # 테스트 실패 시 스크린샷 찍기 (pytest 예시)
-                if hasattr(pytest, 'config'):
-                    if pytest.config.option.lastfailed:
-                        screenshot(self.driver, method.__name__)
-                else:
-                    screenshot(self.driver, method.__name__)
-            except Exception as e:
-                self.logger.error(f"스크린샷 찍는 중 오류 발생: {e}")
-            finally:
-                self.driver.quit()
+            self.quit_driver()
 
     def get_driver(self):
+        """WebDriver 인스턴스 반환"""
         return self.driver
 
     def quit_driver(self):
-        self.driver.quit()
+        """WebDriver 종료"""
+        if self.driver:
+            self.driver.quit()
+            self.driver = None
+
+class LocatorLoader:
+    @staticmethod
+    def load_locators(section):
+        """로케이터 JSON 파일 로드"""
+        try:
+            locators_path = os.path.join('locators', 'locators.json')
+            with open(locators_path, 'r', encoding='utf-8') as f:
+                return json.load(f)[section]
+        except Exception as e:
+            e.handle_exception(None, e, "로케이터 파일 로드 실패")
+            raise

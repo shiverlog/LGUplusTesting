@@ -2,16 +2,16 @@ import logging
 import os
 
 # 로그 레벨
-LOG_LEVEL = logging.DEBUG
-LOG_FILE = "automation.log"
-JSON_FILE = "automation.json"
+LOG_LEVEL = logging.INFO
+LOG_FILE = os.path.join("logs", "automation.log")
+JSON_FILE = os.path.join("logs", "automation.json")
 MAX_BYTES = 5 * 1024 * 1024
 BACKUP_COUNT = 3
 LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s: %(message)s'
 DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
 
 # 스크린샷
-SCREENSHOT_DIR = "./screenshots"
+SCREENSHOT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "screenshots")
 
 # 테스트 대상 URL
 BASE_URL = "https://www.lguplus.com"

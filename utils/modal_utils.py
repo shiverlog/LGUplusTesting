@@ -9,11 +9,11 @@ from exception_handler import ExceptionHandler
 """
     class ModalHandler: 모달창 처리
     handle_modal: 모달 케이스에 따라 처리 if문으로 분기
-
+    determine_modal_type: 모달 타입 결정
 """
 
 class ModalHandler:
-    
+    """모달창 처리 클래스"""
     # determine_modal_type
     def determine_modal_type(self):
         try:

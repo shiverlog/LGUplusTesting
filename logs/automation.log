@@ -1,0 +1,75 @@
+2024-12-22 13:44:41 - Logger - INFO: 테스트 케이스 실행 시작: TestCase01
+2024-12-22 13:44:41 - Logger - INFO: 마이메뉴 마우스오버시 드롭메뉴 활성화 성공
+2024-12-22 13:44:43 - Logger - INFO: 입력한 ID: tmk3602@naver.com 입력한 PW: rlaxorals1!
+2024-12-22 13:44:47 - Logger - INFO: 로그인 정보: 
+2024-12-22 13:44:47 - Logger - INFO: 테스트 케이스 실행 완료: TestCase01
+2024-12-22 13:45:29 - Logger - INFO: 테스트 케이스 실행 시작: TestCase01
+2024-12-22 13:45:29 - Logger - INFO: 마이메뉴 마우스오버시 드롭메뉴 활성화 성공
+2024-12-22 13:45:32 - Logger - INFO: 입력한 ID: tmk3602@naver.com 입력한 PW: rlaxorals1!
+2024-12-22 13:45:35 - Logger - INFO: 로그인 정보: 
+2024-12-22 13:45:35 - Logger - INFO: 테스트 케이스 실행 완료: TestCase01
+2024-12-22 13:45:37 - Logger - INFO: 테스트 케이스 실행 시작: TestCase02
+2024-12-22 13:45:47 - Logger - ERROR: KV 영역 테스트 실패: Message: 
+
+2024-12-22 13:45:47 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\main.py", line 30, in execute
+    kv_images = WebDriverWait(self.driver, 10).until(
+        EC.presence_of_all_elements_located((By.CSS_SELECTOR, f"{self.locators['kv_section']} .swiper-slide img"))
+    )
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-22 13:45:47 - Logger - INFO: 타임아웃 발생. 페이지를 새로고침합니다.
+2024-12-22 13:45:48 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase02_KV영역테스트실패_20241222134548.png
+2024-12-22 13:45:48 - Logger - INFO: 테스트 케이스 실행 완료: TestCase02
+2024-12-22 13:45:50 - Logger - INFO: 테스트 케이스 실행 시작: TestCase03
+2024-12-22 13:45:52 - Logger - INFO: 선택한 탭: Apple
+2024-12-22 13:45:52 - Logger - INFO: 활성화된 탭: Apple
+2024-12-22 13:45:52 - Logger - INFO: Apple 탭의 기기 개수: 4
+2024-12-22 13:45:52 - Logger - INFO: 기기 1: iPhone 16 Pro 256GB 썸네일: https://image.lguplus.com/static/pc-contents/images/fcmm/cnts/imge/20240913-024351-938-Cc8EdGXA.png
+2024-12-22 13:45:52 - Logger - INFO: 기기 2: iPhone 16 Pro Max 256GB 썸네일: https://image.lguplus.com/static/pc-contents/images/fcmm/cnts/imge/20240913-024347-920-rRkcvMhq.png
+2024-12-22 13:45:52 - Logger - INFO: 기기 3: iPhone 16 256GB 썸네일: https://image.lguplus.com/static/pc-contents/images/fcmm/cnts/imge/20240913-024343-398-iAOWXytM.png
+2024-12-22 13:45:52 - Logger - INFO: 기기 4: iPhone 16 Plus 256GB 썸네일: https://image.lguplus.com/static/pc-contents/images/fcmm/cnts/imge/20240913-024357-037-QTaIG1Va.png
+2024-12-22 13:45:53 - Logger - INFO: 선택된 기기: iPhone 16 Pro 256GB
+2024-12-22 13:45:53 - Logger - INFO: 기기 상세 페이지 링크: https://www.lguplus.com/mobile/device/apple/iphone-16-pro-256gb/UIP16PR-256?dcntKdCd=5&urcMblPpCd=LPZ0000409&mblUrcMenuId=M20057&entrKdCd=1&cprtCardNo=1031&combiePerson=2
+2024-12-22 13:45:53 - Logger - INFO: 디바이스 상세 페이지로 이동 URL: https://www.lguplus.com/mobile/device/apple/iphone-16-pro-256gb/UIP16PR-256?dcntKdCd=5&urcMblPpCd=LPZ0000409&mblUrcMenuId=M20057&entrKdCd=1&cprtCardNo=1031&combiePerson=2
+2024-12-22 13:45:53 - Logger - INFO: 상세 페이지 기기명: 
+2024-12-22 13:45:53 - Logger - INFO: 기기명이 일치하지 않습니다. 선택된 기기: iPhone 16 Pro 256GB, 상세 페이지 기기: 
+2024-12-22 13:45:53 - Logger - INFO: 테스트 케이스 실행 완료: TestCase03
+2024-12-22 13:49:35 - Logger - INFO: 테스트 케이스 실행 시작: TestCase01
+2024-12-22 13:49:35 - Logger - INFO: 마이메뉴 마우스오버시 드롭메뉴 활성화 성공
+2024-12-22 13:49:37 - Logger - INFO: 입력한 ID: tmk3602@naver.com 입력한 PW: rlaxorals1!
+2024-12-22 13:49:41 - Logger - INFO: 로그인 정보: 
+2024-12-22 13:49:41 - Logger - INFO: 테스트 케이스 실행 완료: TestCase01
+2024-12-22 13:49:43 - Logger - INFO: 테스트 케이스 실행 시작: TestCase02
+2024-12-22 13:49:53 - Logger - ERROR: KV 영역 테스트 실패: Message: 
+
+2024-12-22 13:49:53 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\main.py", line 21, in execute
+    kv_images = WebDriverWait(self.driver, 10).until(
+        EC.presence_of_all_elements_located((By.CSS_SELECTOR, f"{self.locators['kv_section']} .swiper-slide img"))
+    )
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-22 13:49:53 - Logger - INFO: 타임아웃 발생. 페이지를 새로고침합니다.
+2024-12-22 13:49:54 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase02_KV영역테스트실패_20241222134954.png
+2024-12-22 13:49:54 - Logger - INFO: 테스트 케이스 실행 완료: TestCase02
+2024-12-22 13:49:56 - Logger - INFO: 테스트 케이스 실행 시작: TestCase03
+2024-12-22 13:49:58 - Logger - INFO: 선택한 탭: 추천
+2024-12-22 13:49:58 - Logger - INFO: 활성화된 탭: 추천
+2024-12-22 13:49:58 - Logger - INFO: 추천 탭의 기기 개수: 4
+2024-12-22 13:49:58 - Logger - INFO: 기기 1: U+키즈폰 무너에디션 썸네일: https://image.lguplus.com/static/pc-contents/images/fcmm/cnts/imge/20241211-012151-762-CDXPjbZt.png
+2024-12-22 13:49:58 - Logger - INFO: 기기 2: iPhone 16 Pro 256GB 썸네일: https://image.lguplus.com/static/pc-contents/images/fcmm/cnts/imge/20240913-024351-938-Cc8EdGXA.png
+2024-12-22 13:49:58 - Logger - INFO: 기기 3: iPhone 16 Pro Max 256GB 썸네일: https://image.lguplus.com/static/pc-contents/images/fcmm/cnts/imge/20240913-024347-920-rRkcvMhq.png
+2024-12-22 13:49:58 - Logger - INFO: 기기 4: iPhone 16 256GB 썸네일: https://image.lguplus.com/static/pc-contents/images/fcmm/cnts/imge/20240913-024343-398-iAOWXytM.png
+2024-12-22 13:49:58 - Logger - INFO: 선택된 기기: iPhone 16 Pro 256GB
+2024-12-22 13:49:58 - Logger - INFO: 기기 상세 페이지 링크: https://www.lguplus.com/mobile/device/apple/iphone-16-pro-256gb/UIP16PR-256?dcntKdCd=5&urcMblPpCd=LPZ0000409&mblUrcMenuId=M20057&entrKdCd=1&cprtCardNo=1031&combiePerson=2
+2024-12-22 13:49:58 - Logger - INFO: 디바이스 상세 페이지로 이동 URL: https://www.lguplus.com/mobile/device/apple/iphone-16-pro-256gb/UIP16PR-256?dcntKdCd=5&urcMblPpCd=LPZ0000409&mblUrcMenuId=M20057&entrKdCd=1&cprtCardNo=1031&combiePerson=2
+2024-12-22 13:49:59 - Logger - INFO: 상세 페이지 기기명: 
+2024-12-22 13:49:59 - Logger - INFO: 기기명이 일치하지 않습니다. 선택된 기기: iPhone 16 Pro 256GB, 상세 페이지 기기: 
+2024-12-22 13:49:59 - Logger - INFO: 테스트 케이스 실행 완료: TestCase03

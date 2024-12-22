@@ -1,4 +1,4 @@
-from config import IMPLICIT_WAIT
+from config.config import IMPLICIT_WAIT
 from utils.exception_handler import handle_exception
 from utils.custom_logger import custom_logger
 from selenium.webdriver.support.ui import WebDriverWait
