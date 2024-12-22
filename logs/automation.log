@@ -10563,3 +10563,1542 @@ Stacktrace:
 	BaseThreadInitThunk [0x00007FFC121D259D+29]
 	RtlUserThreadStart [0x00007FFC13EAAF38+40]
 
+2024-12-23 02:53:01 - Logger - INFO: 테스트 케이스 실행 시작: TestCase05
+2024-12-23 02:53:06 - Logger - INFO: 모바일 페이지로 이동 URL: https://www.lguplus.com/mobile
+2024-12-23 02:53:08 - Logger - INFO: 선택한 탭: 가성비폰
+2024-12-23 02:53:10 - Logger - INFO: 가성비폰 기기 리스트 갯수: 20
+2024-12-23 02:53:10 - Logger - INFO: 가성비폰 보여지는 기기 갯수: 4
+2024-12-23 02:53:10 - Logger - INFO: 기기_1: U⁺ 키즈폰 무너에디션 가격: 월 27,520원 색상: ['그레이', '라이트 그린'] URL: https://www.lguplus.com/mobile/4g-phone/samsung/uplus-kidsphone-mooner/SM-A165N-UM
+2024-12-23 02:53:10 - Logger - INFO: 기기_2: 갤럭시 A16 가격: 월 35,920원 색상: ['블랙', '그레이', '라이트 그린'] URL: https://www.lguplus.com/mobile/4g-phone/samsung/galaxy-a16/SM-A165N
+2024-12-23 02:53:10 - Logger - INFO: 기기_3: 샤오미 Redmi 14C 가격: 월 31,370원 색상: ['미드나이트 블랙', '세이지 그린', '스태리 블루'] URL: https://www.lguplus.com/mobile/4g-phone/xiaomi/redmi-14c-128gb/2409BRN2CL
+2024-12-23 02:53:11 - Logger - INFO: 기기_4: Galaxy Buddy3 가격: 월 55,000원 색상: ['라이트 블루', '옐로', '블루 블랙'] URL: https://www.lguplus.com/mobile/5g-phone/samsung/galaxy-buddy3/SM-A156L
+2024-12-23 02:53:11 - Logger - INFO: 주문하기 버튼 URL: https://www.lguplus.com/mobile/4g-phone/samsung/uplus-kidsphone-mooner/SM-A165N-UM
+2024-12-23 02:53:11 - Logger - INFO: 선택된 기기: U⁺ 키즈폰 무너에디션
+2024-12-23 02:53:13 - Logger - INFO: 주문하기 페이지로 이동 URL: https://www.lguplus.com/mobile/device/samsung/uplus-kidsphone-mooner/SM-A165N-UM?dcntKdCd=5&urcMblPpCd=LPZ0002473
+2024-12-23 02:53:13 - Logger - INFO: 주문하는 기기명: U⁺ 키즈폰 무너에디션
+2024-12-23 02:53:13 - Logger - INFO: 선택한 기기명: U⁺ 키즈폰 무너에디션 상세페이지 기기명: U⁺ 키즈폰 무너에디션로 기기명이 일치합니다.
+2024-12-23 02:53:13 - Logger - INFO: 팝업창 닫기 버튼 클릭 완료
+2024-12-23 02:53:23 - Logger - INFO: 기기 옵션: ['색상', '저장공간', '가입유형']
+2024-12-23 02:53:23 - Logger - INFO: 탭 리스트 갯수: 5 ['예상 납부금액', '상품정보', '전문가 리뷰/구매후기(5)', '상품 문의', '가입안내 및 유의사항']
+2024-12-23 02:53:23 - Logger - INFO: 탭 선택옵션: ['배송방법', '요금제', '할인방법', '제휴카드', '추가 할인', '사은품', '쇼핑쿠폰팩']
+2024-12-23 02:53:23 - Logger - INFO: 요소 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.color')
+2024-12-23 02:53:23 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 02:53:23 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 02:53:23 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(1)')
+2024-12-23 02:53:23 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(2) > td')
+2024-12-23 02:53:23 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(3) > td')
+2024-12-23 02:53:23 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr[name="co-card"]')
+2024-12-23 02:53:23 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(5)')
+2024-12-23 02:53:23 - Logger - INFO: 색상옵션: 2 ['그레이', '라이트 그린']
+2024-12-23 02:53:24 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1a51d6a630282c27dee356ab1640b78f", element="f.4B661F98E5C82DB6069C2E12E1A5A438.d.D89ADE77B3963670A0F0F64E367A4104.e.22147")> 요소 클릭 성공
+2024-12-23 02:53:26 - Logger - INFO: 선택된 색상: 라이트 그린
+2024-12-23 02:53:26 - Logger - INFO: 저장옵션: 1 ['128GB']
+2024-12-23 02:53:26 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1a51d6a630282c27dee356ab1640b78f", element="f.4B661F98E5C82DB6069C2E12E1A5A438.d.D89ADE77B3963670A0F0F64E367A4104.e.25671")> 요소 클릭 성공
+2024-12-23 02:53:26 - Logger - INFO: 선택된 저장공간: 128GB
+2024-12-23 02:53:26 - Logger - INFO: 저장옵션: 1 ['128GB']
+2024-12-23 02:53:26 - Logger - INFO: 가입유형: 3 ['기기변경', '번호이동', '신규가입']
+2024-12-23 02:53:27 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1a51d6a630282c27dee356ab1640b78f", element="f.4B661F98E5C82DB6069C2E12E1A5A438.d.D89ADE77B3963670A0F0F64E367A4104.e.22172")> 요소 클릭 성공
+2024-12-23 02:53:27 - Logger - INFO: 선택된 가입유형: 신규가입
+2024-12-23 02:53:27 - Logger - INFO: 배송유형: 2 ['우체국택배', '오늘도착']
+2024-12-23 02:53:27 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1a51d6a630282c27dee356ab1640b78f", element="f.4B661F98E5C82DB6069C2E12E1A5A438.d.D89ADE77B3963670A0F0F64E367A4104.e.27480")> 요소 클릭 성공
+2024-12-23 02:53:27 - Logger - INFO: 선택된 배송방법: 우체국택배
+2024-12-23 02:53:28 - Logger - INFO: 요금제유형: 3 ['LTE 키즈 22(만 12세 이하)', 'LTE 다이렉트 22', 'LTE 데이터 33']
+2024-12-23 02:53:28 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1a51d6a630282c27dee356ab1640b78f", element="f.4B661F98E5C82DB6069C2E12E1A5A438.d.D89ADE77B3963670A0F0F64E367A4104.e.26986")> 요소 클릭 성공
+2024-12-23 02:53:33 - Logger - INFO: 선택된 요금제: LTE 데이터 33
+2024-12-23 02:53:38 - Logger - INFO: 특별 혜택이 없습니다.
+2024-12-23 02:53:43 - Logger - INFO: 선택된 요금제에는 할인방법이 없습니다.
+2024-12-23 02:53:54 - Logger - ERROR: 클릭 가능한 요소를 찾을 수 없음: ('css selector', '.month-credit-box .btn-chk.is-add'): Message: 
+
+2024-12-23 02:53:54 - Logger - ERROR: Traceback (most recent call last):
+  File "D:\test-rpa\utils\element_utils.py", line 71, in find_clickable_element
+    element = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        EC.element_to_be_clickable(locator)
+    )
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-23 02:53:54 - Logger - INFO: 타임아웃 발생. 페이지를 새로고침합니다.
+2024-12-23 02:53:56 - Logger - INFO: 스크린샷 저장 완료: D:\test-rpa\screenshots\NoneType_클릭가능한요소를찾을수없음:('cssselector','.month-credit-box.btn-chk.is-add')_20241223025355.png
+2024-12-23 02:53:56 - Logger - INFO: None 요소 클릭 성공
+2024-12-23 02:53:56 - Logger - INFO: 할부금납부 방법: 4 | ['즉시결제(카드• 간편결제)', '12개월', '24개월', '36개월']
+2024-12-23 02:53:56 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1a51d6a630282c27dee356ab1640b78f", element="f.4B661F98E5C82DB6069C2E12E1A5A438.d.726CD66E893F878B68AFE167168702BA.e.32863")> 요소 클릭 성공
+2024-12-23 02:53:56 - Logger - INFO: 선택된 할부금 납부기간: 128GB
+2024-12-23 02:53:56 - Logger - ERROR: <selenium.webdriver.remote.webelement.WebElement (session="1a51d6a630282c27dee356ab1640b78f", element="f.4B661F98E5C82DB6069C2E12E1A5A438.d.D89ADE77B3963670A0F0F64E367A4104.e.25780")> 요소로 마우스 이동 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB6903D3]
+	(No symbol) [0x00007FF6BB68F666]
+	(No symbol) [0x00007FF6BB6DA513]
+	(No symbol) [0x00007FF6BB6AF43A]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 02:53:56 - Logger - ERROR: 요소를 찾을 수 없음: ('css selector', '.more-view.toggle a'): Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67C6EC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 02:53:56 - Logger - ERROR: Traceback (most recent call last):
+  File "D:\test-rpa\utils\element_utils.py", line 32, in find_element
+    element = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        EC.presence_of_element_located(locator)
+    )
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 408, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67C6EC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-23 02:53:56 - Logger - ERROR: 예상치 못한 예외 발생: StaleElementReferenceException
+2024-12-23 02:54:11 - Logger - ERROR: 요소들을 찾을 수 없음: ('css selector', 'ul.c-card-list-icon.check-type-2 li'): Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67CBBC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 02:54:11 - Logger - ERROR: Traceback (most recent call last):
+  File "D:\test-rpa\utils\element_utils.py", line 45, in find_elements
+    elements = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        EC.presence_of_all_elements_located(locator)
+    )
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 191, in _predicate
+    return driver.find_elements(*locator)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 421, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67CBBC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-23 02:54:11 - Logger - ERROR: 예상치 못한 예외 발생: StaleElementReferenceException
+2024-12-23 03:03:41 - Logger - INFO: 테스트 케이스 실행 시작: TestCase05
+2024-12-23 03:03:46 - Logger - INFO: 모바일 페이지로 이동 URL: https://www.lguplus.com/mobile
+2024-12-23 03:03:48 - Logger - INFO: 선택한 탭: 가성비폰
+2024-12-23 03:03:50 - Logger - INFO: 가성비폰 기기 리스트 갯수: 20
+2024-12-23 03:03:50 - Logger - INFO: 가성비폰 보여지는 기기 갯수: 4
+2024-12-23 03:03:50 - Logger - INFO: 기기_1: U⁺ 키즈폰 무너에디션 가격: 월 27,520원 색상: ['그레이', '라이트 그린'] URL: https://www.lguplus.com/mobile/4g-phone/samsung/uplus-kidsphone-mooner/SM-A165N-UM
+2024-12-23 03:03:50 - Logger - INFO: 기기_2: 갤럭시 A16 가격: 월 35,920원 색상: ['블랙', '그레이', '라이트 그린'] URL: https://www.lguplus.com/mobile/4g-phone/samsung/galaxy-a16/SM-A165N
+2024-12-23 03:03:50 - Logger - INFO: 기기_3: 샤오미 Redmi 14C 가격: 월 31,370원 색상: ['미드나이트 블랙', '세이지 그린', '스태리 블루'] URL: https://www.lguplus.com/mobile/4g-phone/xiaomi/redmi-14c-128gb/2409BRN2CL
+2024-12-23 03:03:50 - Logger - INFO: 기기_4: Galaxy Buddy3 가격: 월 55,000원 색상: ['라이트 블루', '옐로', '블루 블랙'] URL: https://www.lguplus.com/mobile/5g-phone/samsung/galaxy-buddy3/SM-A156L
+2024-12-23 03:03:50 - Logger - INFO: 주문하기 버튼 URL: https://www.lguplus.com/mobile/4g-phone/samsung/galaxy-a16/SM-A165N
+2024-12-23 03:03:51 - Logger - INFO: 선택된 기기: 갤럭시 A16
+2024-12-23 03:03:53 - Logger - INFO: 주문하기 페이지로 이동 URL: https://www.lguplus.com/mobile/device/samsung/galaxy-a16/SM-A165N?dcntKdCd=5&urcMblPpCd=LPZ0000472
+2024-12-23 03:03:53 - Logger - INFO: 주문하는 기기명: 갤럭시 A16
+2024-12-23 03:03:53 - Logger - INFO: 선택한 기기명: 갤럭시 A16 상세페이지 기기명: 갤럭시 A16로 기기명이 일치합니다.
+2024-12-23 03:04:03 - Logger - INFO: 팝업창이 나타나지 않았습니다.
+2024-12-23 03:04:13 - Logger - INFO: 기기 옵션: ['색상', '저장공간', '가입유형']
+2024-12-23 03:04:13 - Logger - INFO: 탭 리스트 갯수: 5 ['예상 납부금액', '상품정보', '전문가 리뷰/구매후기(0)', '상품 문의', '가입안내 및 유의사항']
+2024-12-23 03:04:13 - Logger - INFO: 탭 선택옵션: ['배송방법', '요금제', '할인방법', '제휴카드', '추가 할인', '사은품', '쇼핑쿠폰팩']
+2024-12-23 03:04:16 - Logger - INFO: 요소 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.color')
+2024-12-23 03:04:19 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 03:04:22 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 03:04:24 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(1)')
+2024-12-23 03:04:30 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(2) > td')
+2024-12-23 03:04:35 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(3) > td')
+2024-12-23 03:04:38 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr[name="co-card"]')
+2024-12-23 03:04:43 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(5)')
+2024-12-23 03:04:44 - Logger - INFO: 색상옵션: 3 ['블랙', '그레이', '라이트 그린']
+2024-12-23 03:04:44 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1c0168b90a2dac2dfdf01c28704ee755", element="f.88E62BDA02174D3F9527EFC8C757A204.d.28DDC59BBCEDC121C7906B42AAA85364.e.21525")> 요소 클릭 성공
+2024-12-23 03:04:46 - Logger - INFO: 선택된 색상: 그레이
+2024-12-23 03:04:46 - Logger - INFO: 저장옵션: 1 ['128GB']
+2024-12-23 03:04:46 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1c0168b90a2dac2dfdf01c28704ee755", element="f.88E62BDA02174D3F9527EFC8C757A204.d.28DDC59BBCEDC121C7906B42AAA85364.e.25162")> 요소 클릭 성공
+2024-12-23 03:04:46 - Logger - INFO: 선택된 저장공간: 128GB
+2024-12-23 03:04:47 - Logger - INFO: 저장옵션: 1 ['128GB']
+2024-12-23 03:04:47 - Logger - INFO: 가입유형: 3 ['기기변경', '번호이동', '신규가입']
+2024-12-23 03:04:47 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1c0168b90a2dac2dfdf01c28704ee755", element="f.88E62BDA02174D3F9527EFC8C757A204.d.28DDC59BBCEDC121C7906B42AAA85364.e.21541")> 요소 클릭 성공
+2024-12-23 03:04:47 - Logger - INFO: 선택된 가입유형: 기기변경
+2024-12-23 03:04:47 - Logger - INFO: 배송유형: 2 ['우체국택배', '오늘도착']
+2024-12-23 03:04:48 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1c0168b90a2dac2dfdf01c28704ee755", element="f.88E62BDA02174D3F9527EFC8C757A204.d.28DDC59BBCEDC121C7906B42AAA85364.e.26800")> 요소 클릭 성공
+2024-12-23 03:04:48 - Logger - INFO: 선택된 배송방법: 우체국택배
+2024-12-23 03:04:48 - Logger - INFO: 요금제유형: 3 ['LTE 데이터 33', '추가 요금 걱정 없는 데이터 69', 'LTE 다이렉트 45']
+2024-12-23 03:04:48 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1c0168b90a2dac2dfdf01c28704ee755", element="f.88E62BDA02174D3F9527EFC8C757A204.d.28DDC59BBCEDC121C7906B42AAA85364.e.26237")> 요소 클릭 성공
+2024-12-23 03:04:53 - Logger - INFO: 선택된 요금제: 추가 요금 걱정 없는 데이터 69
+2024-12-23 03:04:58 - Logger - INFO: 특별 혜택이 없습니다.
+2024-12-23 03:05:04 - Logger - INFO: 선택된 요금제에는 할인방법이 없습니다.
+2024-12-23 03:05:14 - Logger - ERROR: 클릭 가능한 요소를 찾을 수 없음: ('css selector', '.month-credit-box .btn-chk.is-add'): Message: 
+
+2024-12-23 03:05:14 - Logger - ERROR: Traceback (most recent call last):
+  File "D:\test-rpa\utils\element_utils.py", line 71, in find_clickable_element
+    element = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        EC.element_to_be_clickable(locator)
+    )
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-23 03:05:14 - Logger - INFO: 타임아웃 발생. 페이지를 새로고침합니다.
+2024-12-23 03:05:16 - Logger - INFO: 스크린샷 저장 완료: D:\test-rpa\screenshots\NoneType_클릭가능한요소를찾을수없음:('cssselector','.month-credit-box.btn-chk.is-add')_20241223030516.png
+2024-12-23 03:05:16 - Logger - INFO: None 요소 클릭 성공
+2024-12-23 03:05:16 - Logger - INFO: 할부금납부 방법: 4 | ['즉시결제(카드• 간편결제)', '12개월', '24개월', '36개월']
+2024-12-23 03:05:16 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="1c0168b90a2dac2dfdf01c28704ee755", element="f.88E62BDA02174D3F9527EFC8C757A204.d.A0BCE9E69C3A8787E037CC49EE493A8A.e.31957")> 요소 클릭 성공
+2024-12-23 03:05:16 - Logger - INFO: 선택된 할부금 납부기간: 128GB
+2024-12-23 03:05:16 - Logger - ERROR: <selenium.webdriver.remote.webelement.WebElement (session="1c0168b90a2dac2dfdf01c28704ee755", element="f.88E62BDA02174D3F9527EFC8C757A204.d.28DDC59BBCEDC121C7906B42AAA85364.e.25271")> 요소로 마우스 이동 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB6903D3]
+	(No symbol) [0x00007FF6BB68F666]
+	(No symbol) [0x00007FF6BB6DA513]
+	(No symbol) [0x00007FF6BB6AF43A]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:05:16 - Logger - ERROR: 요소를 찾을 수 없음: ('css selector', '.more-view.toggle a'): Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67C6EC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:05:16 - Logger - ERROR: Traceback (most recent call last):
+  File "D:\test-rpa\utils\element_utils.py", line 32, in find_element
+    element = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        EC.presence_of_element_located(locator)
+    )
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 408, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67C6EC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-23 03:05:16 - Logger - ERROR: 예상치 못한 예외 발생: StaleElementReferenceException
+2024-12-23 03:05:40 - Logger - ERROR: 요소들을 찾을 수 없음: ('css selector', 'ul.c-card-list-icon.check-type-2 li'): Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67CBBC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:05:40 - Logger - ERROR: Traceback (most recent call last):
+  File "D:\test-rpa\utils\element_utils.py", line 45, in find_elements
+    elements = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        EC.presence_of_all_elements_located(locator)
+    )
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 191, in _predicate
+    return driver.find_elements(*locator)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 421, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67CBBC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-23 03:05:40 - Logger - ERROR: 예상치 못한 예외 발생: StaleElementReferenceException
+2024-12-23 03:07:37 - Logger - INFO: 테스트 케이스 실행 시작: TestCase05
+2024-12-23 03:07:43 - Logger - INFO: 모바일 페이지로 이동 URL: https://www.lguplus.com/mobile
+2024-12-23 03:07:45 - Logger - INFO: 선택한 탭: 추천
+2024-12-23 03:07:47 - Logger - INFO: 추천 기기 리스트 갯수: 20
+2024-12-23 03:07:47 - Logger - INFO: 추천 보여지는 기기 갯수: 4
+2024-12-23 03:07:47 - Logger - INFO: 기기_1: U⁺ 키즈폰 무너에디션 가격: 월 27,520원 색상: ['그레이', '라이트 그린'] URL: https://www.lguplus.com/mobile/4g-phone/samsung/uplus-kidsphone-mooner/SM-A165N-UM
+2024-12-23 03:07:47 - Logger - INFO: 기기_2: iPhone 16 Pro 가격: 월 148,500원 색상: ['내추럴 티타늄', '데저트 티타늄', '화이트 티타늄', '블랙 티타늄'] URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-pro-256gb/UIP16PR-256
+2024-12-23 03:07:47 - Logger - INFO: 기기_3: iPhone 16 가격: 월 133,590원 색상: ['울트라마린', '틸', '핑크', '화이트', '블랙'] URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-256gb/UIP16-256
+2024-12-23 03:07:47 - Logger - INFO: 기기_4: 갤럭시 Z Fold6 가격: 월 172,220원 색상: ['실버 쉐도우', '핑크', '네이비'] URL: https://www.lguplus.com/mobile/5g-phone/samsung/galaxy-z-fold6-256gb/SM-F956N256
+2024-12-23 03:07:47 - Logger - INFO: 주문하기 버튼 URL: https://www.lguplus.com/mobile/4g-phone/samsung/uplus-kidsphone-mooner/SM-A165N-UM
+2024-12-23 03:07:48 - Logger - INFO: 선택된 기기: U⁺ 키즈폰 무너에디션
+2024-12-23 03:07:50 - Logger - INFO: 주문하기 페이지로 이동 URL: https://www.lguplus.com/mobile/device/samsung/uplus-kidsphone-mooner/SM-A165N-UM?dcntKdCd=5&urcMblPpCd=LPZ0002473
+2024-12-23 03:07:50 - Logger - INFO: 주문하는 기기명: U⁺ 키즈폰 무너에디션
+2024-12-23 03:07:50 - Logger - INFO: 선택한 기기명: U⁺ 키즈폰 무너에디션 상세페이지 기기명: U⁺ 키즈폰 무너에디션로 기기명이 일치합니다.
+2024-12-23 03:07:50 - Logger - INFO: 팝업창 닫기 버튼 클릭 완료
+2024-12-23 03:08:00 - Logger - INFO: 기기 옵션: ['색상', '저장공간', '가입유형']
+2024-12-23 03:08:00 - Logger - INFO: 탭 리스트 갯수: 5 ['예상 납부금액', '상품정보', '전문가 리뷰/구매후기(5)', '상품 문의', '가입안내 및 유의사항']
+2024-12-23 03:08:00 - Logger - INFO: 탭 선택옵션: ['배송방법', '요금제', '할인방법', '제휴카드', '추가 할인', '사은품', '쇼핑쿠폰팩']
+2024-12-23 03:08:00 - Logger - INFO: 요소 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.color')
+2024-12-23 03:08:00 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 03:08:00 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 03:08:00 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(1)')
+2024-12-23 03:08:00 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(2) > td')
+2024-12-23 03:08:00 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(3) > td')
+2024-12-23 03:08:07 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr[name="co-card"]')
+2024-12-23 03:08:11 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(5)')
+2024-12-23 03:08:12 - Logger - INFO: 색상옵션: 2 ['그레이', '라이트 그린']
+2024-12-23 03:08:12 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="f1d923317f80323836456f2d9fac88cc", element="f.F1C91A26AA7231CD491F31B3C0BFD88E.d.BD9EA687BFAAC6F387494F045401A5DD.e.21733")> 요소 클릭 성공
+2024-12-23 03:08:14 - Logger - INFO: 선택된 색상: 그레이
+2024-12-23 03:08:14 - Logger - INFO: 저장옵션: 1 ['128GB']
+2024-12-23 03:08:14 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="f1d923317f80323836456f2d9fac88cc", element="f.F1C91A26AA7231CD491F31B3C0BFD88E.d.BD9EA687BFAAC6F387494F045401A5DD.e.25260")> 요소 클릭 성공
+2024-12-23 03:08:14 - Logger - INFO: 선택된 저장공간: 128GB
+2024-12-23 03:08:14 - Logger - INFO: 저장옵션: 1 ['128GB']
+2024-12-23 03:08:15 - Logger - INFO: 가입유형: 3 ['기기변경', '번호이동', '신규가입']
+2024-12-23 03:08:15 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="f1d923317f80323836456f2d9fac88cc", element="f.F1C91A26AA7231CD491F31B3C0BFD88E.d.BD9EA687BFAAC6F387494F045401A5DD.e.21761")> 요소 클릭 성공
+2024-12-23 03:08:15 - Logger - INFO: 선택된 가입유형: 신규가입
+2024-12-23 03:08:15 - Logger - INFO: 배송유형: 2 ['우체국택배', '오늘도착']
+2024-12-23 03:08:16 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="f1d923317f80323836456f2d9fac88cc", element="f.F1C91A26AA7231CD491F31B3C0BFD88E.d.BD9EA687BFAAC6F387494F045401A5DD.e.27198")> 요소 클릭 성공
+2024-12-23 03:08:16 - Logger - INFO: 선택된 배송방법: 우체국택배
+2024-12-23 03:08:16 - Logger - INFO: 요금제유형: 3 ['LTE 키즈 22(만 12세 이하)', 'LTE 다이렉트 22', 'LTE 데이터 33']
+2024-12-23 03:08:16 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="f1d923317f80323836456f2d9fac88cc", element="f.F1C91A26AA7231CD491F31B3C0BFD88E.d.BD9EA687BFAAC6F387494F045401A5DD.e.26558")> 요소 클릭 성공
+2024-12-23 03:08:21 - Logger - INFO: 선택된 요금제: LTE 키즈 22(만 12세 이하)
+2024-12-23 03:08:26 - Logger - INFO: 특별 혜택이 없습니다.
+2024-12-23 03:08:32 - Logger - INFO: 선택된 요금제에는 할인방법이 없습니다.
+2024-12-23 03:08:42 - Logger - ERROR: 클릭 가능한 요소를 찾을 수 없음: ('css selector', '.month-credit-box .btn-chk.is-add'): Message: 
+
+2024-12-23 03:08:42 - Logger - ERROR: Traceback (most recent call last):
+  File "D:\test-rpa\utils\element_utils.py", line 71, in find_clickable_element
+    element = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        EC.element_to_be_clickable(locator)
+    )
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-23 03:08:42 - Logger - INFO: 타임아웃 발생. 페이지를 새로고침합니다.
+2024-12-23 03:08:44 - Logger - INFO: 스크린샷 저장 완료: D:\test-rpa\screenshots\NoneType_클릭가능한요소를찾을수없음:('cssselector','.month-credit-box.btn-chk.is-add')_20241223030844.png
+2024-12-23 03:08:44 - Logger - INFO: None 요소 클릭 성공
+2024-12-23 03:08:44 - Logger - INFO: 할부금납부 방법: 4 | ['즉시결제(카드• 간편결제)', '12개월', '24개월', '36개월']
+2024-12-23 03:08:44 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="f1d923317f80323836456f2d9fac88cc", element="f.F1C91A26AA7231CD491F31B3C0BFD88E.d.5CD3FFA4DBFB2595ED42AB13CFE52872.e.30587")> 요소 클릭 성공
+2024-12-23 03:08:44 - Logger - INFO: 선택된 할부금 납부기간: 128GB
+2024-12-23 03:08:44 - Logger - ERROR: <selenium.webdriver.remote.webelement.WebElement (session="f1d923317f80323836456f2d9fac88cc", element="f.F1C91A26AA7231CD491F31B3C0BFD88E.d.BD9EA687BFAAC6F387494F045401A5DD.e.25369")> 요소로 마우스 이동 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB6903D3]
+	(No symbol) [0x00007FF6BB68F666]
+	(No symbol) [0x00007FF6BB6DA513]
+	(No symbol) [0x00007FF6BB6AF43A]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:08:44 - Logger - ERROR: 요소를 찾을 수 없음: ('css selector', '.more-view.toggle a'): Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67C6EC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:08:44 - Logger - ERROR: Traceback (most recent call last):
+  File "D:\test-rpa\utils\element_utils.py", line 32, in find_element
+    element = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        EC.presence_of_element_located(locator)
+    )
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 408, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67C6EC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-23 03:08:44 - Logger - ERROR: 예상치 못한 예외 발생: StaleElementReferenceException
+2024-12-23 03:13:20 - Logger - INFO: 테스트 케이스 실행 시작: TestCase05
+2024-12-23 03:13:26 - Logger - INFO: 모바일 페이지로 이동 URL: https://www.lguplus.com/mobile
+2024-12-23 03:13:28 - Logger - INFO: 선택한 탭: Apple
+2024-12-23 03:13:30 - Logger - INFO: Apple 기기 리스트 갯수: 20
+2024-12-23 03:13:30 - Logger - INFO: Apple 보여지는 기기 갯수: 4
+2024-12-23 03:13:30 - Logger - INFO: 기기_1: iPhone 16 Pro 가격: 월 148,500원 색상: ['내추럴 티타늄', '데저트 티타늄', '화이트 티타늄', '블랙 티타늄'] URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-pro-256gb/UIP16PR-256
+2024-12-23 03:13:30 - Logger - INFO: 기기_2: iPhone 16 Pro Max 가격: 월 157,260원 색상: ['데저트 티타늄', '내추럴 티타늄', '화이트 티타늄', '블랙 티타늄'] URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-promax-256gb/UIP16PM-256
+2024-12-23 03:13:30 - Logger - INFO: 기기_3: iPhone 16 가격: 월 133,590원 색상: ['울트라마린', '틸', '핑크', '화이트', '블랙'] URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-256gb/UIP16-256
+2024-12-23 03:13:30 - Logger - INFO: 기기_4: iPhone 16 Plus 가격: 월 139,730원 색상: ['핑크', '울트라마린', '틸', '화이트', '블랙'] URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-plus-256gb/UIP16PL-256
+2024-12-23 03:13:30 - Logger - INFO: 주문하기 버튼 URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-256gb/UIP16-256
+2024-12-23 03:13:31 - Logger - INFO: 선택된 기기: iPhone 16
+2024-12-23 03:13:33 - Logger - INFO: 주문하기 페이지로 이동 URL: https://www.lguplus.com/mobile/device/apple/iphone-16-256gb/UIP16-256?dcntKdCd=5&urcMblPpCd=LPZ0002536
+2024-12-23 03:13:33 - Logger - INFO: 주문하는 기기명: iPhone 16 256GB
+2024-12-23 03:13:33 - Logger - INFO: 선택한 기기명: iPhone 16 상세페이지 기기명: iPhone 16 256GB로 기기명이 일치합니다.
+2024-12-23 03:13:43 - Logger - INFO: 팝업창이 나타나지 않았습니다.
+2024-12-23 03:13:53 - Logger - INFO: 기기 옵션: ['색상', '저장공간', '가입유형']
+2024-12-23 03:13:53 - Logger - INFO: 탭 리스트 갯수: 5 ['예상 납부금액', '상품정보', '전문가 리뷰/구매후기(132)', '상품 문의', '가입안내 및 유의사항']
+2024-12-23 03:13:53 - Logger - INFO: 탭 선택옵션: ['배송방법', '요금제', '할인방법', '제휴카드', 'VIP 멤버십 혜택', '추가 할인', '사은품', '쇼핑쿠폰팩']
+2024-12-23 03:13:53 - Logger - INFO: 요소 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.color')
+2024-12-23 03:13:53 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 03:13:53 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 03:13:53 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(1)')
+2024-12-23 03:13:53 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(2) > td')
+2024-12-23 03:13:53 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(3) > td')
+2024-12-23 03:13:53 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr[name="co-card"]')
+2024-12-23 03:13:53 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(5)')
+2024-12-23 03:13:53 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(6)')
+2024-12-23 03:13:53 - Logger - INFO: VIP 멤버십 혜택이 존재합니다. 추가할인 셋팅
+2024-12-23 03:13:53 - Logger - INFO: 색상옵션: 5 ['울트라마린', '틸', '핑크', '화이트', '블랙']
+2024-12-23 03:13:53 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.F8F24C59AF487FDE6FD75779EC81FE62.e.21825")> 요소 클릭 성공
+2024-12-23 03:13:55 - Logger - INFO: 선택된 색상: 화이트
+2024-12-23 03:13:56 - Logger - INFO: 저장옵션: 1 ['256GB']
+2024-12-23 03:13:56 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.F8F24C59AF487FDE6FD75779EC81FE62.e.25601")> 요소 클릭 성공
+2024-12-23 03:13:56 - Logger - INFO: 선택된 저장공간: 256GB
+2024-12-23 03:13:56 - Logger - INFO: 저장옵션: 1 ['256GB']
+2024-12-23 03:13:56 - Logger - INFO: 가입유형: 3 ['기기변경', '번호이동', '신규가입']
+2024-12-23 03:13:57 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.F8F24C59AF487FDE6FD75779EC81FE62.e.21847")> 요소 클릭 성공
+2024-12-23 03:13:57 - Logger - INFO: 선택된 가입유형: 번호이동
+2024-12-23 03:13:57 - Logger - INFO: 배송유형: 2 ['우체국택배', '오늘도착']
+2024-12-23 03:13:57 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.F8F24C59AF487FDE6FD75779EC81FE62.e.27687")> 요소 클릭 성공
+2024-12-23 03:13:57 - Logger - INFO: 선택된 배송방법: 우체국택배
+2024-12-23 03:13:58 - Logger - INFO: 요금제유형: 3 ['(넷플릭스) 5G 프리미어 플러스', '5G 프리미어 에센셜', '(에어팟프로2) 5G 다이렉트 65']
+2024-12-23 03:13:58 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.F8F24C59AF487FDE6FD75779EC81FE62.e.26976")> 요소 클릭 성공
+2024-12-23 03:14:03 - Logger - INFO: 선택된 요금제: 5G 프리미어 에센셜
+2024-12-23 03:14:08 - Logger - INFO: 특별 혜택이 없습니다.
+2024-12-23 03:14:13 - Logger - INFO: 선택된 요금제에는 할인방법이 없습니다.
+2024-12-23 03:14:24 - Logger - ERROR: 클릭 가능한 요소를 찾을 수 없음: ('css selector', '.month-credit-box .btn-chk.is-add'): Message: 
+
+2024-12-23 03:14:24 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\element_utils.py", line 71, in find_clickable_element
+    element = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        EC.element_to_be_clickable(locator)
+    )
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-23 03:14:24 - Logger - INFO: 타임아웃 발생. 페이지를 새로고침합니다.
+2024-12-23 03:14:25 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_클릭가능한요소를찾을수없음:('cssselector','.month-credit-box.btn-chk.is-add')_20241223031425.png
+2024-12-23 03:14:25 - Logger - INFO: None 요소 클릭 성공
+2024-12-23 03:14:25 - Logger - INFO: 할부금납부 방법: 4 | ['즉시결제(카드• 간편결제)', '12개월', '24개월', '36개월']
+2024-12-23 03:14:26 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.3FC6719CFDEF3A978D83A57B9CF7045F.e.33511")> 요소 클릭 성공
+2024-12-23 03:14:26 - Logger - INFO: 선택된 할부금 납부기간: 256GB
+2024-12-23 03:14:26 - Logger - ERROR: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.F8F24C59AF487FDE6FD75779EC81FE62.e.25710")> 요소로 마우스 이동 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB6903D3]
+	(No symbol) [0x00007FF6BB68F666]
+	(No symbol) [0x00007FF6BB6DA513]
+	(No symbol) [0x00007FF6BB6AF43A]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:14:26 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr[name="co-card"] .more-view.toggle a')
+2024-12-23 03:14:26 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.3FC6719CFDEF3A978D83A57B9CF7045F.e.33236")> 요소 클릭 성공
+2024-12-23 03:14:26 - Logger - INFO: 요소들을 찾음: ('css selector', 'tbody > tr[name="co-card"] ul.c-card-list-icon.check-type-2 li')
+2024-12-23 03:14:26 - Logger - INFO: 카드 미선택 문구: 신청하지 않을래요
+2024-12-23 03:14:26 - Logger - INFO: 카드_1: LG U⁺ 현대카드M Edition3(통신할인형2.0) 애플페이 가능한 현대카드 월 최대 2.5만원 통신비 할인!
+2024-12-23 03:14:26 - Logger - INFO: 카드_2: LG U⁺ 삼성카드 통신료 자동이체 시 월 최대 16,000원 할인
+2024-12-23 03:14:26 - Logger - INFO: 카드_3: LG U⁺스마트플랜Plus 신한카드(중고폰 보상 플랜) 최대 1.5만원 통신비 할인 및 중고폰 보상 플랜 이용.  대상 휴대폰 24개월 할부 구매 시, 가입할 수 있는 중고폰 보상 플랜(중고가 40% 보장) 이용료 무료 (1만원 캐시백)
+2024-12-23 03:14:26 - Logger - INFO: 카드_4: LG U⁺ X LOCA 롯데카드 통신요금 자동이체 시 월 최대 20,000원 할인
+2024-12-23 03:14:26 - Logger - INFO: 카드_5: 더 심플 하나카드 통신요금 자동이체 시 월 최대 15,000원
+2024-12-23 03:14:27 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.3FC6719CFDEF3A978D83A57B9CF7045F.e.33222")> 요소 클릭 성공
+2024-12-23 03:14:29 - Logger - INFO: 요소 찾음: ('css selector', 'div.info-tit')
+2024-12-23 03:14:29 - Logger - INFO: 선택된 카드: 
+2024-12-23 03:14:29 - Logger - ERROR: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.F8F24C59AF487FDE6FD75779EC81FE62.e.27545")> 요소로 마우스 이동 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB6903D3]
+	(No symbol) [0x00007FF6BB68F666]
+	(No symbol) [0x00007FF6BB6DA513]
+	(No symbol) [0x00007FF6BB6AF43A]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:14:29 - Logger - INFO: VIP맴버십 혜택: 6 [{'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240722-103434-236-yta6oWZl.jpg', '혜택': 'CGV', '가격': '12,500원'}, {'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240722-103524-710-D2k8MgbN.jpg', '혜택': '네이버멤버십', '가격': '4,900원'}, {'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240722-103555-092-HS4xu0ph.jpg', '혜택': '유독', '가격': '4,000원'}, {'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240722-103619-668-z5a9fcFr.jpg', '혜택': '공차', '가격': '4,500원'}, {'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240722-103648-856-QZ4EWH0a.jpg', '혜택': '배스킨라빈스', '가격': '4,700원'}, {'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240805-013032-498-gFZ5dkDN.png', '혜택': '쉐이크쉑', '가격': '5,000원'}]
+2024-12-23 03:14:29 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.3FC6719CFDEF3A978D83A57B9CF7045F.e.34148")> 요소 클릭 성공
+2024-12-23 03:14:29 - Logger - INFO: 선택된 VIP 혜택: CGV
+2024-12-23 03:14:29 - Logger - ERROR: <selenium.webdriver.remote.webelement.WebElement (session="ea5f77c4edfb7e6d2dea8e68108e04b7", element="f.E148D1DA2B513F1B73C1A8BDDFCC0224.d.F8F24C59AF487FDE6FD75779EC81FE62.e.28093")> 요소로 마우스 이동 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB6903D3]
+	(No symbol) [0x00007FF6BB68F666]
+	(No symbol) [0x00007FF6BB6DA513]
+	(No symbol) [0x00007FF6BB6AF43A]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:14:29 - Logger - ERROR: 휴대폰 주문 및 장바구니 테스트 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67CBBC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:14:29 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m1.py", line 124, in execute
+    self.select_other_option()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "d:\test-rpa\pages\GNB_m1.py", line 504, in select_other_option
+    sale_plus_list = self.sale_plus_section.find_elements(By.CSS_SELECTOR, 'ul.sale-plus-list li')
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 421, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67CBBC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-23 03:14:29 - Logger - ERROR: 예상치 못한 예외 발생: StaleElementReferenceException
+2024-12-23 03:14:29 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase05_휴대폰주문및장바구니테스트실패_20241223031429.png
+2024-12-23 03:14:29 - Logger - ERROR: 테스트 케이스 실행 실패: TestCase05 - Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67CBBC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:15:22 - Logger - INFO: 테스트 케이스 실행 시작: TestCase05
+2024-12-23 03:15:27 - Logger - INFO: 모바일 페이지로 이동 URL: https://www.lguplus.com/mobile
+2024-12-23 03:15:30 - Logger - INFO: 선택한 탭: 추천
+2024-12-23 03:15:32 - Logger - INFO: 추천 기기 리스트 갯수: 20
+2024-12-23 03:15:32 - Logger - INFO: 추천 보여지는 기기 갯수: 4
+2024-12-23 03:15:32 - Logger - INFO: 기기_1: U⁺ 키즈폰 무너에디션 가격: 월 27,520원 색상: ['그레이', '라이트 그린'] URL: https://www.lguplus.com/mobile/4g-phone/samsung/uplus-kidsphone-mooner/SM-A165N-UM
+2024-12-23 03:15:32 - Logger - INFO: 기기_2: iPhone 16 Pro 가격: 월 148,500원 색상: ['내추럴 티타늄', '데저트 티타늄', '화이트 티타늄', '블랙 티타늄'] URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-pro-256gb/UIP16PR-256
+2024-12-23 03:15:32 - Logger - INFO: 기기_3: iPhone 16 가격: 월 133,590원 색상: ['울트라마린', '틸', '핑크', '화이트', '블랙'] URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-256gb/UIP16-256
+2024-12-23 03:15:32 - Logger - INFO: 기기_4: 갤럭시 Z Fold6 가격: 월 172,220원 색상: ['실버 쉐도우', '핑크', '네이비'] URL: https://www.lguplus.com/mobile/5g-phone/samsung/galaxy-z-fold6-256gb/SM-F956N256
+2024-12-23 03:15:32 - Logger - INFO: 주문하기 버튼 URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-256gb/UIP16-256
+2024-12-23 03:15:32 - Logger - INFO: 선택된 기기: iPhone 16
+2024-12-23 03:15:34 - Logger - INFO: 주문하기 페이지로 이동 URL: https://www.lguplus.com/mobile/device/apple/iphone-16-256gb/UIP16-256?dcntKdCd=5&urcMblPpCd=LPZ0002536
+2024-12-23 03:15:34 - Logger - INFO: 주문하는 기기명: iPhone 16 256GB
+2024-12-23 03:15:34 - Logger - INFO: 선택한 기기명: iPhone 16 상세페이지 기기명: iPhone 16 256GB로 기기명이 일치합니다.
+2024-12-23 03:15:44 - Logger - INFO: 팝업창이 나타나지 않았습니다.
+2024-12-23 03:15:54 - Logger - INFO: 기기 옵션: ['색상', '저장공간', '가입유형']
+2024-12-23 03:15:54 - Logger - INFO: 탭 리스트 갯수: 5 ['예상 납부금액', '상품정보', '전문가 리뷰/구매후기(132)', '상품 문의', '가입안내 및 유의사항']
+2024-12-23 03:15:54 - Logger - INFO: 탭 선택옵션: ['배송방법', '요금제', '할인방법', '제휴카드', 'VIP 멤버십 혜택', '추가 할인', '사은품', '쇼핑쿠폰팩']
+2024-12-23 03:15:54 - Logger - INFO: 요소 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.color')
+2024-12-23 03:15:54 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 03:15:54 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 03:15:54 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(1)')
+2024-12-23 03:15:54 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(2) > td')
+2024-12-23 03:15:55 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(3) > td')
+2024-12-23 03:15:55 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr[name="co-card"]')
+2024-12-23 03:15:55 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(5)')
+2024-12-23 03:15:55 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(6)')
+2024-12-23 03:15:55 - Logger - INFO: VIP 멤버십 혜택이 존재합니다. 추가할인 셋팅
+2024-12-23 03:15:55 - Logger - INFO: 색상옵션: 5 ['울트라마린', '틸', '핑크', '화이트', '블랙']
+2024-12-23 03:15:55 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.44424F62664B01716012529DA52CFD40.e.21508")> 요소 클릭 성공
+2024-12-23 03:15:57 - Logger - INFO: 선택된 색상: 울트라마린
+2024-12-23 03:15:57 - Logger - INFO: 저장옵션: 1 ['256GB']
+2024-12-23 03:15:58 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.44424F62664B01716012529DA52CFD40.e.25299")> 요소 클릭 성공
+2024-12-23 03:15:58 - Logger - INFO: 선택된 저장공간: 256GB
+2024-12-23 03:15:58 - Logger - INFO: 저장옵션: 1 ['256GB']
+2024-12-23 03:15:58 - Logger - INFO: 가입유형: 3 ['기기변경', '번호이동', '신규가입']
+2024-12-23 03:15:58 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.44424F62664B01716012529DA52CFD40.e.21545")> 요소 클릭 성공
+2024-12-23 03:15:58 - Logger - INFO: 선택된 가입유형: 신규가입
+2024-12-23 03:15:59 - Logger - INFO: 배송유형: 2 ['우체국택배', '오늘도착']
+2024-12-23 03:15:59 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.44424F62664B01716012529DA52CFD40.e.27377")> 요소 클릭 성공
+2024-12-23 03:15:59 - Logger - INFO: 선택된 배송방법: 우체국택배
+2024-12-23 03:15:59 - Logger - INFO: 요금제유형: 3 ['(넷플릭스) 5G 프리미어 플러스', '5G 프리미어 에센셜', '(에어팟프로2) 5G 다이렉트 65']
+2024-12-23 03:16:00 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.44424F62664B01716012529DA52CFD40.e.26724")> 요소 클릭 성공
+2024-12-23 03:16:05 - Logger - INFO: 선택된 요금제: 5G 프리미어 에센셜
+2024-12-23 03:16:10 - Logger - INFO: 특별 혜택이 없습니다.
+2024-12-23 03:16:15 - Logger - INFO: 선택된 요금제에는 할인방법이 없습니다.
+2024-12-23 03:16:26 - Logger - ERROR: 클릭 가능한 요소를 찾을 수 없음: ('css selector', '.month-credit-box .btn-chk.is-add'): Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB68930E]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB6D28A7]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:16:26 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\element_utils.py", line 71, in find_clickable_element
+    element = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        EC.element_to_be_clickable(locator)
+    )
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB68930E]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB6D28A7]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-23 03:16:26 - Logger - INFO: 타임아웃 발생. 페이지를 새로고침합니다.
+2024-12-23 03:16:28 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_클릭가능한요소를찾을수없음:('cssselector','.month-credit-box.btn-chk.is-add')_20241223031628.png
+2024-12-23 03:16:28 - Logger - INFO: None 요소 클릭 성공
+2024-12-23 03:16:28 - Logger - INFO: 할부금납부 방법: 4 | ['즉시결제(카드• 간편결제)', '12개월', '24개월', '36개월']
+2024-12-23 03:16:28 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.CD9A49B160B481D7682C545CA8989EA5.e.33052")> 요소 클릭 성공
+2024-12-23 03:16:28 - Logger - INFO: 선택된 할부금 납부기간: 256GB
+2024-12-23 03:16:28 - Logger - ERROR: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.44424F62664B01716012529DA52CFD40.e.25408")> 요소로 마우스 이동 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB6903D3]
+	(No symbol) [0x00007FF6BB68F666]
+	(No symbol) [0x00007FF6BB6DA513]
+	(No symbol) [0x00007FF6BB6AF43A]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:16:28 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr[name="co-card"] .more-view.toggle a')
+2024-12-23 03:16:29 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.CD9A49B160B481D7682C545CA8989EA5.e.32868")> 요소 클릭 성공
+2024-12-23 03:16:29 - Logger - INFO: 요소들을 찾음: ('css selector', 'tbody > tr[name="co-card"] ul.c-card-list-icon.check-type-2 li')
+2024-12-23 03:16:29 - Logger - INFO: 카드 미선택 문구: 신청하지 않을래요
+2024-12-23 03:16:29 - Logger - INFO: 카드_1: LG U⁺ 현대카드M Edition3(통신할인형2.0) 애플페이 가능한 현대카드 월 최대 2.5만원 통신비 할인!
+2024-12-23 03:16:29 - Logger - INFO: 카드_2: LG U⁺ 삼성카드 통신료 자동이체 시 월 최대 16,000원 할인
+2024-12-23 03:16:29 - Logger - INFO: 카드_3: LG U⁺스마트플랜Plus 신한카드(중고폰 보상 플랜) 최대 1.5만원 통신비 할인 및 중고폰 보상 플랜 이용.  대상 휴대폰 24개월 할부 구매 시, 가입할 수 있는 중고폰 보상 플랜(중고가 40% 보장) 이용료 무료 (1만원 캐시백)
+2024-12-23 03:16:29 - Logger - INFO: 카드_4: LG U⁺ X LOCA 롯데카드 통신요금 자동이체 시 월 최대 20,000원 할인
+2024-12-23 03:16:29 - Logger - INFO: 카드_5: 더 심플 하나카드 통신요금 자동이체 시 월 최대 15,000원
+2024-12-23 03:16:29 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.CD9A49B160B481D7682C545CA8989EA5.e.32806")> 요소 클릭 성공
+2024-12-23 03:16:31 - Logger - INFO: 요소 찾음: ('css selector', 'div.info-tit')
+2024-12-23 03:16:31 - Logger - INFO: 선택된 카드: 
+2024-12-23 03:16:31 - Logger - ERROR: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.44424F62664B01716012529DA52CFD40.e.27287")> 요소로 마우스 이동 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB6903D3]
+	(No symbol) [0x00007FF6BB68F666]
+	(No symbol) [0x00007FF6BB6DA513]
+	(No symbol) [0x00007FF6BB6AF43A]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:16:31 - Logger - INFO: VIP맴버십 혜택: 6 [{'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240722-103434-236-yta6oWZl.jpg', '혜택': 'CGV', '가격': '12,500원'}, {'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240722-103524-710-D2k8MgbN.jpg', '혜택': '네이버멤버십', '가격': '4,900원'}, {'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240722-103555-092-HS4xu0ph.jpg', '혜택': '유독', '가격': '4,000원'}, {'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240722-103619-668-z5a9fcFr.jpg', '혜택': '공차', '가격': '4,500원'}, {'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240722-103648-856-QZ4EWH0a.jpg', '혜택': '배스킨라빈스', '가격': '4,700원'}, {'이미지': 'https://www.lguplus.com/static/pc-contents/images/prdv/tco/mbsp/20240805-013032-498-gFZ5dkDN.png', '혜택': '쉐이크쉑', '가격': '5,000원'}]
+2024-12-23 03:16:32 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.CD9A49B160B481D7682C545CA8989EA5.e.33620")> 요소 클릭 성공
+2024-12-23 03:16:32 - Logger - INFO: 선택된 VIP 혜택: CGV
+2024-12-23 03:16:32 - Logger - ERROR: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.44424F62664B01716012529DA52CFD40.e.27800")> 요소로 마우스 이동 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB6903D3]
+	(No symbol) [0x00007FF6BB68F666]
+	(No symbol) [0x00007FF6BB6DA513]
+	(No symbol) [0x00007FF6BB6AF43A]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:16:32 - Logger - INFO: 추가할인: 2 ['결합할인 상담신청(2인 결합 시 최대 18,700원 할인)', '포인트 파크 할인 사용']
+2024-12-23 03:16:32 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.CD9A49B160B481D7682C545CA8989EA5.e.34208")> 요소 클릭 성공
+2024-12-23 03:16:32 - Logger - INFO: 선택된 추가 할인: 결합할인 상담신청(2인 결합 시 최대 18,700원 할인)
+2024-12-23 03:16:32 - Logger - ERROR: <selenium.webdriver.remote.webelement.WebElement (session="c6ad02db903b15e2ed16b57d39bda5ad", element="f.AFA16D5BF18BD7D3FD245ACA50BD6C23.d.44424F62664B01716012529DA52CFD40.e.26981")> 요소로 마우스 이동 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB6903D3]
+	(No symbol) [0x00007FF6BB68F666]
+	(No symbol) [0x00007FF6BB6DA513]
+	(No symbol) [0x00007FF6BB6AF43A]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:16:32 - Logger - ERROR: 휴대폰 주문 및 장바구니 테스트 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67CBBC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:16:32 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m1.py", line 124, in execute
+    self.select_other_option()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "d:\test-rpa\pages\GNB_m1.py", line 521, in select_other_option
+    gift_list = [gift for gift in self.gift_section.find_elements(By.CSS_SELECTOR, 'div.radio-image-type ul li') if not gift.find_elements(By.CSS_SELECTOR, 'span.text-sold-out')]
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 421, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67CBBC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-23 03:16:32 - Logger - ERROR: 예상치 못한 예외 발생: StaleElementReferenceException
+2024-12-23 03:16:32 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase05_휴대폰주문및장바구니테스트실패_20241223031632.png
+2024-12-23 03:16:32 - Logger - ERROR: 테스트 케이스 실행 실패: TestCase05 - Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB649F14]
+	(No symbol) [0x00007FF6BB6489C4]
+	(No symbol) [0x00007FF6BB63D109]
+	(No symbol) [0x00007FF6BB63AF52]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67CBBC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:22:23 - Logger - INFO: 테스트 케이스 실행 시작: TestCase05
+2024-12-23 03:22:28 - Logger - INFO: 모바일 페이지로 이동 URL: https://www.lguplus.com/mobile
+2024-12-23 03:22:30 - Logger - INFO: 선택한 탭: 추천
+2024-12-23 03:22:33 - Logger - INFO: 추천 기기 리스트 갯수: 20
+2024-12-23 03:22:33 - Logger - INFO: 추천 보여지는 기기 갯수: 4
+2024-12-23 03:22:33 - Logger - INFO: 기기_1: U⁺ 키즈폰 무너에디션 가격: 월 27,520원 색상: ['그레이', '라이트 그린'] URL: https://www.lguplus.com/mobile/4g-phone/samsung/uplus-kidsphone-mooner/SM-A165N-UM
+2024-12-23 03:22:33 - Logger - INFO: 기기_2: iPhone 16 Pro 가격: 월 148,500원 색상: ['내추럴 티타늄', '데저트 티타늄', '화이트 티타늄', '블랙 티타늄'] URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-pro-256gb/UIP16PR-256
+2024-12-23 03:22:33 - Logger - INFO: 기기_3: iPhone 16 가격: 월 133,590원 색상: ['울트라마린', '틸', '핑크', '화이트', '블랙'] URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-256gb/UIP16-256
+2024-12-23 03:22:33 - Logger - INFO: 기기_4: 갤럭시 Z Fold6 가격: 월 172,220원 색상: ['실버 쉐도우', '핑크', '네이비'] URL: https://www.lguplus.com/mobile/5g-phone/samsung/galaxy-z-fold6-256gb/SM-F956N256
+2024-12-23 03:22:33 - Logger - INFO: 주문하기 버튼 URL: https://www.lguplus.com/mobile/5g-phone/apple/iphone-16-pro-256gb/UIP16PR-256
+2024-12-23 03:22:33 - Logger - INFO: 선택된 기기: iPhone 16 Pro
+2024-12-23 03:22:35 - Logger - INFO: 주문하기 페이지로 이동 URL: https://www.lguplus.com/mobile/device/apple/iphone-16-pro-256gb/UIP16PR-256?dcntKdCd=2&urcMblPpCd=LPZ0002536
+2024-12-23 03:22:35 - Logger - INFO: 주문하는 기기명: iPhone 16 Pro 256GB
+2024-12-23 03:22:35 - Logger - INFO: 선택한 기기명: iPhone 16 Pro 상세페이지 기기명: iPhone 16 Pro 256GB로 기기명이 일치합니다.
+2024-12-23 03:22:45 - Logger - INFO: 팝업창이 나타나지 않았습니다.
+2024-12-23 03:22:55 - Logger - INFO: 기기 옵션: ['색상', '저장공간', '가입유형']
+2024-12-23 03:22:55 - Logger - INFO: 탭 리스트 갯수: 5 ['예상 납부금액', '상품정보', '전문가 리뷰/구매후기(593)', '상품 문의', '가입안내 및 유의사항']
+2024-12-23 03:22:55 - Logger - INFO: 탭 선택옵션: ['배송방법', '요금제', '할인방법', '제휴카드', 'VIP 멤버십 혜택', '추가 할인', '사은품', '쇼핑쿠폰팩']
+2024-12-23 03:22:55 - Logger - INFO: 요소 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.color')
+2024-12-23 03:22:55 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 03:22:55 - Logger - INFO: 요소들을 찾음: ('css selector', 'div > div.middlearea > div > div.device-info-area > div.option-box')
+2024-12-23 03:22:55 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(1)')
+2024-12-23 03:22:55 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(2) > td')
+2024-12-23 03:22:55 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(3) > td')
+2024-12-23 03:22:55 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr[name="co-card"]')
+2024-12-23 03:22:55 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(5)')
+2024-12-23 03:22:55 - Logger - INFO: 요소 찾음: ('css selector', 'tbody > tr:nth-child(6)')
+2024-12-23 03:22:55 - Logger - INFO: VIP 멤버십 혜택이 존재합니다. 추가할인 셋팅
+2024-12-23 03:22:55 - Logger - INFO: 색상옵션: 4 ['내추럴 티타늄', '데저트 티타늄', '화이트 티타늄', '블랙 티타늄']
+2024-12-23 03:22:56 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="47083ba78fbbe536651cd7922e64b744", element="f.A16714156A19F430BD8F76BB24993BBD.d.4C923BA0FDC46B226E1677DDC36524F7.e.22093")> 요소 클릭 성공
+2024-12-23 03:22:58 - Logger - INFO: 선택된 색상: 화이트 티타늄
+2024-12-23 03:22:58 - Logger - INFO: 저장옵션: 1 ['256GB']
+2024-12-23 03:22:58 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="47083ba78fbbe536651cd7922e64b744", element="f.A16714156A19F430BD8F76BB24993BBD.d.4C923BA0FDC46B226E1677DDC36524F7.e.25790")> 요소 클릭 성공
+2024-12-23 03:22:58 - Logger - INFO: 선택된 저장공간: 256GB
+2024-12-23 03:22:58 - Logger - INFO: 저장옵션: 1 ['256GB']
+2024-12-23 03:22:59 - Logger - INFO: 가입유형: 3 ['기기변경', '번호이동', '신규가입']
+2024-12-23 03:22:59 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="47083ba78fbbe536651cd7922e64b744", element="f.A16714156A19F430BD8F76BB24993BBD.d.4C923BA0FDC46B226E1677DDC36524F7.e.22109")> 요소 클릭 성공
+2024-12-23 03:22:59 - Logger - INFO: 선택된 가입유형: 기기변경
+2024-12-23 03:22:59 - Logger - INFO: 배송유형: 2 ['우체국택배', '오늘도착']
+2024-12-23 03:22:59 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="47083ba78fbbe536651cd7922e64b744", element="f.A16714156A19F430BD8F76BB24993BBD.d.4C923BA0FDC46B226E1677DDC36524F7.e.27728")> 요소 클릭 성공
+2024-12-23 03:22:59 - Logger - INFO: 선택된 배송방법: 우체국택배
+2024-12-23 03:23:00 - Logger - INFO: 요금제유형: 3 ['(넷플릭스) 5G 프리미어 플러스', '5G 프리미어 에센셜', '(에어팟프로2) 5G 다이렉트 65']
+2024-12-23 03:23:00 - Logger - INFO: <selenium.webdriver.remote.webelement.WebElement (session="47083ba78fbbe536651cd7922e64b744", element="f.A16714156A19F430BD8F76BB24993BBD.d.4C923BA0FDC46B226E1677DDC36524F7.e.26996")> 요소 클릭 성공
+2024-12-23 03:23:05 - Logger - ERROR: 휴대폰 주문 및 장바구니 테스트 실패: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB63C48F]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67C6EC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-23 03:23:05 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m1.py", line 124, in execute
+    Base.select_other_option()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "d:\test-rpa\pages\GNB_m1.py", line 380, in select_other_option
+    selected_fee_text = selected_fee.find_element(By.CSS_SELECTOR, 'label.text-radio div.name').get_attribute('textContent').strip()
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 408, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB63C48F]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67C6EC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-23 03:23:05 - Logger - ERROR: 예상치 못한 예외 발생: StaleElementReferenceException
+2024-12-23 03:23:05 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_휴대폰주문및장바구니테스트실패_20241223032305.png
+2024-12-23 03:23:05 - Logger - ERROR: 테스트 케이스 실행 실패: TestCase05 - Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BB82FB05+28789]
+	(No symbol) [0x00007FF6BB7986E0]
+	(No symbol) [0x00007FF6BB63592A]
+	(No symbol) [0x00007FF6BB63C48F]
+	(No symbol) [0x00007FF6BB63F13C]
+	(No symbol) [0x00007FF6BB63F20F]
+	(No symbol) [0x00007FF6BB688DBA]
+	(No symbol) [0x00007FF6BB6895FC]
+	(No symbol) [0x00007FF6BB67C6EC]
+	(No symbol) [0x00007FF6BB6AF47F]
+	(No symbol) [0x00007FF6BB67C5B6]
+	(No symbol) [0x00007FF6BB6AF650]
+	(No symbol) [0x00007FF6BB6CF654]
+	(No symbol) [0x00007FF6BB6AF1E3]
+	(No symbol) [0x00007FF6BB67A938]
+	(No symbol) [0x00007FF6BB67BAA1]
+	GetHandleVerifier [0x00007FF6BBB6933D+3410093]
+	GetHandleVerifier [0x00007FF6BBB7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6BBB72A73+3448803]
+	GetHandleVerifier [0x00007FF6BB8F7BBB+848171]
+	(No symbol) [0x00007FF6BB7A3C3F]
+	(No symbol) [0x00007FF6BB79F6E4]
+	(No symbol) [0x00007FF6BB79F87D]
+	(No symbol) [0x00007FF6BB78ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+

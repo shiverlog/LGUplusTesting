@@ -449,12 +449,12 @@ class TestCase05(Base):
         # 제휴카드 포커싱
         move_to_element(self.driver, self.card_section)
         # 제휴카드 더보기 버튼 클릭
-        more_card_button = find_element(self.card_section, (By.CSS_SELECTOR, '.more-view.toggle a'))
+        more_card_button = find_element(self.driver, (By.CSS_SELECTOR, 'tbody > tr[name="co-card"] .more-view.toggle a'))
         if more_card_button:
             click(self.driver, more_card_button)
         
         # 제휴카드 선택
-        all_card_list = find_elements(self.card_section, (By.CSS_SELECTOR, 'ul.c-card-list-icon.check-type-2 li'))
+        all_card_list = find_elements(self.driver, (By.CSS_SELECTOR, 'tbody > tr[name="co-card"] ul.c-card-list-icon.check-type-2 li'))
         card_not_select = all_card_list[0]
         card_list = all_card_list[1:]
         card_not_select_text = card_not_select.get_attribute('textContent').strip()
@@ -501,7 +501,7 @@ class TestCase05(Base):
         # 7. 추가할인
         # 추가할인 포커싱
         move_to_element(self.driver, self.sale_plus_section)
-        sale_plus_list = self.sale_plus_section.find_elements(By.CSS_SELECTOR, 'ul.sale-plus-list li')
+        sale_plus_list = self.driver.find_elements(By.CSS_SELECTOR, 'ul.sale-plus-list li')
         sale_plus_list_text = [
             sale_plus.find_element(By.CSS_SELECTOR, 'label.text-chkbox span.txt').get_attribute('textContent').strip()
             for sale_plus in sale_plus_list
