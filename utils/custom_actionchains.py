@@ -105,3 +105,4 @@ def send_keys_to_element(driver, element, *keys_to_send):
     """지정된 요소에 키 입력"""
     actions = ActionChains(driver).send_keys_to_element(element, *keys_to_send)
     perform_action(driver, actions, f"{element} 요소에 키 입력: {keys_to_send}")
+

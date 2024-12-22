@@ -9,10 +9,11 @@
         "myinfo_active": "a.icon-myInfo-1.is-active, div.myInfo-list.is-show",
         "main_login_btn": "a.btn-my.c-btn-solid-1-m[data-gtm-click-text=\"로그인\"]",
         "main_logout_btn": "a.btn-logout.c-btn-outline-2-s",
-        "kv_section": "swiper-wrapper",
+        "kv_section": "div.swiper-wrapper",
+        "kv_section_img": "div.swiper-wrapper .swiper-slide img",
         "benefit_section": ".benefits-section.active",
         "device_section": ".device-section.active",
-
+        "device_detail_name": "div.device-info-area > h2.title-main",
         "blurb_section": ".blurb-section,active",
         "payment_section": ".payment-section.active",
         "promotion_section": ".promotion-section.active",

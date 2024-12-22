@@ -4,6 +4,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from base.base import Base, LocatorLoader
+from utils.element_utils import *
+from utils.custom_actionchains import *
 import time
 import random
 
@@ -17,7 +19,7 @@ class TestCase02(Base):
     def execute(self):
         try:
             kv_images = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_all_elements_located((By.CSS_SELECTOR, f"{self.locators['kv_section']} .swiper-slide img"))
+                EC.presence_of_all_elements_located((By.CSS_SELECTOR, self.locators['kv_section_img']))
             )
             self.logger.info(f"KV 영역 이미지 개수: {len(kv_images)}")
             
@@ -93,10 +95,13 @@ class TestCase03(Base):
                     WebDriverWait(self.driver, 30).until(
                         EC.presence_of_element_located((By.CSS_SELECTOR, '.device-info-area'))
                     )
-
+                    time.sleep(10)
                     # 기기명 비교
-                    device_detail_name = self.driver.find_element(By.XPATH, "//h2[@class='title-main']").text
+                    device_detail_name = self.driver.find_element(By.CSS_SELECTOR, 'div.device-info-area > h2.title-main').text
                     self.logger.info(f"상세 페이지 기기명: {device_detail_name}")
+                    # device_detail_name = get_text(self.driver, (By.CSS_SELECTOR, self.locators['device_detail_name']))
+                    # if device_detail_name:
+                    #     self.logger.info(f"상세 페이지 기기명: {device_detail_name}")                    
 
                     if self.device_name in device_detail_name:
                         self.logger.info(f"기기명이 일치합니다: {device_detail_name}")
