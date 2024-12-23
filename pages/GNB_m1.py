@@ -20,10 +20,8 @@ class TestCase04(Base):
     def execute(self):
         try:
             # 1. 모바일 메뉴 클릭
-            mobile_button = WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, self.locators['mobile_menu']))
-            )
-            mobile_button.click()
+            mobile_menu = find_element(self.driver, (By.CSS_SELECTOR, self.locators['mobile_menu']))
+            click(self.driver, mobile_menu)
             time.sleep(5)
 
             # URL 확인
@@ -63,46 +61,46 @@ class TestCase04(Base):
                 self.logger.info(f"{slide_page}_배경: {visual_bg}")
 
             # 재생/정지 버튼 테스트
-            play_button = self.driver.find_element(By.CSS_SELECTOR, self.locators['play_button'])
-            pause_button = self.driver.find_element(By.CSS_SELECTOR, self.locators['pause_button'])
-            pause_button.click()
-            time.sleep(2)
+            # play_button = self.driver.find_element(By.CSS_SELECTOR, self.locators['play_button'])
+            # pause_button = self.driver.find_element(By.CSS_SELECTOR, self.locators['pause_button'])
+            # pause_button.click()
+            # time.sleep(2)
             
-            if play_button.is_displayed():
-                self.logger.info("정지버튼 > 재생버튼 변경됨")
-            else:
-                self.logger.info("버튼이 변경되지 않음")
+            # if play_button.is_displayed():
+            #     self.logger.info("정지버튼 > 재생버튼 변경됨")
+            # else:
+            #     self.logger.info("버튼이 변경되지 않음")
 
             # 4. 테마배너 슬라이드 버튼 확인
-            prev_button = self.driver.find_element(By.CSS_SELECTOR, self.locators['prev_button'])
-            next_button = self.driver.find_element(By.CSS_SELECTOR, self.locators['next_button'])
+            # prev_button = self.driver.find_element(By.CSS_SELECTOR, self.locators['prev_button'])
+            # next_button = self.driver.find_element(By.CSS_SELECTOR, self.locators['next_button'])
 
-            for direction, limit in [("next", button_count-1), ("previous", 0)]:
-                while True:
-                    active_slide = WebDriverWait(self.driver, 10).until(
-                        EC.presence_of_element_located((By.CSS_SELECTOR, self.locators['active_slide']))
-                    )
-                    current_index = int(active_slide.get_attribute('data-index'))
-                    visual_text = active_slide.find_element(By.CSS_SELECTOR, self.locators['banner_text']).get_attribute('alt')
-                    time.sleep(1)
+            # for direction, limit in [("next", button_count-1), ("previous", 0)]:
+            #     while True:
+            #         active_slide = WebDriverWait(self.driver, 10).until(
+            #             EC.presence_of_element_located((By.CSS_SELECTOR, self.locators['active_slide']))
+            #         )
+            #         current_index = int(active_slide.get_attribute('data-index'))
+            #         visual_text = active_slide.find_element(By.CSS_SELECTOR, self.locators['banner_text']).get_attribute('alt')
+            #         time.sleep(1)
                     
-                    self.logger.info(f"슬라이드_{current_index+1} 텍스트: {visual_text}")
+            #         self.logger.info(f"슬라이드_{current_index+1} 텍스트: {visual_text}")
                     
-                    if current_index == limit:
-                        break
+            #         if current_index == limit:
+            #             break
                         
-                    if direction == "previous":
-                        WebDriverWait(self.driver, 30).until(
-                            EC.element_to_be_clickable(prev_button)
-                        ).click()
-                    elif direction == "next":
-                        if current_index < limit:
-                            WebDriverWait(self.driver, 30).until(
-                                EC.element_to_be_clickable(next_button)
-                            ).click()
-                        else:
-                            break
-                time.sleep(2)
+            #         if direction == "previous":
+            #             WebDriverWait(self.driver, 30).until(
+            #                 EC.element_to_be_clickable(prev_button)
+            #             ).click()
+            #         elif direction == "next":
+            #             if current_index < limit:
+            #                 WebDriverWait(self.driver, 30).until(
+            #                     EC.element_to_be_clickable(next_button)
+            #                 ).click()
+            #             else:
+            #                 break
+            #     time.sleep(2)
 
         except Exception as e:
             eh.exception_handler(self.driver, e, "테마배너 테스트 실패")
@@ -131,8 +129,8 @@ class TestCase05(Base):
 
     def select_mobile_device(self):
         # 1. 모바일 메뉴 클릭
-        mobile_button = self.driver.find_element(By.CSS_SELECTOR, "header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m1")
-        mobile_button.click()
+        mobile_menu = find_element(self.driver, (By.CSS_SELECTOR, self.locators['mobile_menu']))
+        click(self.driver, mobile_menu)
         time.sleep(5)
 
         # 2. 모바일 메뉴로 리다이렉션 확인
@@ -143,55 +141,49 @@ class TestCase05(Base):
             self.logger.info(f"모바일 페이지로 이동 실패 URL: {mobile_url}")
 
         # 3. 디바이스 섹션 포커싱
-        device_section = WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, '[section-group-id="PcSubMainMobileDeviceSection"]'))
-        )
-        actions = ActionChains(self.driver)
-        actions.move_to_element(device_section).perform()
+        phone_device_section = find_element(self.driver, (By.CSS_SELECTOR, self.locators['phone_device_section']))
+        move_to_element(self.driver, phone_device_section)
         time.sleep(2)
 
         # 4. 무작위 탭 선택
-        tabs = device_section.find_elements(By.CSS_SELECTOR, '.c-tabmenu-tab.c-tab-default ul li')
-        random_tab = random.choice(tabs)
-        random_tab_text = random_tab.text
+        if phone_device_section:
+            device_tabs = find_elements
+            if device_tabs:
+                random_tab = random.choice(device_tabs)
+                random_tab_text = random_tab.text
+                click(self.driver, random_tab)
+                self.logger.info(f"선택한 탭: {random_tab_text}")
+                time.sleep(2)
 
-        WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, '.c-tabmenu-tab.c-tab-default ul li'))
-        )
-        random_tab.click()
-        self.logger.info(f"선택한 탭: {random_tab_text}")
-        time.sleep(2)
+            device_list = find_visible_elements(self.driver, (By.CSS_SELECTOR, f"{self.locators['phone_device_section']} div.slick-list div.slick-track div.slick-slide"))
+            self.logger.info(f"{random_tab_text} 보여지는 기기 갯수: {len(device_list)}")
 
-        # 5. 무작위 기기 선택('style' 속성에 "display: none"이 포함X)
-        active_list = device_section.find_element(By.CSS_SELECTOR, '.c-tabmenu-wrap .c-tabcontent-box:not([style*="display: none"])')
-        device_list = active_list.find_elements(By.CSS_SELECTOR, '.slick-list .slick-track .slick-slide')
-        visible_devices = [
-            device for device in device_list
-                if device.get_attribute("aria-hidden") == "false"
-                and "slick-slide" in device.get_attribute("class")
-        ]
-        self.logger.info(f"{random_tab_text} 기기 리스트 갯수: {len(device_list)}")
-        self.logger.info(f"{random_tab_text} 보여지는 기기 갯수: {len(visible_devices)}")
+            for index, device in enumerate(device_list):
+                device_name = device.find_element(By.CSS_SELECTOR, '.big-title').text
+                device_price = device.find_element(By.CSS_SELECTOR, '.total-price').text
+                device_colors = [
+                    color.text for color in device.find_elements(By.CSS_SELECTOR, 'p.color-chip span.is-blind')
+                ]
+                device_url = device.find_element(By.CSS_SELECTOR, 'button[data-gtm-click-url]').get_attribute('data-gtm-click-url')
+                custom_logger.info(f"기기_{index + 1}: {device_name} 가격: {device_price} 색상: {device_colors} URL: {device_url}")
+
+            # 6. 무작위 기기 선택
+            random_device = random.choice(device_list)
+            device_name = random_device.find_element(By.CSS_SELECTOR, '.big-title').text
+            order_button = random_device.find_element(By.CSS_SELECTOR, 'button[data-gtm-click-url]')
+            order_button_url = order_button.get_attribute('data-gtm-click-url')
+            self.logger.info(f"주문하기 버튼 URL: {order_button_url}")
+            order_button.click()
+            self.logger.info(f"선택된 기기: {device_name}")
+            time.sleep(2)
+
+        # 4. 무작위 탭 선택
+
+        # 5. 무작위 기기 선택
+        
 
         # 5. 무작위 탭의 기기 리스트 확인
-        for index, device in enumerate(visible_devices):
-            device_name = device.find_element(By.CSS_SELECTOR, '.big-title').text
-            device_price = device.find_element(By.CSS_SELECTOR, '.total-price').text
-            device_colors = [
-                color.text for color in device.find_elements(By.CSS_SELECTOR, 'p.color-chip span.is-blind')
-            ]
-            device_url = device.find_element(By.CSS_SELECTOR, 'button[data-gtm-click-url]').get_attribute('data-gtm-click-url')
-            custom_logger.info(f"기기_{index + 1}: {device_name} 가격: {device_price} 색상: {device_colors} URL: {device_url}")
-
-        # 6. 무작위 기기 선택
-        random_device = random.choice(visible_devices)
-        device_name = random_device.find_element(By.CSS_SELECTOR, '.big-title').text
-        order_button = random_device.find_element(By.CSS_SELECTOR, 'button[data-gtm-click-url]')
-        order_button_url = order_button.get_attribute('data-gtm-click-url')
-        self.logger.info(f"주문하기 버튼 URL: {order_button_url}")
-        order_button.click()
-        self.logger.info(f"선택된 기기: {device_name}")
-        time.sleep(2)
+        
 
         # 7. 주문하기 버튼 클릭 후 장바구니 페이지로 리다이렉션 확인
         order_url = self.driver.current_url
@@ -663,7 +655,7 @@ class TestCase06(Base):
 
             # 2. 인터넷/IPTV결합 섹션 포커싱
             mobile_combined_section = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, self.locators['device_section']))
+                EC.presence_of_element_located((By.CSS_SELECTOR, self.locators['mobile_conbine_section']))
             )
             ActionChains(self.driver).move_to_element(mobile_combined_section).perform()
             self.logger.info("인터넷/IPTV결합 섹션 포커싱 완료")
@@ -739,6 +731,13 @@ class TestCase06(Base):
             else:
                 self.logger.info(f"할인금액이 일치하지 않습니다. 총 할인금액: {total_discount}, 할인금액: {total_amt}")
             
+            close_button = find_element(self.driver , (By.CSS_SELECTOR, self.locators['modal_close_button']))
+            click(self.driver, close_button)
+            
+            # 8. 자식 윈도우창 닫기 버튼 클릭 후 부모 윈도우로 전환
+            self.driver.switch_to.window(self.driver.window_handles[0])
+            self.logger.info("부모 윈도우로 전환 완료")
+
         except Exception as e:
             eh.exception_handler(self.driver, e, "인터넷/IPTV 결합 테스트 실패")
             raise

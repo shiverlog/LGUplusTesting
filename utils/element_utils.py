@@ -2,7 +2,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.custom_logger import custom_logger
 from utils import exception_handler as eh
-from config.config import IMPLICIT_WAIT, EXPLICIT_WAIT
+from config.config import EXPLICIT_WAIT, EXPLICIT_WAIT
 
 """
     # Selenium WebDriver를 위한 요소 조작 유틸리티 모듈
@@ -29,7 +29,7 @@ from config.config import IMPLICIT_WAIT, EXPLICIT_WAIT
 def find_element(driver, locator):
     """요소를 찾는 함수"""
     try:
-        element = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        element = WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.presence_of_element_located(locator)
         )
         custom_logger.info(f"요소 찾음: {locator}")
@@ -42,20 +42,35 @@ def find_element(driver, locator):
 def find_elements(driver, locator):
     """요소들을 찾는 함수"""
     try:
-        elements = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        elements = WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.presence_of_all_elements_located(locator)
         )
-        custom_logger.info(f"요소들을 찾음: {locator}")
+        custom_logger.info(f"요소들을 찾음 {len(elements)}: {locator}")
         return elements
+
     except Exception as e:
         eh.exception_handler(driver, e, f"요소들을 찾을 수 없음: {locator}")
         return []
+
+def select_random_list_element(driver, locator):
+    """요소들을 찾아 랜덤하게 선택하는 함수"""
+    try:
+        elements = find_elements(driver, locator)
+        if elements:
+            import random
+            random_element = random.choice(elements)
+            custom_logger.info(f"랜덤하게 요소 선택: {locator}")
+            return random_element
+        return None
+    except Exception as e:
+        eh.exception_handler(driver, e, f"랜덤하게 요소 선택 실패: {locator}")
+        return None
 
 # find_visible_element
 def find_visible_element(driver, locator):
     """보이는 요소를 찾는 함수"""
     try:
-        element = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        element = WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.visibility_of_element_located(locator)
         )
         custom_logger.info(f"보이는 요소 찾음: {locator}")
@@ -64,11 +79,26 @@ def find_visible_element(driver, locator):
         eh.exception_handler(driver, e, f"보이는 요소를 찾을 수 없음: {locator}")
         return None
 
+# find_visible_elements
+def find_visible_elements(driver, locator, EXPLICIT_WAIT=10):
+    """보이는 요소들을 찾는 함수"""
+    try:
+        elements = WebDriverWait(driver, EXPLICIT_WAIT).until(
+            EC.visibility_of_all_elements_located(locator)
+        )
+        custom_logger.info(f"보이는 요소들 찾음: {locator}")
+        return elements
+    except Exception as e:
+        eh.exception_handler(driver, e, f"보이는 요소들을 찾을 수 없음: {locator}")
+        return []
+
+
+
 # find_clickable_element
 def find_clickable_element(driver, locator):
     """클릭 가능한 요소를 찾는 함수"""
     try:
-        element = WebDriverWait(driver, IMPLICIT_WAIT).until(
+        element = WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.element_to_be_clickable(locator)
         )
         custom_logger.info(f"클릭 가능한 요소 찾음: {locator}")
@@ -144,7 +174,7 @@ def select_option(driver, locator, value):
 def is_element_present(driver, locator):
     """요소 존재 여부 확인"""
     try:
-        WebDriverWait(driver, IMPLICIT_WAIT).until(
+        WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.presence_of_element_located(locator)
         )
         custom_logger.info(f"{locator} 요소가 존재")
@@ -157,7 +187,7 @@ def is_element_present(driver, locator):
 def is_element_visible(driver, locator):
     """요소 보이는 상태 확인"""
     try:
-        WebDriverWait(driver, IMPLICIT_WAIT).until(
+        WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.visibility_of_element_located(locator)
         )
         custom_logger.info(f"{locator} 요소를 보이는 상태로 찾음")

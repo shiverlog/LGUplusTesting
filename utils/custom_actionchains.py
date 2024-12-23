@@ -33,8 +33,13 @@ def perform_action(driver, action_chain, description):
 
 def click(driver, element):
     """요소를 클릭하는 함수"""
+    element_info = {
+        "tag_name": element.tag_name,
+        "id": element.get_attribute('id'),
+        "class": element.get_attribute('class')
+    }
     actions = ActionChains(driver).click(element)
-    perform_action(driver, actions, f"{element} 요소 클릭")
+    perform_action(driver, actions, f"{element_info} 요소 클릭")
 
 def click_and_hold(driver, element):
     """요소를 클릭하고 누른 상태를 유지하는 함수"""
@@ -63,8 +68,13 @@ def drag_and_drop_by_offset(driver, source, xoffset, yoffset):
 
 def move_to_element(driver, element):
     """요소로 마우스를 이동"""
+    element_info = {
+        "tag_name": element.tag_name,
+        "id": element.get_attribute('id'),
+        "class": element.get_attribute('class')
+    }
     actions = ActionChains(driver).move_to_element(element)
-    perform_action(driver, actions, f"{element} 요소로 마우스 이동")
+    perform_action(driver, actions, f"{element_info} 요소로 마우스 이동")
 
 def move_to_element_with_offset(driver, element, xoffset, yoffset):
     """요소에서 특정 오프셋만큼 마우스를 이동"""

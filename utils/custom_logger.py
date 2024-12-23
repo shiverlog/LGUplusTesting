@@ -162,7 +162,7 @@ class Logger:
         self.logger.debug(message)
 
     def critical(self, message):
-        """치명적 오류 메시지를 로깅하는 메서드"""
+        """크리티컬 오류 메시지를 로깅하는 메서드"""
         self.logger.critical(message)
 
 # Logger 인스턴스 생성

@@ -12,6 +12,7 @@ class Base:
         self.driver = None
         self.logger = None
         self.locators = None
+        """WebDriver 인스턴스, Logger 인스턴스, 로케이터 JSON 파일을 저장하는 변수"""
         self.initialize()
 
     def initialize(self):

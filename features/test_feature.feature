@@ -1,7 +1,9 @@
 Feature: 자동화가이드 TC Scripts 작성
 
-    Background: U+아이디로 로그인
+    Background: U+ 닷컴 접속
         Given U+ 닷컴에 접속한다
+    
+    Scenario: Testcase_01. 메인 페이지 - 로그인
         When "U+ID" 로그인 버튼을 클릭한다
         Then "/login/onid-login" 페이지로 이동한다
         When 아이디와 비밀번호를 입력한다

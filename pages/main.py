@@ -1,9 +1,9 @@
-from utils import exception_handler as eh
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from base.base import Base, LocatorLoader
+from utils import exception_handler as eh
 from utils.element_utils import *
 from utils.custom_actionchains import *
 import time
@@ -18,9 +18,7 @@ class TestCase02(Base):
 
     def execute(self):
         try:
-            kv_images = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_all_elements_located((By.CSS_SELECTOR, self.locators['kv_section_img']))
-            )
+            kv_images = find_elements(self.driver, (By.CSS_SELECTOR, self.locators['kv_section_img']))
             self.logger.info(f"KV 영역 이미지 개수: {len(kv_images)}")
             
             for index, img in enumerate(kv_images):
