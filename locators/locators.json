@@ -2,8 +2,7 @@
     "main": {
         "_comment": "주석",
         "main_url": "https://lguplus.com",
-        "logo": "#_uid_2",
-        
+        "logo": "#_uid_2", 
         "gnb_section": "header > div.header-gnb-wrap",
         "gnb_menu": "ul.header-gnb-list", 
         "icon_menu": "ul.header-menu-list-1",
@@ -17,13 +16,13 @@
         "main_logout_btn": "a.btn-logout.c-btn-outline-2-s",
         "kv_section": "div.swiper-wrapper",
         "kv_section_img": "div.swiper-wrapper .swiper-slide img",
-        "benefit_section": ".benefits-section.active",
-        "device_section": ".device-section.active",
+        "benefit_section": "div.benefits-section",
+        "device_section": "div.device-section",
         "device_detail_name": "div.device-info-area > h2.title-main",
-        "blurb_section": ".blurb-section.active",
-        "payment_section": ".payment-section.active",
-        "promotion_section": ".promotion-section.active",
-        "custom_section": ".custom-section.active",
+        "blurb_section": "div.blurb-section",
+        "payment_section": "div.payment-section",
+        "promotion_section": "div.promotion-section",
+        "custom_section": "div.custom-section",
         "footer": "footer-layout-wrap"
     },
     "login": {
@@ -32,6 +31,7 @@
         "login_button": "a.btn-my.c-btn-solid-1-m[data-gtm-click-text='로그인']",
         "kakao_login_button": "section.new-mem-section ul.iconLoginList li:nth-of-type(1) button",
         "uplus_login_button": "section.new-mem-section ul.iconLoginList li:nth-of-type(4) button",
+        "login_form":"div.nm-loginPage",
         "auto_login_checkbox": "#idsave",
         "username_input": "#username-1-6",
         "password_input": "#password-1",

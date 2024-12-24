@@ -27,19 +27,24 @@ def perform_action(driver, action_chain, description):
     """액션 체인을 실행하는 함수"""
     try:
         action_chain.perform()
-        custom_logger.info(f"{description} 성공")
+        custom_logger.info(f"{description} 성공하였습니다.")
     except Exception as e:
-        custom_logger.error(f"{description} 실패: {e}")
+        custom_logger.error(f"{description} 실패하였습니다. {e}")
+        raise e
 
-def click(driver, element):
-    """요소를 클릭하는 함수"""
-    element_info = {
+def get_element_info(element):
+    """WebElement 객체의 정보를 딕셔너리로 반환하는 함수"""
+    return {
         "tag_name": element.tag_name,
         "id": element.get_attribute('id'),
         "class": element.get_attribute('class')
-    }
+}
+
+def click(driver, element, text=None):
+    """요소를 클릭하는 함수"""
+    element_info = get_element_info(element)
     actions = ActionChains(driver).click(element)
-    perform_action(driver, actions, f"{element_info} 요소 클릭")
+    perform_action(driver, actions, f"{text}{element_info}(을)를 클릭")
 
 def click_and_hold(driver, element):
     """요소를 클릭하고 누른 상태를 유지하는 함수"""
@@ -66,15 +71,15 @@ def drag_and_drop_by_offset(driver, source, xoffset, yoffset):
     actions = ActionChains(driver).drag_and_drop_by_offset(source, xoffset, yoffset)
     perform_action(driver, actions, f"{source} 요소를 ({xoffset}, {yoffset})만큼 드래그 앤 드롭")
 
-def move_to_element(driver, element):
+def move_to_element(driver, element, text=None):
     """요소로 마우스를 이동"""
-    element_info = {
-        "tag_name": element.tag_name,
-        "id": element.get_attribute('id'),
-        "class": element.get_attribute('class')
-    }
-    actions = ActionChains(driver).move_to_element(element)
-    perform_action(driver, actions, f"{element_info} 요소로 마우스 이동")
+    try:
+        actions = ActionChains(driver)
+        actions.pause(1)  # 1초 멈춤
+        actions.move_to_element(element).perform()
+        custom_logger.info(f"{text} {element}로 마우스를 이동했습니다.")
+    except Exception as e:
+        eh.exception_handler(driver, e, f"{text} {element}로 마우스를 이동하지 못했습니다.")
 
 def move_to_element_with_offset(driver, element, xoffset, yoffset):
     """요소에서 특정 오프셋만큼 마우스를 이동"""

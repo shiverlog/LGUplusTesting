@@ -1,76 +1,40 @@
 from config.config import EXPLICIT_WAIT
 from utils.exception_handler import exception_handler
-from utils.custom_logger import custom_logger
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from utils.custom_logger import custom_logger
 
-class PageRedirectionHandler:
-    """페이지 리다이렉션 확인 공통 클래스"""
+def verify_redirection(driver, element, text=""):
+    """특정 요소 클릭 후 리다이렉션 확인"""
+    try:
+        # 클릭한 요소의 URL 가져오기 (data-gtm-click-url 속성 값)
+        expected_url = element.get_attribute("data-gtm-click-url")
+        
+        if expected_url:
+            # data-gtm-click-url 속성 값이 있을 경우 로그 출력
+            custom_logger.info(f"클릭 요소안의 URL: {expected_url}")
 
-    def __init__(self, driver):
-        self.driver = driver
-        self.logger = custom_logger
+            # expected_url이 있을 경우 URL 변경이 일어날 때까지 대기
+            WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_to_be(expected_url))
 
-    def handle_modal(self, modal_type):
-        """페이지 리다이렉션 처리"""
-        try: 
-            match modal_type:
-                case "event_modal":
-                    self.handle_event_modal()
-                case "confirm_modal":
-                    self.handle_confirm_modal()
-                case "address_modal":
-                    self.handle_address_modal()
-                case "market_pipup_modal":
-                    self.handle_market_pipup_modal()
-                case _:
-                    self.logger.error(f"처리할 수 없는 모달창 타입")
-        except Exception as e:
-            self.logger.error(f"모달창 처리 실패: {str(e)}")
-            
+            # 현재 URL 가져오기
+            current_url = driver.current_url
 
-
-    def verify_redirection(self, locator, attribute_name="data-gtm-click-url", timeout=EXPLICIT_WAIT):
-        """
-        특정 요소 클릭 후 리다이렉션 확인
-        :param locator: 클릭할 요소의 locator
-        :param attribute_name: 확인할 속성 이름 (기본: 'data-gtm-click-url')
-        :param timeout: 대기 시간 (초)
-        :return: 성공 여부 (True/False)
-        """
-        try:
-            # 속성 값 가져오기
-            expected_url = locator.get_attribute(attribute_name)
-            current_url = self.driver.current_url
-
-            # 리다이렉션 확인
-            if expected_url in current_url:
-                self.logger.info(f"페이지 리다이렉션 성공 URL: {current_url}")
+            # expected_url이 있을 경우 URL 비교
+            if current_url == expected_url:
+                custom_logger.info(f"{text}페이지 리다이렉션 성공 URL: {current_url}")
                 return True
             else:
-                self.logger.error(f"리다이렉션 실패: 예상 URL({expected_url})와 현재 URL({current_url}) 불일치")
+                custom_logger.error(f"{text}페이지 리다이렉션 실패: 예상 URL({expected_url})와 현재 URL({current_url}) 불일치")
                 return False
-
-        except Exception as e:
-            exception_handler(self.driver, e, "리다이렉션 확인 중 오류 발생")
-            return False
-    
-    def cofirm_redirection(self, locator, timeout=EXPLICIT_WAIT):
-        """
-        특정 요소 클릭 후 리다이렉션 확인
-        :param locator: 클릭할 요소의 locator
-        :param timeout: 대기 시간 (초)
-        :return: 성공 여부 (True/False)
-        """
-        try:
-            # 요소 클릭
-            locator.click()
-            WebDriverWait(self.driver, timeout).until(
-                EC.url_changes
-            )
-            self.logger.info(f"페이지 리다이렉션 성공 URL: {self.driver.current_url}")
+        else:
+            # 클릭한 요소의 expected_url이 없을 경우 URL 변경이 일어날 때까지 대기
+            WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+            
+            current_url = driver.current_url
+            custom_logger.info(f"{text}페이지 리다이렉션 확인 URL: {current_url}")
             return True
 
-        except Exception as e:
-            exception_handler(self.driver, e, "리다이렉션 확인 중 오류 발생")
-            return False
+    except Exception as e:
+        exception_handler(driver, e, "리다이렉션 시간초과")
+        raise e

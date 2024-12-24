@@ -12,7 +12,7 @@ class Base:
         self.driver = None
         self.logger = None
         self.locators = None
-        """WebDriver 인스턴스, Logger 인스턴스, 로케이터 JSON 파일을 저장하는 변수"""
+        # WebDriver 인스턴스, Logger 인스턴스, 로케이터 JSON 파일을 저장하는 변수
         self.initialize()
 
     def initialize(self):
@@ -52,8 +52,11 @@ class LocatorLoader:
     def load_locators(section):
         """로케이터 JSON 파일 로드"""
         try:
+            # 로케이터 파일 경로
             locators_path = os.path.join('locators', 'locators.json')
+            # JSON 파일 로드
             with open(locators_path, 'r', encoding='utf-8') as f:
+                # 로드한 JSON 파일에서 해당 섹션의 로케이터 반환
                 return json.load(f)[section]
         except Exception as e:
             eh.exception_handler(None, e, "로케이터 파일 로드 실패")

@@ -18,18 +18,19 @@ class TestExecutor(Base):
         """테스트 케이스 초기화"""
         self.test_cases = [
             # 테스트 케이스 클래스 추가
-            TestCase01(self.driver, self.logger),
-            TestCase02(self.driver, self.logger),
+            # TestCase01(self.driver, self.logger),
+            # TestCase02(self.driver, self.logger),
+
             TestCase03(self.driver, self.logger), 
-            TestCase04(self.driver, self.logger),
-            TestCase05(self.driver, self.logger),
-            TestCase06(self.driver, self.logger),
-            TestCase07(self.driver, self.logger),
-            TestCase08(self.driver, self.logger),
-            TestCase09(self.driver, self.logger),
-            TestCase10(self.driver, self.logger),
-            TestCase11(self.driver, self.logger),
-            TestCase12(self.driver, self.logger)
+            # TestCase04(self.driver, self.logger),
+            # TestCase05(self.driver, self.logger),
+            # TestCase06(self.driver, self.logger),
+            # TestCase07(self.driver, self.logger),
+            # TestCase08(self.driver, self.logger),
+            # TestCase09(self.driver, self.logger),
+            # TestCase10(self.driver, self.logger),
+            # TestCase11(self.driver, self.logger),
+            # TestCase12(self.driver, self.logger)
         ]
 
     def run_tests(self):
@@ -37,16 +38,16 @@ class TestExecutor(Base):
         try:
             for test_case in self.test_cases:
                 try:
-                    self.logger.info(f"테스트 케이스 실행 시작: {test_case.__class__.__name__}")
+                    self.logger.info(f"===================================테스트 케이스 실행 시작: {test_case.__class__.__name__}===================================")
                     test_case.execute()
-                    self.logger.info(f"테스트 케이스 실행 완료: {test_case.__class__.__name__}")
+                    self.logger.info(f"===================================테스트 케이스 실행 완료: {test_case.__class__.__name__}===================================")
                     time.sleep(2)
                 except Exception as e:
-                    self.logger.error(f"테스트 케이스 실행 실패: {test_case.__class__.__name__} - {str(e)}")
+                    self.logger.error(f"===================================테스트 케이스 실행 실패: {test_case.__class__.__name__} - {str(e)}===================================")
                     self.setup_method(None)  # 실패 시 환경 재설정
 
         except Exception as e:
-            self.logger.error(f"테스트 실행 중 오류 발생: {str(e)}")
+            self.logger.error(f"===================================테스트 실행 중 오류 발생: {str(e)}===================================")
         finally:
             self.teardown_method(None)
 

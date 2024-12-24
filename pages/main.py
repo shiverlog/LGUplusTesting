@@ -6,6 +6,7 @@ from base.base import Base, LocatorLoader
 from utils import exception_handler as eh
 from utils.element_utils import *
 from utils.custom_actionchains import *
+from utils.custom_utils import *
 import time
 import random
 
@@ -18,15 +19,12 @@ class TestCase02(Base):
 
     def execute(self):
         try:
-            kv_images = find_elements(self.driver, (By.CSS_SELECTOR, self.locators['kv_section_img']))
-            self.logger.info(f"KV 영역 이미지 개수: {len(kv_images)}")
-            
-            for index, img in enumerate(kv_images):
-                img_src = img.get_attribute('src')
-                if img_src:
-                    self.logger.info(f"이미지 {index + 1} src: {img_src}")
-                else:
-                    self.logger.info(f"이미지 {index + 1} src 속성이 없습니다.")
+            # 메인 페이지 영역 활성화 확인
+            find_visible_sections(self.driver, self.locators, "메인페이지")
+
+            # KV 영역 확인 - 이미지 한줄씩
+            show_elements_text(self.driver, (By.CSS_SELECTOR, self.locators['kv_section_img']), f"KV영역 이미지")
+
         except Exception as e:
             eh.exception_handler(self.driver, e, "KV 영역 테스트 실패")
 
@@ -36,16 +34,31 @@ class TestCase03(Base):
         self.driver = driver
         self.logger = logger
         self.locators = LocatorLoader.load_locators('main')
+        # (By.CSS_SELECTOR, self.locators['key_name']) 튜플형식으로 locators로 넘김
+    
+    def get_locator(self, section, sub_locator=""):
+        """ section에 맞는 기본 locator와 하위 요소를 동적으로 생성 """
+        return (By.CSS_SELECTOR, self.locators[section] + sub_locator)
 
     def execute(self):
         try:
-            # 기기 추천 영역으로 이동
-            device_section = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, "device-section"))
-            )
-            ActionChains(self.driver).move_to_element(device_section).perform()
-            time.sleep(2)
+            device_locator = (By.CSS_SELECTOR, self.locators['device_section'])
+            device_section = find_visible_element(self.driver, device_locator, f"기기 추천 영역")
+            move_to_element(self.driver, device_section, f"기기 추천 영역")
+            
+            custom_logger.info(f"기기 추천 영역: {self.locators['device_section']}")
+            device_tabs = find_elements(self.driver, (By.CSS_SELECTOR, self.locators['device_section'] + " .tab-wrap ul li"), f"기기 추천 탭")
+            
 
+
+
+
+
+
+            tabs = find_visible_element(device_section, (By.CSS_SELECTOR, self.locators['device_section']), f"기기 추천 영역")
+            tabs = device_section.find_elements(By.CSS_SELECTOR, ".tab-wrap ul li")
+            device_section.find_element(self.driver, (By.CSS_SELECTOR, ".tab-wrap ul li "), f"기기 추천 탭")
+            
             # 랜덤 탭 선택
             tabs = self.driver.find_elements(By.CSS_SELECTOR, '.tab-wrap ul li')
             self.random_tab = random.choice(tabs)

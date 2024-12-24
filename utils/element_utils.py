@@ -25,33 +25,66 @@ from config.config import EXPLICIT_WAIT, EXPLICIT_WAIT
     wait_until_element_is_enabled: 요소가 활성화 될 때까지 대기
 """
 
-# find_element
-def find_element(driver, locator):
+def find_element(driver, locator, text=""):
     """요소를 찾는 함수"""
     try:
         element = WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.presence_of_element_located(locator)
         )
-        custom_logger.info(f"요소 찾음: {locator}")
+        custom_logger.info(f"{text}{locator}(을)를 찾았습니다.")
         return element
     except Exception as e:
-        eh.exception_handler(driver, e, f"요소를 찾을 수 없음: {locator}")
+        eh.exception_handler(driver, e, f"{text}{locator}(을)를 찾지못했습니다.")
         return None
 
-# find_elements
-def find_elements(driver, locator):
+def find_elements(driver, locator, text=""):
     """요소들을 찾는 함수"""
     try:
         elements = WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.presence_of_all_elements_located(locator)
         )
-        custom_logger.info(f"요소들을 찾음 {len(elements)}: {locator}")
+        custom_logger.info(f"{text}{locator}들을 {len(elements)}개 찾았습니다.")
         return elements
-
     except Exception as e:
-        eh.exception_handler(driver, e, f"요소들을 찾을 수 없음: {locator}")
+        eh.exception_handler(driver, e, f"{text}{locator}들을 찾지못했습니다.")
         return []
 
+def show_elements_text(driver, locator, text=""):
+    """요소안의 정보를 텍스트로 출력하는 함수"""
+    try:
+        elements = WebDriverWait(driver, EXPLICIT_WAIT).until(
+            EC.presence_of_all_elements_located(locator)
+        )
+        custom_logger.info(f"{text}{locator}들을 {len(elements)}개 찾았습니다.")
+        for index, element in enumerate(elements):
+            print_info = element.get_attribute('src')
+            if print_info:
+                custom_logger.info(f"{text} {index + 1}번째 src: {print_info}")
+            else:  # 이미지가 아닌 경우
+                custom_logger.info(f"{text} {index + 1}번째 텍스트: {element.text.strip()}")
+    except Exception as e:
+        eh.exception_handler(driver, e, f"{text}{locator}들을 찾지못했습니다.")
+        return []
+
+def show_element_list(driver, locator, text=""):
+    """요소들을 리스트로 출력하는 함수"""
+    try:
+        elements = WebDriverWait(driver, EXPLICIT_WAIT).until(
+            EC.presence_of_all_elements_located(locator)
+        )
+        custom_logger.info(f"{text}{locator}들을 {len(elements)}개 찾았습니다.")
+        print_info = []
+        for element in elements:
+            src = element.get_attribute('src')
+            if src:
+                print_info.append(src)
+            else:
+                print_info.append(element.text.strip())
+        custom_logger.info(f"{text} src: {print_info}")
+    except Exception as e:
+        eh.exception_handler(driver, e, f"{text}{locator}들을 찾지못했습니다.")
+        return []
+    
 def select_random_list_element(driver, locator):
     """요소들을 찾아 랜덤하게 선택하는 함수"""
     try:
@@ -64,19 +97,6 @@ def select_random_list_element(driver, locator):
         return None
     except Exception as e:
         eh.exception_handler(driver, e, f"랜덤하게 요소 선택 실패: {locator}")
-        return None
-
-# find_visible_element
-def find_visible_element(driver, locator):
-    """보이는 요소를 찾는 함수"""
-    try:
-        element = WebDriverWait(driver, EXPLICIT_WAIT).until(
-            EC.visibility_of_element_located(locator)
-        )
-        custom_logger.info(f"보이는 요소 찾음: {locator}")
-        return element
-    except Exception as e:
-        eh.exception_handler(driver, e, f"보이는 요소를 찾을 수 없음: {locator}")
         return None
 
 # find_visible_elements
@@ -95,28 +115,28 @@ def find_visible_elements(driver, locator, EXPLICIT_WAIT=10):
 
 
 # find_clickable_element
-def find_clickable_element(driver, locator):
+def find_clickable_element(driver, locator, text=""):
     """클릭 가능한 요소를 찾는 함수"""
     try:
         element = WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.element_to_be_clickable(locator)
         )
-        custom_logger.info(f"클릭 가능한 요소 찾음: {locator}")
+        custom_logger.info(f"{text}{locator}(이)가 클릭 가능한 상태입니다. ")
         return element
     except Exception as e:
-        eh.exception_handler(driver, e, f"클릭 가능한 요소를 찾을 수 없음: {locator}")
+        eh.exception_handler(driver, e, f"{text}{locator}(이)가 클릭 가능하지 않은 상태입니다.")
         return None
 
 # enter_text
-def enter_text(driver, locator, text):
+def enter_text(driver, locator, input_text, text=""):
     """요소에 텍스트를 입력하는 함수"""
     try:
-        element = find_element(driver, locator)
+        element = find_element(driver, locator, text)
         if element:
-            element.send_keys(text)
-            custom_logger.info(f"{locator} 요소에 '{text}' 텍스트를 입력 완료")
+            element.send_keys(input_text)
+            custom_logger.info(f"{text}{locator}에 '{input_text}' 텍스트를 입력하였습니다.")
     except Exception as e:
-        eh.exception_handler(driver, e, f"{locator} 요소에 텍스트 입력 실패")
+        eh.exception_handler(driver, e, f"{text}{locator} 요소에 텍스트 입력하지 못했습니다.")
 
 # clear_text
 def clear_text(driver, locator):
@@ -130,14 +150,21 @@ def clear_text(driver, locator):
         eh.exception_handler(driver, e, f"{locator} 요소의 텍스트 지우기 실패")
 
 # get_text
-def get_text(driver, locator):
+def get_text(driver, locator, text=""):
     """요소의 텍스트를 가져오는 함수"""
     try:
-        element = find_element(driver, locator)
+        element = find_element(driver, locator, text)
         if element:
-            text = element.text
-            custom_logger.info(f"{locator} 요소에서 텍스트 '{text}' 가져오기 성공")
-            return text
+            try:
+                # .text로 텍스트 가져오기 시도
+                element_text = element.text.strip().replace("\n", " ")
+                custom_logger.info(f"{text}{locator}에서 텍스트 '{element_text}'를 가져왔습니다.")
+                return text
+            except Exception as e:
+                # .text로 실패 시 .get_attribute('textContent') 시도
+                text = element.get_attribute('textContent').strip().replace("\n", " ")
+                custom_logger.warning(f"{text}{locator}에서 .get_attribute('textContent')을 사용하여 텍스트 '{element_text}'를 가져왔습니다.")
+                return text
         return None
     except Exception as e:
         eh.exception_handler(driver, e, f"{locator} 요소의 텍스트 가져오기 실패")
