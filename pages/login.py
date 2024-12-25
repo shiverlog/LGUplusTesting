@@ -1,11 +1,9 @@
-from config.config import USERNAME, PASSWORD
-from utils import exception_handler as eh
 from selenium.webdriver.common.by import By
 from base.base import Base, LocatorLoader
-from utils.element_utils import *
-from utils.custom_actionchains import *
-from utils.page_handler import verify_redirection
-import time
+from config.config import USERNAME, PASSWORD
+from utils import exception_handler as eh
+from utils.page_handler import page_handler
+from utils.custom_utils import *
 
 class TestCase01(Base):
     def __init__(self, driver, logger):
@@ -32,14 +30,14 @@ class TestCase01(Base):
                     click(self.driver, login_button, f"메인로그인 버튼")
 
             # 리다이렉션 확인
-            verify_redirection(self.driver, login_button, f"로그인")
+            page_handler(self.driver, login_button, f"로그인")
 
             # U+ID 버튼 찾기 및 클릭
             uplus_login_button = find_clickable_element(self.driver, (By.CSS_SELECTOR, self.locators['uplus_login_button']), f"U+ID 버튼")
             if uplus_login_button:
                 click(self.driver, uplus_login_button, f"U+ID 버튼")
 
-                verify_redirection(self.driver, uplus_login_button, f"U+ID 로그인")
+                page_handler(self.driver, uplus_login_button, f"U+ID 로그인")
 
             self._perform_login()
 
@@ -55,7 +53,7 @@ class TestCase01(Base):
             if uplus_login_button:
                 click(self.driver, uplus_login_button, f"U+ID 버튼")
 
-                verify_redirection(self.driver, uplus_login_button, f"U+ID 로그인")
+                page_handler(self.driver, uplus_login_button, f"U+ID 로그인")
 
             self._perform_login()
 
@@ -75,14 +73,13 @@ class TestCase01(Base):
                 # 로그인 버튼 클릭
                 submit_button = find_element(self.driver, (By.CSS_SELECTOR, self.locators['login_submit_button']), f"U+ID로그인 버튼")
                 click(self.driver, submit_button, f"U+ID로그인 버튼")
-                verify_redirection(self.driver, submit_button, f"메인")
+                page_handler(self.driver, submit_button, f"메인")
 
                 # 마이메뉴 마우스오버
                 myinfo = find_element(self.driver, (By.CSS_SELECTOR, self.locators['myinfo']), f"마이메뉴 아이콘")
                 if myinfo:
                     move_to_element(self.driver, myinfo, f"마이메뉴 아이콘")
                     get_text(self.driver, (By.CSS_SELECTOR, ".login-info-txt"), f"마이메뉴 정보 텍스트")
-                time.sleep(2)
 
         except Exception as e:
             eh.exception_handler(self.driver, e, "로그인 테스트 실패")

@@ -1,9 +1,4 @@
-import logging
-import json
-import re
-import os
-import sys
-import datetime
+import logging, os, json, re, sys, datetime
 from logging.handlers import TimedRotatingFileHandler, RotatingFileHandler
 from config.config import LOG_LEVEL, LOG_FILE, JSON_FILE, MAX_BYTES, BACKUP_COUNT
 

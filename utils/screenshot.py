@@ -1,5 +1,4 @@
-import os
-import time
+import os, time
 from utils.custom_logger import Logger
 from config.config import SCREENSHOT_DIR
 

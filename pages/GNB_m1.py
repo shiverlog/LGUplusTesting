@@ -7,8 +7,7 @@ from utils import exception_handler as eh
 from base.base import Base, LocatorLoader
 import random
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
-from utils.custom_actionchains import *
-from utils.element_utils import *
+from utils.custom_utils import *   
 
 class TestCase04(Base):
     """테마배너 항목 텍스트 정상 노출 확인"""

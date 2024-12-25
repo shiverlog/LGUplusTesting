@@ -4,13 +4,10 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from base.base import Base, LocatorLoader
 from utils import exception_handler as eh
-from utils.element_utils import *
-from utils.custom_actionchains import *
+from utils.custom_utils import *
 
 class TestCase11(Base):
     """자주 찾는 검색어 항목 텍스트 비교 및 검색 테스트"""

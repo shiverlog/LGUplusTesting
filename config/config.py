@@ -1,5 +1,4 @@
-import logging
-import os
+import logging, os
 
 # 로그 레벨
 LOG_LEVEL = logging.INFO

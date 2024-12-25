@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.custom_logger import custom_logger
 
-def verify_redirection(driver, element, text=""):
+def page_handler(driver, element, text=""):
     """특정 요소 클릭 후 리다이렉션 확인"""
     try:
         # 클릭한 요소의 URL 가져오기 (data-gtm-click-url 속성 값)

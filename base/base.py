@@ -1,8 +1,7 @@
-from utils import custom_logger as cl
 from base.webdriver_factory import WebDriverFactory
+from utils import custom_logger as cl
 from config.config import BASE_URL
-import os
-import json
+import os, json
 from utils.exception_handler import exception_handler as eh
 
 class Base:

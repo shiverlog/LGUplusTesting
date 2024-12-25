@@ -2,8 +2,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from utils.custom_logger import custom_logger
-from element_utils import *
-from custom_actionchains import *
+from utils.custom_utils import *
 from utils.exception_handler import handle_exception
 
 """

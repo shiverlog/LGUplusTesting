@@ -5,8 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from utils import exception_handler as eh
 from base.base import Base, LocatorLoader
 from pages.login import TestCase01 as UPlusLogin
-from utils.element_utils import *
-from utils.custom_actionchains import *
+from utils.custom_utils import *
 
 class TestCase07(Base):
     """청구내역 영역 청구월 무작위 월, 청구금액 데이터 추출 후 클릭, 페이지 이동 후 해당 월, 청구금액 일치 여부 확인"""
