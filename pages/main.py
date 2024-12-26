@@ -4,33 +4,35 @@ from utils import exception_handler as eh
 from utils.custom_utils import *
 
 class TestCase02(Base):
-    """메인 페이지 KV 영역 테스트 케이스"""
+
     def __init__(self, driver, logger):
         self.driver = driver
         self.logger = logger
         self.locators = LocatorLoader.load_locators('main')
         self.by_type = self.get_by_type("css")
-
+    
+    """메인 페이지 KV 영역 테스트 케이스"""
     def execute(self):
         try:
             # 메인 페이지 영역 활성화 확인
             find_visible_sections(self.driver, self.by_type, self.locators, "메인페이지")
 
             # KV 영역 확인 - 이미지 한줄씩
-            show_elements_text(self.driver, self.by_type, self.locators['kv_section_img'], f"KV영역 이미지")
+            show_elements_text(self.driver, self.by_type, self.locators['kv_section_img'], "src", f"KV영역 이미지")
 
         except Exception as e:
             eh.exception_handler(self.driver, e, "KV 영역 테스트 실패")
 
 
 class TestCase03(Base):
-    """기기 추천 영역 테스트 케이스"""
+    
     def __init__(self, driver, logger):
         self.driver = driver
         self.logger = logger
         self.locators = LocatorLoader.load_locators('main')
         self.by_type = self.get_by_type("css")
-
+        
+    """기기 추천 영역 테스트 케이스"""
     def execute(self):
         try:
             # device_section으로 포커싱

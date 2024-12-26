@@ -56,6 +56,7 @@ class TestCase01(Base):
 
 
     def _perform_login(self):
+        """로그인 수행"""
         try:
             # 로그인 폼 찾기
             find_element(self.driver, self.by_type, self.locators['login_form'], f"로그인 폼")

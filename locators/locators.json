@@ -39,13 +39,13 @@
         "login_info_text": "div.myInfo-top p.login-info-txt"
     },
     "gnb_m1": {
-        "mobile_menu": "header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m1",
+        "mobile_menu": "header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m1 a",
         "mobile_sub_menu": "li.m1 div.sub-menu-wrap ul.sub-menu-list li ul li",
         "theme_banner_section": "div[section-group-id='PcSubMainMobileKVSection']",
-        "banner_links": ".visual-wrap a.link_btn",
+        "banner_links": "div.visual-wrap a.link_btn",
+        "banner_texts": "div.visual-text img",
+        "banner_bgs": "div.visual-bg img",
         "banner_slides": ".slick-list div[data-index]",
-        "banner_text": ".visual-text img",
-        "banner_bg": ".visual-bg img",
         "play_button": ".btn-play-control.btn-play",
         "pause_button": ".btn-play-control.btn-pause",
         "prev_button": ".btn-move.btn-prev",
@@ -148,15 +148,15 @@
     },
     "gnb_m5": {
         "support_menu": "header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m5",
-        "search_keyword": "keyword-link",
+        "search_keyword": "div.keyword-link a",
         "search_section": "div.top-search-wrap > div > div > div.c-inpfield.column-search.search-type2",
         "search_input": "div.c-inpform input[type='text']",
         "search_button": "div.c-inpform button.c-ibtn-find",
         "search_tag_section": "div.cs-intro-1-wrap",
         "r_search_input": "#cfrmSearch-1-3",
         "search_result_section":"div.c-content-wrap > div:nth-child(1)",
-        "search_result_text": "//p[@class='faq-title']/span[@class='color-def']",
-        "clear_button": "button.c-btn-clear",
+        "search_result_text": "div.faq-list-title > p > span",
+        "clear_button": "div.c-inpform.is-clear button.c-btn-clear",
         "no_result_message": "p.h5"
     }
 }

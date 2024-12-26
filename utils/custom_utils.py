@@ -7,7 +7,7 @@ from utils.custom_logger import custom_logger
 from selenium.webdriver.remote.webelement import WebElement
 from utils import exception_handler as eh
 from config.config import EXPLICIT_WAIT, EXPLICIT_WAIT
-import random
+import random, time
 
 
 # unpack_by_locator
@@ -38,10 +38,10 @@ def find_element(driver, by, locator, text=""):
         element = WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.presence_of_element_located((by, locator))  # by와 locator를 튜플로 묶어서 전달
         )
-        custom_logger.info(f"{text} {by}: {locator}(을)를 찾았습니다.")  # by 정보 추가
+        custom_logger.info(f"{text} {locator}(을)를 찾았습니다.")  # by 정보 추가
         return element
     except Exception as e:
-        eh.exception_handler(driver, e, f"{text} {by}: {locator}(을)를 찾지못했습니다.")  # by 정보 추가
+        eh.exception_handler(driver, e, f"{text} {locator}(을)를 찾지못했습니다.")  # by 정보 추가
         return None
 
 
@@ -71,13 +71,13 @@ def find_visible_element(driver, by, locator, text=""):
         )
         # 요소가 화면에 보이지 않으면 스크롤하여 포커싱
         if not element.is_displayed():
-            move_to_element(driver, locator, text)
-            custom_logger.info(f"{text}{locator}(이)가 화면에 보이지 않아 스크롤하여 포커싱했습니다.")
+            move_to_element(driver, by, locator, text)
+            custom_logger.info(f"{text} {locator}(이)가 화면에 보이지 않아 스크롤하여 포커싱했습니다.")
 
-        custom_logger.info(f"{text}{locator}(이)가 화면에 보입니다.")
+        custom_logger.info(f"{text} {locator}(이)가 화면에 보입니다.")
         return element
     except Exception as e:
-        eh.exception_handler(driver, e, f"{text}{locator}(이)가 화면에 보이지 않습니다.")
+        eh.exception_handler(driver, e, f"{text} {locator}(이)가 화면에 보이지 않습니다.")
         return None
 
 
@@ -85,7 +85,7 @@ def find_visible_element(driver, by, locator, text=""):
 def find_clickable_element(driver, by, locator, text=""):
     """클릭 가능한 요소를 찾는 단일함수"""
     try:
-        element = WebDriverWait(driver, EXPLICIT_WAIT).until(
+        element = WebDriverWait(driver, 60).until(
             EC.element_to_be_clickable((by, locator))
         )
         custom_logger.info(f"{text} {locator}(이)가 클릭가능한 상태입니다. ")
@@ -144,7 +144,7 @@ def page_redirect_confirm(driver, by, locator, text=""):
         if isinstance(locator, WebElement):
             element = locator
         expected_url = element.get_attribute("data-gtm-click-url")
-        
+
         if expected_url:
             # data-gtm-click-url 속성 값이 있을 경우 로그 출력
             custom_logger.info(f"클릭한 요소 안의 URL: {expected_url}")
@@ -220,71 +220,91 @@ def find_visible_sections(driver, by, locators, text=""):
 
 
 # show_elements_text
-def show_elements_text(driver, by, locator, text=""):
+def show_elements_text(driver, by, locator, attribute, text=""):
     """요소안의 정보를 텍스트로 출력하는 함수"""
     try:
-        elements = WebDriverWait(driver, EXPLICIT_WAIT).until(
-            EC.presence_of_all_elements_located((by, locator))
-        )
-        custom_logger.info(f"{text} {locator}들을 {len(elements)}개 찾았습니다.")
-
+        elements = find_elements(driver, by, locator, text)
         for index, element in enumerate(elements):
-            # 이미지 요소의 src 정보
-            if element.tag_name == 'img':
-                print_info = element.get_attribute('src')
-                custom_logger.info(f"{text} {index + 1}번째 src: {print_info}")
-            
-            # a 요소의 data-gtm-click-text 정보
-            elif element.tag_name == 'a':
-                print_info = element.get_attribute('data-gtm-click-text')
-                custom_logger.info(f"{text} {index + 1}번째 텍스트: {print_info}")
-            else: 
-                custom_logger.info(f"{text} {index + 1}번째 텍스트: {element.text.strip()}")
+            if attribute:
+                print_info = element.get_attribute(attribute)
+                custom_logger.info(f"{text} {index + 1}번째 {attribute}: {print_info}")
+            else:
+                print_info = element.text.strip()
+                custom_logger.info(f"{text} {index + 1}번째 {attribute}: {print_info}")
 
     except Exception as e:
         eh.exception_handler(driver, e, f"{text} {locator}들을 찾지못했습니다.")
         return []
 
 
+# show_elements_list
+def show_elements_list(driver, by, locator, attribute, text=""):
+    """요소들을 리스트로 출력하는 함수"""
+    try:
+        elements = find_elements(driver, by, locator, text)
+        print_info = []
+        for element in elements:
+            if attribute.lower() == "text":
+                # .text로 텍스트 가져오기 시도
+                element_text = element.text.strip().replace("\n", " ")
+                if not element_text:
+                    # .text로 가져온 텍스트가 비어 있으면 .get_attribute('textContent')로 시도
+                    element_text = element.get_attribute('textContent').strip().replace("\n", " ")
+                    if not element_text:
+                        # textContent도 비어 있으면 innerHTML로 시도
+                        element_text = element.get_attribute('innerHTML').strip().replace("\n", " ")
+                        custom_logger.info(f"{text} {element.tag_name} 요소에서 .get_attribute('innerHTML')을 사용하여 텍스트 '{element_text}'를 가져왔습니다.")
+                    else:
+                        custom_logger.info(f"{text} {element.tag_name} 요소에서 .get_attribute('textContent')을 사용하여 텍스트 '{element_text}'를 가져왔습니다.")
+                else:
+                    custom_logger.info(f"{text} {element.tag_name} 요소에서 .text를 사용하여 텍스트 '{element_text}'를 가져왔습니다.")
+                info = element_text
+            elif attribute:
+                info = element.get_attribute(attribute)
+            else:
+                info = element.text.strip()
+            if info:
+                print_info.append(info)
+        custom_logger.info(f"{text}: {print_info}")
+        return print_info
+    except Exception as e:
+        eh.exception_handler(driver, e, f"{text}를 찾지 못했습니다.")
+        return []
+    
+
 # 요소들을 찾아 랜덤하게 선택하는 함수
-def select_random_item(driver, by, locator, text=""):
+def select_random_item(driver, by, locator, attribute, text=""):
     """
-    1. find_elements 로 요소들찾기
+    1. show_elements_list로 요소들 찾기
     2. 요소 text 정보 가져와서 리스트로 출력
     3. 요소들 중 하나를 랜덤하게 선택
     4. return 선택된 요소
     """
     try:
-        elements = find_elements(driver, by, locator, text)
-        if elements:
-            elements_text = []
+        # show_elements_list를 호출하여 요소 리스트와 텍스트 가져오기
+        elements_text = show_elements_list(driver, by, locator, attribute, text)
+
+        if elements_text:
+            custom_logger.info(f"리스트 목록 {elements_text}")
+
+            # 랜덤하게 요소 한 개 선택
+            random_element_text = random.choice(elements_text)
+
+            custom_logger.info(f"{text} {random_element_text}(을)를 선택하였습니다.")
+            
+            # 선택된 텍스트에 해당하는 요소 찾기
+            elements = find_elements(driver, by, locator, text)
             for element in elements:
-                # a 요소인 경우 data-gtm-click-text 속성 값 가져오기
-                if element.tag_name == 'a':
-                    element_text = element.get_attribute('data-gtm-click-text')
-                else:
-                    element_text = get_text(driver, element)  # by, locator, text 인자 제거
-                elements_text.append(element_text)
+                if element.text.strip() == random_element_text or element.get_attribute('textContent').strip() == random_element_text:
+                    return element, random_element_text
 
-            if elements_text:
-                custom_logger.info(f"리스트 목록 {elements_text}")
-
-                # 랜덤하게 요소 한 개 선택
-                random_element = random.choice(elements)
-
-                # 선택된 요소가 a 요소인 경우 data-gtm-click-text 속성 값을 가져옵니다.
-                if random_element.tag_name == 'a':
-                    random_element_text = random_element.get_attribute('data-gtm-click-text')
-                else:
-                    random_element_text = get_text(driver, random_element)  # by, locator, text 인자 제거
-                custom_logger.info(f"{text} {random_element_text}(을)를 선택하였습니다.")
-                return random_element, random_element_text
         return None, None
     except Exception as e:
         eh.exception_handler(driver, e, f"{text} {locator}(을)를 랜덤하게 요소 선택하지 못했습니다.")
-        return None
+        return None, None
 
 
+# click
 def click(driver, element, text=""):
     """요소를 클릭하는 단일함수"""
     try:
@@ -300,31 +320,38 @@ def click(driver, element, text=""):
         return False
 
 
-# 요소의 텍스트를 가져오는 함수
+# get_text
 def get_text(driver, by, locator, text=""):
     """요소의 텍스트를 가져오는 함수"""
     try:
         element = find_element(driver, by, locator, text)  # find_element를 사용하여 element 찾기
         if element:
-            if element.tag_name == 'img':
+            if element.tag_name == 'input':
+                # input 요소인 경우 value 속성 값을 가져옵니다.
+                element_text = element.get_attribute('value')
+                custom_logger.info(f"{text} {element.tag_name} 요소에서 value 속성값 '{element_text}' 가져오기 성공")
+            elif element.tag_name == 'img':
                 # 이미지인 경우 alt 속성 값을 가져옵니다.
                 element_text = element.get_attribute('alt')
-                log_msg = f"{text} {element.tag_name} 요소에서 alt 속성값 '{element_text}' 가져오기 성공"
+                custom_logger.info(f"{text} {element.tag_name} 요소에서 alt 속성값 '{element_text}' 가져오기 성공")
             elif element.tag_name == 'a':
                 # a 요소인 경우 data-gtm-click-text 속성 값을 가져옵니다.
                 element_text = element.get_attribute('data-gtm-click-text')
-                log_msg = f"{text} {element.tag_name} 요소에서 data-gtm-click-text 속성값 '{element_text}' 가져오기 성공"
+                custom_logger.info(f"{text} {element.tag_name} 요소에서 data-gtm-click-text 속성값 '{element_text}' 가져오기 성공")
             else:
                 # .text로 텍스트 가져오기 시도
                 element_text = element.text.strip().replace("\n", " ")
                 if not element_text:
                     # .text로 가져온 텍스트가 비어 있으면 .get_attribute('textContent')로 시도
                     element_text = element.get_attribute('textContent').strip().replace("\n", " ")
-                    log_msg = f"{text} {element.tag_name} 요소에서 .get_attribute('textContent')을 사용하여 텍스트 '{element_text}'를 가져왔습니다."
+                    if not element_text:
+                        # textContent도 비어 있으면 innerHTML로 시도
+                        element_text = element.get_attribute('innerHTML').strip().replace("\n", " ")
+                        custom_logger.info(f"{text} {element.tag_name} 요소에서 .get_attribute('innerHTML')을 사용하여 텍스트 '{element_text}'를 가져왔습니다.")
+                    else:
+                        custom_logger.info(f"{text} {element.tag_name} 요소에서 .get_attribute('textContent')을 사용하여 텍스트 '{element_text}'를 가져왔습니다.")
                 else:
-                    log_msg = f"{text} {element.tag_name} 요소에서 텍스트 '{element_text}'를 가져왔습니다."
-
-            custom_logger.info(log_msg)
+                    custom_logger.info(f"{text} {element.tag_name} 요소에서 .text를 사용하여 텍스트 '{element_text}'를 가져왔습니다.")
             return element_text
         return None
     except Exception as e:
@@ -350,54 +377,100 @@ def check_active(driver, locator, text=""):
         return False  
 
 
-# show_element_list
-def show_element_list(driver, locator, text=""):
-    """요소들을 리스트로 출력하는 함수"""
-    try:
-        elements = WebDriverWait(driver, EXPLICIT_WAIT).until(
-            EC.presence_of_all_elements_located(locator)
-        )
-        custom_logger.info(f"{text}{locator}들을 {len(elements)}개 찾았습니다.")
-        print_info = []
-        for element in elements:
-            src = element.get_attribute('src')
-            if src:
-                print_info.append(src)
-            else:
-                print_info.append(element.text.strip())
-        custom_logger.info(f"{text} src: {print_info}")
-    except Exception as e:
-        eh.exception_handler(driver, e, f"{text}{locator}들을 찾지못했습니다.")
-        return []
-    
-
 # compare_values
-def compare_values(before_value, after_value, text=""):
-    """두 값을 비교하여 일치 여부를 확인하고 결과를 로그로 출력하는 함수"""
-
-    if before_value in after_value:  # 부분 일치 확인
-        custom_logger.info(f"{text} {after_value}이(가) 일치합니다.")
-        return True
-    else:
-        custom_logger.info(f"{text}이(가) 이전 값: {before_value}, 이후 값: {after_value}으로 일치하지 않습니다.")
+def compare_values(*values):
+    """여러 값을 비교하여 일치 여부를 확인하고 결과를 로그로 출력하는 함수"""
+    if len(values) < 3:  # 최소 2개의 비교값과 1개의 text가 필요
+        custom_logger.warning("비교할 값이 충분하지 않습니다. 최소 2개의 값과 1개의 텍스트가 필요합니다.")
         return False
 
-
-# # find_visible_element
-# def find_visible_element(driver, locator, text=""):
-#     """보이는 요소를 찾는 함수"""
-#     try:
-#         element = WebDriverWait(driver, EXPLICIT_WAIT).until(
-#             EC.visibility_of_element_located(locator)
-#         )
-#         if not element.is_displayed():
-#             move_to_element(driver, element)
-#         custom_logger.info(f"{text}{locator}(이)가 화면에 보입니다.")
-#         return element
-#     except Exception as e:
-#         eh.exception_handler(driver, e, f"{text}{locator}(이)가 화면에 보이지 않습니다.")
-#         return None
+    *comparison_values, text = values  # 마지막 값을 text로 분리
     
+    if len(comparison_values) < 2:
+        custom_logger.warning(f"{text} 비교할 값이 충분하지 않습니다. 최소 2개의 값이 필요합니다.")
+        return False
+
+    reference_value = comparison_values[0]
+    all_match = True
+
+    for i, value in enumerate(comparison_values[1:], 1):
+        if reference_value in value:
+            custom_logger.info(f"{text} 기준값: {reference_value}(와)과 비교값{i}: {value}(이)가 일치합니다.")
+        else:
+            custom_logger.info(f"{text} 기준값: {reference_value}(와)과 비교값{i}: {value}(이)가 일치하지 않습니다.")
+            all_match = False
+    
+    if all_match:
+        custom_logger.info(f"{text} 모든 데이터가 일치합니다.")
+    else:
+        custom_logger.info(f"{text} 일부 또는 모든 데이터가 불일치합니다.")
+    
+    return all_match
+
+
+# def compare_values(before_value, after_value, text=""):
+#     """두 값을 비교하여 일치 여부를 확인하고 결과를 로그로 출력하는 함수"""
+
+#     if before_value in after_value:  # 부분 일치 확인
+#         custom_logger.info(f"{text} {after_value}(이)가 일치합니다.")
+#         return True
+#     else:
+#         custom_logger.info(f"{text}(이)가 이전 값: {before_value}, 이후 값: {after_value}으로 일치하지 않습니다.")
+#         return False
+
+
+# navigate_slides
+def navigate_slides(driver, by_type, locators, text=""):
+    def find_and_click(button_locator):
+        button = WebDriverWait(driver, 30).until(
+            EC.element_to_be_clickable((by_type, locators[button_locator]))
+        )
+        custom_logger.info(f"{text} {button_locator} 클릭")
+        button.click()
+
+    button_count = len(WebDriverWait(driver, 10).until(
+        EC.presence_of_all_elements_located((by_type, locators['slide']))
+    ))
+    
+    # 버튼 클릭 방향 설정
+    for direction, limit in [("next", button_count-1), ("previous", 0)]:
+        while True:
+            active_slide = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((by_type, locators['active_slide']))
+            )
+            current_index = int(active_slide.get_attribute('data-index'))
+            visual_text = active_slide.find_element(by_type, locators['banner_text']).get_attribute('alt')
+            
+            if current_index == 0:
+                custom_logger.info(f"{text} 첫 슬라이드입니다. alt: {visual_text}")
+            elif current_index == button_count - 1:
+                custom_logger.info(f"{text} 마지막 슬라이드입니다. alt: {visual_text}")
+            else:
+                custom_logger.info(f"{text} 슬라이드_{current_index+1} alt: {visual_text}")
+            
+            if current_index == limit:
+                break
+            
+            if direction == "previous":
+                find_and_click('prev_button')
+            elif direction == "next":
+                find_and_click('next_button')
+            
+            time.sleep(2)
+        time.sleep(2)
+
+
+
+def release(driver, element, text=""):
+    """마우스 버튼 놓기"""
+    try:
+        actions = ActionChains(driver)
+        actions.release(element)
+        actions.perform()
+        custom_logger.info(f"{text} 요소에서 마우스 버튼을 놓았습니다.")
+    except Exception as e:
+        custom_logger.error(f"{text} 요소에서 마우스 버튼 놓기 실패: {str(e)}")
+
 
 
 
@@ -455,11 +528,6 @@ def compare_values(before_value, after_value, text=""):
 #     """지정된 시간 동안 일시중지"""
 #     actions = ActionChains(driver).pause(seconds)
 #     perform_action(driver, actions, f"{seconds}초 동안 일시중지")
-
-# def release(driver, element=None):
-#     """마우스 버튼 놓기"""
-#     actions = ActionChains(driver).release(element)
-#     perform_action(driver, actions, f"{element} 요소에서 마우스 버튼 놓기")
 
 # def send_keys(driver, *keys_to_send):
 #     """현재 포커스된 요소에 키 입력"""
