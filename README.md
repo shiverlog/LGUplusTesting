@@ -8,6 +8,8 @@ git commit -m "커밋 메시지"     # 변경 사항을 커밋
 git checkout <브랜치 이름>      # 지정된 브랜치로 전환
 git remote add origin <원격 저장소 주소> # 원격 저장소 주소를 추가
 git push origin main           # 로컬 main 브랜치를 원격 저장소로 푸시
+git fetch origin               # 원격 브랜치의 최신 상태 가져오기
+git reset --hard origin/main   # 로컬 브랜치를 원격 브랜치로 강제로 덮어쓰기
 ```
 
 ### TEST-RPA 구조

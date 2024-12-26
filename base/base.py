@@ -1,8 +1,9 @@
 from base.webdriver_factory import WebDriverFactory
 from utils import custom_logger as cl
 from config.config import BASE_URL
-import os, json
+from selenium.webdriver.common.by import By
 from utils.exception_handler import exception_handler as eh
+import os, json
 
 class Base:
     """모든 테스트 케이스에서 상속받는 기본 클래스"""
@@ -25,6 +26,29 @@ class Base:
     def load_locators(self, section):
         """로케이터 JSON 파일 로드"""
         self.locators = LocatorLoader.load_locators(section)
+    
+    def get_by_type(self, locatorType):
+        """LocatorType을 By 객체로 변환하는 함수"""
+        locator_type = locatorType.lower()
+        if locator_type == "id":
+            return By.ID
+        elif locator_type == "name":
+            return By.NAME
+        elif locator_type == "xpath":
+            return By.XPATH
+        elif locator_type == "css":
+            return By.CSS_SELECTOR
+        elif locator_type == "class":
+            return By.CLASS_NAME
+        elif locator_type == "link":
+            return By.LINK_TEXT
+        elif locator_type == "tag":
+            return By.TAG_NAME
+        elif locator_type == "partial_link":
+            return By.PARTIAL_LINK_TEXT
+        else:
+            self.log.info("Locator type " + locatorType + " not correct/supported")
+            return False
 
     def setup_method(self, method):
         """테스트 실행 전 환경 설정"""
