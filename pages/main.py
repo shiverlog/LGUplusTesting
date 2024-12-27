@@ -61,6 +61,3 @@ class TestCase03(Base):
         except Exception as e:
             eh.exception_handler(self.driver, e, "기기 추천 영역 테스트 실패")
             raise
-
-    
-

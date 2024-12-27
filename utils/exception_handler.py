@@ -9,7 +9,7 @@ def exception_handler(driver, e, message="오류 발생"):
     custom_logger.error(traceback.format_exc())
     
     if isinstance(e, TimeoutException):
-        custom_logger.info("타임아웃 발생. 페이지를 새로고침합니다.")
+        custom_logger.info("타임아웃 발생했습니다.")
         # driver.refresh()
     elif isinstance(e, NoSuchElementException):
         custom_logger.warning("요소를 찾을 수 없습니다.")

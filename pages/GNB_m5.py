@@ -57,74 +57,25 @@ class TestCase12(Base):
     def execute(self):
         """특수문자 검색 테스트"""
         try:
-            # 검색창 클리어 버튼 클릭
-            search_input = find_element(self.driver, self.by_type, self.locators['search_input'], f"검색어 입력창")
-            release(self.driver, search_input, f"검색어 입력창")
-
-            clickable_link_click(self.driver, self.by_type, self.locators['clear_button'], f"검색어 클리어")
-
-            # 검색어 입력창, 검색 버튼 확인
-            clear_button = find_element(self.driver, self.by_type, self.locators['clear_button'], f"검색어 클리어 버튼")
-            search_input = find_element(self.driver, self.by_type, self.locators['search_input'], f"검색어 입력창")
-            search_button = find_element(self.driver, self.by_type, self.locators['search_button'], f"검색 버튼")
-            time.sleep(5)
-            clear_button.click()
-            custom_logger.info("검색어 클리어 버튼 클릭")
             # 검색창 클릭
-            clickable_link_click(self.driver, self.by_type, self.locators['search_input'], f"검색어 입력창")
+            move_to_element(self.driver, self.by_type, self.locators['search_input'], f"검색어 입력창")
 
-            # 특수문자 입력 및 검색
-            input_special_text = enter_text(self.driver, self.by_type, self.locators['search_input'], self.special_characters, f"검색어 입력창")
+            # 임시 함수 사용해서 해결
+            click_element(self.driver, self.by_type, self.locators['clear_button'], f"검색 클리어 버튼")
+            click_element(self.driver, self.by_type, self.locators['search_input'], f"검색 입력창")
+            push_special_characters = self.special_characters
+            enter_text(self.driver, self.by_type, self.locators['search_input'], push_special_characters, f"검색어 입력창")
+            click_element(self.driver, self.by_type, self.locators['search_button'], f"검색 입력 버튼")
 
-            # 검색 버튼 클릭
-            clickable_link_click(self.driver, self.by_type, self.locators['search_button'], f"검색 버튼")
-            
             # 검색 결과 확인
             input_value = get_text(self.driver, self.by_type, self.locators['r_search_input'], f"인풋 안 텍스트")
             search_result_text = get_text(self.driver, self.by_type, self.locators['search_result_text'], f"검색 결과 텍스트")
-            compare_values(input_special_text, input_value, search_result_text, f"검색어 입력값")
+            compare_values(push_special_characters, input_value, search_result_text, f"검색어 입력값")
 
             # 검색 결과가 없는 경우 메시지 확인
             find_element(self.driver, self.by_type, self.locators['no_result_message'], "검색 결과 메시지")
             get_text(self.driver, self.by_type, self.locators['no_result_message'], "검색 결과 메시지")
-            clear_button = find_element(self.driver, (By.CSS_SELECTOR, self.locators['clear_button']))
-
-
-#             # 특수문자 입력 및 검색
-#             move_to_element(self.driver, search_input)
-#             click(self.driver, search_input)
-#             send_keys_to_element(self.driver, search_input, self.special_characters)
-#             time.sleep(5)
-#             click(self.driver, search_button)
-#             time.sleep(5)
-#             # # ActionChains(self.driver).move_to_element(search_input).click().perform()
-#             # search_input.send_keys(self.special_characters)
-#             # # search_input.send_keys(Keys.ENTER)
-#             # time.sleep(5)
-#             # click(self.driver, search_button)
-
-
-#             # 검색 결과 확인
-#             input_value = self.driver.find_element(By.CSS_SELECTOR, self.locators['search_input']).get_attribute('value')
-#             faq_url = self.driver.current_url
             
-#             if input_value == self.special_characters:
-#                 self.logger.info(f"검색어 '{self.special_characters}'이(가) 입력되었습니다. URL: {faq_url}")
-#             else:
-#                 self.logger.warning(f"검색어 입력 실패")
-
-#             try:
-#                 no_data_element = self.driver.find_element(By.CSS_SELECTOR, self.locators['no_result_message'])
-#                 if no_data_element.text == "검색 결과가 존재하지 않습니다.":
-#                     self.logger.info("'검색 결과가 존재하지 않습니다.' 메시지가 확인되었습니다.")
-#                 else:
-#                     self.logger.info(f"검색 결과: {no_data_element.text}")
-#             except NoSuchElementException:
-#                 self.logger.info("'검색 결과가 존재하지 않습니다.' 메시지를 찾을 수 없습니다.")
-
-#         except Exception as e:
-#             eh.exception_handler(self.driver, e, "특수문자 검색 테스트 실패")
-#             raise
         except Exception as e:
             eh.exception_handler(self.driver, e, "특수문자 검색 테스트 실패")
             raise

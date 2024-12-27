@@ -2,8 +2,8 @@ from base.base import Base
 from pages.login import TestCase01
 from pages.main import TestCase02, TestCase03
 from pages.GNB_m1 import TestCase04, TestCase05, TestCase06
-# from pages.GNB_m3 import TestCase07, TestCase08
-# from pages.GNB_m4 import TestCase09, TestCase10
+from pages.GNB_m3 import TestCase07, TestCase08
+from pages.GNB_m4 import TestCase09, TestCase10
 from pages.GNB_m5 import TestCase11, TestCase12
 import time
 
@@ -25,13 +25,14 @@ class TestExecutor(Base):
 
             # TestCase05(self.driver, self.logger),
             # TestCase06(self.driver, self.logger),
+            # 
             # TestCase07(self.driver, self.logger),
-            # TestCase08(self.driver, self.logger),
+            TestCase08(self.driver, self.logger),
+            
             # TestCase09(self.driver, self.logger),
             # TestCase10(self.driver, self.logger),
-
-            TestCase11(self.driver, self.logger),
-            TestCase12(self.driver, self.logger)
+            # TestCase11(self.driver, self.logger),
+            # TestCase12(self.driver, self.logger)
         ]
 
     def run_tests(self):

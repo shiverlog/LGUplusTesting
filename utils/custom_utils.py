@@ -7,6 +7,7 @@ from utils.custom_logger import custom_logger
 from selenium.webdriver.remote.webelement import WebElement
 from utils import exception_handler as eh
 from config.config import EXPLICIT_WAIT, EXPLICIT_WAIT
+from selenium.common.exceptions import StaleElementReferenceException
 import random, time
 
 
@@ -38,10 +39,10 @@ def find_element(driver, by, locator, text=""):
         element = WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.presence_of_element_located((by, locator))  # by와 locator를 튜플로 묶어서 전달
         )
-        custom_logger.info(f"{text} {locator}(을)를 찾았습니다.")  # by 정보 추가
+        custom_logger.info(f"{text} {by}: {locator}(을)를 찾았습니다.")  # by 정보 추가
         return element
     except Exception as e:
-        eh.exception_handler(driver, e, f"{text} {locator}(을)를 찾지못했습니다.")  # by 정보 추가
+        eh.exception_handler(driver, e, f"{text} {by}: {locator}(을)를 찾지못했습니다.")  # by 정보 추가
         return None
 
 
@@ -71,13 +72,13 @@ def find_visible_element(driver, by, locator, text=""):
         )
         # 요소가 화면에 보이지 않으면 스크롤하여 포커싱
         if not element.is_displayed():
-            move_to_element(driver, by, locator, text)
-            custom_logger.info(f"{text} {locator}(이)가 화면에 보이지 않아 스크롤하여 포커싱했습니다.")
+            move_to_element(driver, locator, text)
+            custom_logger.info(f"{text}{locator}(이)가 화면에 보이지 않아 스크롤하여 포커싱했습니다.")
 
-        custom_logger.info(f"{text} {locator}(이)가 화면에 보입니다.")
+        custom_logger.info(f"{text}{locator}(이)가 화면에 보입니다.")
         return element
     except Exception as e:
-        eh.exception_handler(driver, e, f"{text} {locator}(이)가 화면에 보이지 않습니다.")
+        eh.exception_handler(driver, e, f"{text}{locator}(이)가 화면에 보이지 않습니다.")
         return None
 
 
@@ -85,7 +86,7 @@ def find_visible_element(driver, by, locator, text=""):
 def find_clickable_element(driver, by, locator, text=""):
     """클릭 가능한 요소를 찾는 단일함수"""
     try:
-        element = WebDriverWait(driver, 60).until(
+        element = WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.element_to_be_clickable((by, locator))
         )
         custom_logger.info(f"{text} {locator}(이)가 클릭가능한 상태입니다. ")
@@ -125,50 +126,76 @@ def clickable_link_click(driver, by, locator, text=""):
         if element:
             element_info = get_element_info(element)
             actions = ActionChains(driver)
-            actions.click(element).perform()
+            actions.move_to_element(element).click().perform() 
             custom_logger.info(f"{text} {element_info}(을)를 클릭하였습니다.")
     except Exception as e:
         custom_logger.error(f"{text} {element_info}(을)를 클릭 실패하였습니다. {e}")
         raise e
 
 
-# page_redirect_confirm
 def page_redirect_confirm(driver, by, locator, text=""):
     """
     1. find_element 함수로 요소찾기 또는 element 직접 전달
-    2. 요소에 data-gtm-click-url 속성 값이 있을 경우, 아닌 경우 분기
+    2. 요소에 href, src, data-gtm-click-url 속성 값이 있을 경우, 아닌 경우 분기
     3. 특정 요소 클릭 후 리다이렉션 확인
+    4. 리다이렉션 후 요소가 사라지는 경우 StaleElementReferenceException 처리
     """
     try:
-        # expected_url = get_attribute(driver, by, locator, "data-gtm-click-url", text)
+        # element 직접 전달
         if isinstance(locator, WebElement):
             element = locator
-        expected_url = element.get_attribute("data-gtm-click-url")
-
-        if expected_url:
-            # data-gtm-click-url 속성 값이 있을 경우 로그 출력
-            custom_logger.info(f"클릭한 요소 안의 URL: {expected_url}")
-
-            # expected_url이 있을 경우 URL 변경이 일어날 때까지 대기
-            WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_to_be(expected_url))
-
-            # 현재 URL 가져오기
-            current_url = driver.current_url
-
-            # expected_url이 있을 경우 URL 비교
-            if current_url == expected_url:
-                custom_logger.info(f"{text} 페이지 리다이렉션 성공하였습니다. URL: {current_url}")
-                return True
-            else:
-                custom_logger.error(f"{text} 페이지 리다이렉션 실패하였습니다. 예상 URL({expected_url})와 현재 URL({current_url}) 불일치 발생")
-                return False
+        # by, locator 전달
         else:
-            # 클릭한 요소의 expected_url이 없을 경우 URL 변경이 일어날 때까지 대기
-            WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+            element = find_element(driver, by, locator, text)
 
-            current_url = driver.current_url
-            custom_logger.info(f"{text} 페이지 리다이렉션 확인 URL: {current_url}")
-            return True
+        if element:
+            expected_url = None
+            try:
+                # data-gtm-click-url, src, href 순으로 속성 존재 여부 확인
+                if "data-gtm-click-url" in element.get_property("attributes"):
+                    expected_url = element.get_attribute("data-gtm-click-url")
+                elif "src" in element.get_property("attributes"):
+                    expected_url = element.get_attribute("src")
+                elif "href" in element.get_property("attributes"):
+                    expected_url = element.get_attribute("href")
+
+            except StaleElementReferenceException:
+                custom_logger.warning(f"{text} 요소가 리다이렉션 후 사라졌습니다. URL 변경 확인을 계속합니다.")
+
+                # 현재 URL 가져오기
+                current_url = driver.current_url
+                custom_logger.info(f"{text} 페이지 리다이렉션 확인 URL: {current_url}")
+                return True  # 리다이렉션 확인 후 함수 종료
+
+            if expected_url:
+                # 예상 URL이 있을 경우 로그 출력
+                custom_logger.info(f"클릭한 요소 안의 URL: {expected_url}")
+
+                try:
+                    # expected_url이 있을 경우 URL 변경이 일어날 때까지 대기
+                    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_to_be(expected_url))
+
+                    # 현재 URL 가져오기
+                    current_url = driver.current_url
+
+                    # URL 비교
+                    if current_url == expected_url:
+                        custom_logger.info(f"{text} 페이지 리다이렉션 성공하였습니다. URL: {current_url}")
+                        return True
+                    else:
+                        custom_logger.warning(f"{text} 페이지 리다이렉션 실패하였습니다. 예상 URL({expected_url})와 현재 URL({current_url}) 불일치 발생")
+                        return False
+
+                except StaleElementReferenceException:
+                    # StaleElementReferenceException 발생 시 예외 처리
+                    custom_logger.warning(f"{text} 요소가 리다이렉션 후 사라졌습니다. URL 변경 확인을 계속합니다.")
+
+        # 클릭한 요소의 expected_url이 없거나 element를 찾지 못한 경우 URL 변경이 일어날 때까지 대기
+        WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+
+        current_url = driver.current_url
+        custom_logger.info(f"{text} 페이지 리다이렉션 확인 URL: {current_url}")
+        return True
 
     except Exception as e:
         eh.exception_handler(driver, e, "리다이렉션 시간초과")
@@ -219,18 +246,20 @@ def find_visible_sections(driver, by, locators, text=""):
             find_visible_element(driver, by, value, f"{text} {key} 영역")
 
 
-# show_elements_text
 def show_elements_text(driver, by, locator, attribute, text=""):
-    """요소안의 정보를 텍스트로 출력하는 함수"""
+    """요소들의 속성 값 또는 텍스트를 출력하는 함수"""
     try:
-        elements = find_elements(driver, by, locator, text)
+        elements = WebDriverWait(driver, EXPLICIT_WAIT).until(
+            EC.presence_of_all_elements_located((by, locator))
+        )
+        custom_logger.info(f"{text} {locator}들을 {len(elements)}개 찾았습니다.")
+
         for index, element in enumerate(elements):
             if attribute:
                 print_info = element.get_attribute(attribute)
                 custom_logger.info(f"{text} {index + 1}번째 {attribute}: {print_info}")
             else:
-                print_info = element.text.strip()
-                custom_logger.info(f"{text} {index + 1}번째 {attribute}: {print_info}")
+                custom_logger.info(f"{text} {index + 1}번째 {attribute}: {element.text.strip()}")
 
     except Exception as e:
         eh.exception_handler(driver, e, f"{text} {locator}들을 찾지못했습니다.")
@@ -311,7 +340,7 @@ def click(driver, element, text=""):
         # 요소가 클릭 가능할 때까지 기다린 후 클릭
         WebDriverWait(driver, EXPLICIT_WAIT).until(
             EC.element_to_be_clickable(element)
-        ).click()
+            ).click()
 
         custom_logger.info(f"{text}(을)를 클릭하였습니다.")
         return True
@@ -360,22 +389,27 @@ def get_text(driver, by, locator, text=""):
 
 
 # check_active
-def check_active(driver, locator, text=""):
-    """활성화 상태(active 클래스 포함)인지 확인하는 함수"""
+def check_active(driver, by, locator, condition, text=""):
+    """활성화 상태(active, show, collapse 클래스 등)인지 확인하는 함수"""
     try:
-        element = find_visible_element(driver, locator, text)  # 요소 찾기
+        element = find_visible_element(driver, by, locator, text)
         if element:
-            move_to_element(driver, element, text)
+            move_to_element(driver, element, text)  # by, locator 제거
             class_name = element.get_attribute("class")
-            if "active" in class_name:
-                custom_logger.info(f"{text} 섹션이 활성화 상태입니다.")
-                return True
-        else:
-            return False
-    except Exception as e:
-        eh.exception_handler(driver, e, f"{text} 섹션 활성화 상태 확인 실패")
-        return False  
 
+            # 조건에 맞는 클래스가 포함되어 있는지 확인
+            if condition in class_name:
+                custom_logger.info(f"{text}(이)가 활성화 상태입니다.")
+                return True
+            else:
+                return False
+        else:
+            return False  # 요소를 찾지 못한 경우
+
+    except Exception as e:
+        eh.exception_handler(driver, e, f"{text}(이)가 활성화 상태인지 확인하지 못했습니다.")
+        return False
+    
 
 # compare_values
 def compare_values(*values):
@@ -406,17 +440,6 @@ def compare_values(*values):
         custom_logger.info(f"{text} 일부 또는 모든 데이터가 불일치합니다.")
     
     return all_match
-
-
-# def compare_values(before_value, after_value, text=""):
-#     """두 값을 비교하여 일치 여부를 확인하고 결과를 로그로 출력하는 함수"""
-
-#     if before_value in after_value:  # 부분 일치 확인
-#         custom_logger.info(f"{text} {after_value}(이)가 일치합니다.")
-#         return True
-#     else:
-#         custom_logger.info(f"{text}(이)가 이전 값: {before_value}, 이후 값: {after_value}으로 일치하지 않습니다.")
-#         return False
 
 
 # navigate_slides
@@ -460,7 +483,7 @@ def navigate_slides(driver, by_type, locators, text=""):
         time.sleep(2)
 
 
-
+# release
 def release(driver, element, text=""):
     """마우스 버튼 놓기"""
     try:
@@ -472,10 +495,159 @@ def release(driver, element, text=""):
         custom_logger.error(f"{text} 요소에서 마우스 버튼 놓기 실패: {str(e)}")
 
 
+# select_random_option
+def select_random_option(driver, by, area_txt_locator, dropdowns_locator, text=""):
+    """
+    dropbox 요소에서 랜덤하게 옵션 선택
+    """
+    try:
+        # 영역명/ 드롭박스 요소들 찾기
+        area_txts = find_elements(driver, by, area_txt_locator, f"{text} 영역명")
+        dropdowns = find_elements(driver, by, dropdowns_locator, f"{text} 드롭박스")
+        for area_txt, dropdown in zip(area_txts, dropdowns):
+            try:
+                # 드롭박스 열기 <- 나중에 공통변수로 빼기
+                select_button = dropdown.find_element(By.CSS_SELECTOR, "a.select-btn")
+                select_button.click()
+                time.sleep(1)
+
+                # 옵션 목록 찾기 <- 나중에 공통변수로 빼기
+                options = dropdown.find_elements(By.CSS_SELECTOR, "ul li a")
+
+                # 랜덤 옵션 선택
+                random_option = random.choice(options)
+                random_option_text = random_option.text
+                random_option.click()
+
+                custom_logger.info(f"{text} {area_txt.text}: {random_option_text} 드롭박스 옵션 선택을 하였습니다.")
+                time.sleep(2)
+
+            except Exception as e:
+                eh.exception_handler(driver, e, f"{text} {area_txt.text} 드롭박스 옵션 선택을 실패하였습니다.")
+
+    except Exception as e:
+        eh.exception_handler(driver, e, f"{text} 드롭박스 요소 찾기에 실패하였습니다.")
 
 
+# total price calculation
+def total_price_calculation(driver, by, locator, text=""):
+    """총 금액 요소에서 할인 금액을 추출하고 합계를 계산하는 함수"""
+    total_sum = 0
+    try:
+        for total_price_txt in find_elements(driver, by, locator, text):
+            for discount_span in total_price_txt.find_elements(By.CSS_SELECTOR, "span.discount-price"):
+                discount_text = ''.join(filter(str.isdigit, discount_span.text))
+                try:
+                    total_sum += int(discount_text)  # int로 변환
+                except ValueError:
+                    custom_logger.warning(f"할인 금액을 숫자로 변환할 수 없습니다: {discount_text}")
+        custom_logger.info(f"{text} 할인 금액 합계: {total_sum}")
+        return total_sum
+    except Exception as e:
+        eh.exception_handler(driver, e, f"{text} 요소에서 할인 금액 추출 실패")
+        return 0
 
 
+# switch_to_new_window
+def switch_to_new_window(driver):
+  """새로운 윈도우로 전환하는 함수"""
+  try:
+    # 현재 윈도우 핸들 저장
+    current_window = driver.current_window_handle
+
+    # 모든 윈도우 핸들 가져오기
+    all_windows = driver.window_handles
+
+    # 새로운 윈도우 핸들 찾기
+    new_window = next((window for window in all_windows if window != current_window), None)
+    if new_window is None:
+      raise ValueError("새로운 윈도우를 찾을 수 없습니다.")
+
+    # 새로운 윈도우로 전환
+    driver.switch_to.window(new_window)
+    custom_logger.info("새로운 윈도우로 전환했습니다.")
+
+  except Exception as e:
+    eh.exception_handler(driver, e, "윈도우 전환 실패")
+
+
+# 임시 한번에 처리하도록 변경하기
+def click_element(driver, by, locator, text=""):
+    """
+    요소를 클릭하는 함수(임시)
+    """
+    try:
+        element = driver.find_element(by, locator)
+        # ActionChains로 마우스 이동 후 클릭
+        actions = ActionChains(driver)
+        actions.move_to_element(element).click().perform()
+
+        # 클릭 후 로그
+        custom_logger.info(f"{text} {locator} 클릭 성공")
+
+    except Exception as e:
+        custom_logger.error(f"{text} {locator} 클릭 실패. 오류: {e}")
+        raise e
+    
+
+# 헤더 정보 출력
+def print_sidebar_menu_info(driver, cards_locator, text=""):
+    """
+    사이드바 메뉴 정보를 출력하는 함수
+
+    Args:
+        driver: WebDriver 객체
+        cards_locator: 카드 요소를 찾기 위한 locator
+        text: 로그 메시지에 추가할 텍스트
+    """
+    try:
+        cards = driver.find_elements(By.CSS_SELECTOR, cards_locator)
+
+        tab_items = {}
+        for card in cards:
+            header_link = card.find_element(By.CSS_SELECTOR, "header.card-header a")
+            tab_name = header_link.get_attribute("data-gtm-click-text")
+            custom_logger.info(f"{text} 사이드바 메뉴: {tab_name}")  # 헤더 정보 출력
+            tab_items[tab_name] = []
+
+            tabpanels = card.find_elements(By.CSS_SELECTOR, 'div[role="tabpanel"]')
+            if tabpanels:
+                for tabpanel in tabpanels:
+                    list_items = tabpanel.find_elements(By.CSS_SELECTOR, 'div.card-body ul li a')
+                    for item in list_items:
+                        item_text = item.get_attribute('innerText').strip()
+                        tab_items[tab_name].append(item_text)
+                        custom_logger.info(f"{text} {tab_name} | {item_text}")  # 사이드바 내 세부 메뉴 정보 출력
+            else:
+                custom_logger.info(f"{text} 세부메뉴 없음")
+
+        for tab_name, items in tab_items.items():
+            custom_logger.info(f"{text} {tab_name} {items}")
+
+    except Exception as e:
+        eh.exception_handler(driver, e, f"{text} 사이드바 메뉴 정보 출력 실패")            
+
+
+# click_specific_side_menu
+def click_specific_side_menu(driver, by, locator, target_text):
+    """사이드 메뉴에서 특정 텍스트를 가진 메뉴를 클릭하는 함수"""
+    try:
+        # 사이드 메뉴 제목 요소들 찾기
+        side_title_menus = find_elements(driver, by, locator, "사이드 메뉴 제목")  # 네 번째 인자 수정
+
+        # 각 메뉴의 텍스트 확인 후 클릭
+        for menu in side_title_menus:
+            menu_text = menu.get_attribute("data-gtm-click-text")
+            if menu_text == target_text:
+                menu.click()
+                custom_logger.info(f"사이드 메뉴 '{target_text}' 클릭")
+                return
+
+        # 찾지 못한 경우
+        custom_logger.warning(f"사이드 메뉴 '{target_text}'를 찾을 수 없습니다.")
+
+    except Exception as e:
+        eh.exception_handler(driver, e, "사이드 메뉴 클릭 실패")
 
 # def click_and_hold(driver, element):
 #     """요소를 클릭하고 누른 상태를 유지하는 함수"""

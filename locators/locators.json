@@ -60,18 +60,19 @@
         "bottom_menu_section": "[section-group-id='PcSubMainMobileBottomMenuSection']",
         "mobile_review_section": "[section-group-id='PcSubMainMobileReviewSection']",
         "customer_service_section": "[section-group-id='PcSubMainMobileCustomerServiceSection']",
-        "select_area_txt": ".simul-dropbox-wrap .select-area-txt",
-        "select_button": ".select-btn",
-        "options": "li a",
-        "area_txt": "div.select-area-txt",
-        "results": ".result-txt",
-        "discount_spans": ".price-txt span",
+        
+        "combine_txt": "div.simul-dropbox-wrap div.select-area-txt",
+        "combine_dropbox": "div.simul-wrap div[role='selectbox']",
+        "results": "div.result-txt",
+        "discount_spans": "div.price-txt span",
+
         "consultation_button":"div.total-result-wrap div button.c-btn-solid-1",
         "consultation_modal":"div.modal-dialog > div.modal-content",
         "modal_close_button":"div.modal-header > button",
         "calcutaor_value": "div.calculatorBox dl.result span",
-        "phone_device_tabs": "div.c-tabmenu-tab.c-tab-default ul li",
-        "phone_device_list": "div.c-tabcontent-box div.slick-list div.slick-track div.slick-slide",
+        "mobile_device_tabs": "div.c-tabmenu-tab.c-tab-default ul li a",
+        "mobile_device_list": "div.c-tabcontent-box div.slick-list div.slick-track div.slick-slide",
+        
         "order_button": "button[data-gtm-click-url]",
         "device_detail_name": "h2.title-main",
         "popup_close_button": "button.c-btn-close",
@@ -100,7 +101,7 @@
         "main_page_button": "button.c-btn-outline-2"
     },
     "gnb_m3": {
-        "mypage_menu": "header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3",
+        "mypage_menu": "header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a",
         "mypage_sidenav": "aside.p-main-sub-my-lnb",
         "billing_info_section": "div.c-content-wrap > div:nth-child(1)",
         "alert_section": "div.c-content-wrap > div:nth-child(2)",
@@ -109,18 +110,18 @@
         "billing/payment_section": "div.c-content-wrap > div:nth-child(1)",
         "billing_detail_section": "div.c-content-wrap > div:nth-child(2)",
         "payment_detail_section": "div.c-content-wrap > div:nth-child(3)",
-        "billing_info": "ul.my-payment-section",
+        
         "usage_period": "ul.my-payment-section li.text-line-01",
         "usage_month": "ul.my-payment-section li.text-line-02",
         "billing_amount": "ul.my-payment-section li.right-item-txt",
+
         "billing_menu": "div.card a[data-gtm-click-text='요금/납부']",
         "billing_table": "div.row.c-table.payment-table",
         "billing_rows": "div.row.c-table.payment-table tbody tr",
         "first_billing_row": "div.row.c-table.payment-table tbody tr:first-child",
         "usage_details_menu": "div[role='tabpanel'] ul.p-main-sub-my-lnb-inner-ul li:nth-child(4) a",
         "tab_list": "div.swiper-container.c-tab-slidemenu ul li",
-        "side_menu": "div.card",
-        "side_menu_header": "header.card-header a",
+        "side_title_menu": "div.card header.card-header a",
         "card_tabpanels": "div[role='tabpanel']",
         "card_list_items": "div.card-body ul li a",
         "usage_menu": "aside > ul > div:nth-child(2) > header > a",
@@ -134,7 +135,7 @@
         "tab_text": "a"
     },
     "gnb_m4": {
-        "benefit_menu": "header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m4",
+        "benefit_menu": "header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m4 a",
         "kn_section": "[section-group-id='PcSubMainBenefitKVSection']",
         "benefit_theme_section": "[section-group-id='PcSubMainBenefitThemeSection']",
         "benefit_affiliate_section": "[section-group-id='PcSubMainBenefitAffiliateSection']",
