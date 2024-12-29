@@ -1,0 +1,1834 @@
+2024-12-27 17:46:45 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-27 17:46:45 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-27 17:46:45 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-27 17:46:46 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-27 17:46:46 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-27 17:46:46 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-27 17:46:47 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-27 17:46:47 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-27 17:46:47 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-27 17:46:47 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-27 17:46:47 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-27 17:46:47 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-27 17:46:47 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-27 17:46:48 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-27 17:46:48 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-27 17:46:48 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-27 17:46:48 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-27 17:46:52 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-27 17:46:52 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-27 17:46:54 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-27 17:46:54 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-27 17:46:54 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-27 17:46:54 - Logger - INFO: 사이드 메뉴 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 사이드바 메뉴: 요금/납부
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 세부메뉴 없음
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 사이드바 메뉴: 가입/사용 현황
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 가입/사용 현황 | 가입 정보 조회/변경
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 가입/사용 현황 | 요금제 조회/변경
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 가입/사용 현황 | 부가서비스 조회/변경/해지
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 가입/사용 현황 | 사용내역 조회
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 가입/사용 현황 | 해외로밍 조회
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 가입/사용 현황 | 휴대폰 결제
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 가입/사용 현황 | 일시정지/해제
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 가입/사용 현황 | 서비스 해지
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 가입/사용 현황 | 회원 정보
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 사이드바 메뉴: 데이터 선물/충전
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 데이터 선물/충전 | 참 쉬운 가족 데이터
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 주고 받기
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 2GB 쿠폰
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 데이터 선물/충전 | 가족사랑 데이터
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 데이터 선물/충전 | 링(홀) 요금제
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 사이드바 메뉴: 마이샵
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 마이샵 | 사전예약내역
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 마이샵 | 가입 신청 내역
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 마이샵 | 액세서리 주문 내역
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 마이샵 | 최근 본 상품
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 마이샵 | 나의 문의/리뷰
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 마이샵 | 입고알림
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 사이드바 메뉴: ez포인트
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 안내
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 조회
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 사용
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 요금/납부 []
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 가입/사용 현황 ['가입 정보 조회/변경', '요금제 조회/변경', '부가서비스 조회/변경/해지', '사용내역 조회', '해외로밍 조회', '휴대폰 결제', '일시정지/해제', '서비스 해지', '회원 정보']
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 데이터 선물/충전 ['참 쉬운 가족 데이터', '데이터 주고 받기', '데이터 2GB 쿠폰', '가족사랑 데이터', '링(홀) 요금제']
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 마이샵 ['사전예약내역', '가입 신청 내역', '액세서리 주문 내역', '최근 본 상품', '나의 문의/리뷰', '입고알림']
+2024-12-27 17:46:54 - Logger - INFO: 마이페이지 ez포인트 ['ez포인트 안내', 'ez포인트 조회', 'ez포인트 사용']
+2024-12-27 17:46:54 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-27 17:54:29 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-27 17:54:29 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-27 17:54:29 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-27 17:54:30 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-27 17:54:30 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-27 17:54:30 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-27 17:54:31 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-27 17:54:31 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-27 17:54:31 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-27 17:54:31 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-27 17:54:31 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-27 17:54:32 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-27 17:54:32 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-27 17:54:32 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-27 17:54:32 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-27 17:54:32 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-27 17:54:32 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-27 17:54:37 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-27 17:54:37 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-27 17:54:38 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-27 17:54:38 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-27 17:54:38 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-27 17:54:38 - Logger - INFO: 마이페이지 사이드바 메뉴: 요금/납부
+2024-12-27 17:54:38 - Logger - INFO: 마이페이지 세부메뉴 없음
+2024-12-27 17:54:38 - Logger - INFO: 마이페이지 사이드바 메뉴: 가입/사용 현황
+2024-12-27 17:54:38 - Logger - INFO: 마이페이지 가입/사용 현황 | 가입 정보 조회/변경
+2024-12-27 17:54:38 - Logger - INFO: 마이페이지 가입/사용 현황 | 요금제 조회/변경
+2024-12-27 17:54:38 - Logger - INFO: 마이페이지 가입/사용 현황 | 부가서비스 조회/변경/해지
+2024-12-27 17:54:38 - Logger - INFO: 마이페이지 가입/사용 현황 | 사용내역 조회
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 가입/사용 현황 | 해외로밍 조회
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 가입/사용 현황 | 휴대폰 결제
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 가입/사용 현황 | 일시정지/해제
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 가입/사용 현황 | 서비스 해지
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 가입/사용 현황 | 회원 정보
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 사이드바 메뉴: 데이터 선물/충전
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 데이터 선물/충전 | 참 쉬운 가족 데이터
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 주고 받기
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 2GB 쿠폰
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 데이터 선물/충전 | 가족사랑 데이터
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 데이터 선물/충전 | 링(홀) 요금제
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 사이드바 메뉴: 마이샵
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 마이샵 | 사전예약내역
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 마이샵 | 가입 신청 내역
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 마이샵 | 액세서리 주문 내역
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 마이샵 | 최근 본 상품
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 마이샵 | 나의 문의/리뷰
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 마이샵 | 입고알림
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 사이드바 메뉴: ez포인트
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 안내
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 조회
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 사용
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 요금/납부 []
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 가입/사용 현황 ['가입 정보 조회/변경', '요금제 조회/변경', '부가서비스 조회/변경/해지', '사용내역 조회', '해외로밍 조회', '휴대폰 결제', '일시정지/해제', '서비스 해지', '회원 정보']
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 데이터 선물/충전 ['참 쉬운 가족 데이터', '데이터 주고 받기', '데이터 2GB 쿠폰', '가족사랑 데이터', '링(홀) 요금제']
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 마이샵 ['사전예약내역', '가입 신청 내역', '액세서리 주문 내역', '최근 본 상품', '나의 문의/리뷰', '입고알림']
+2024-12-27 17:54:39 - Logger - INFO: 마이페이지 ez포인트 ['ez포인트 안내', 'ez포인트 조회', 'ez포인트 사용']
+2024-12-27 17:54:39 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-27 17:54:39 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-27 17:54:39 - Logger - INFO: 가입/사용 현황div.card header.card-header a(이)가 화면에 보입니다.
+2024-12-27 17:54:39 - Logger - ERROR:  <selenium.webdriver.remote.webelement.WebElement (session="ea117c77d45f5091220aaf5fb0be0544", element="f.41005F1A7788BCCD1D6C53C2BC50B703.d.35028C30539300DCE59C16DEF0D1D1C4.e.5161")>: 가입/사용 현황(을)를 찾지못했습니다.: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FFA2FB05+28789]
+	(No symbol) [0x00007FF6FF9986E0]
+	(No symbol) [0x00007FF6FF83592A]
+	(No symbol) [0x00007FF6FF8890C5]
+	(No symbol) [0x00007FF6FF8895FC]
+	(No symbol) [0x00007FF6FF8D28A7]
+	(No symbol) [0x00007FF6FF8AF47F]
+	(No symbol) [0x00007FF6FF8CF654]
+	(No symbol) [0x00007FF6FF8AF1E3]
+	(No symbol) [0x00007FF6FF87A938]
+	(No symbol) [0x00007FF6FF87BAA1]
+	GetHandleVerifier [0x00007FF6FFD6933D+3410093]
+	GetHandleVerifier [0x00007FF6FFD7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6FFD72A73+3448803]
+	GetHandleVerifier [0x00007FF6FFAF7BBB+848171]
+	(No symbol) [0x00007FF6FF9A3C3F]
+	(No symbol) [0x00007FF6FF99F6E4]
+	(No symbol) [0x00007FF6FF99F87D]
+	(No symbol) [0x00007FF6FF98ED49]
+	BaseThreadInitThunk [0x00007FFAD4387374+20]
+	RtlUserThreadStart [0x00007FFAD569CC91+33]
+
+2024-12-27 17:54:39 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 39, in find_element
+    element = WebDriverWait(driver, EXPLICIT_WAIT).until(
+        EC.presence_of_element_located((by, locator))  # by와 locator를 튜플로 묶어서 전달
+    )
+  File "D:\test-rpa\myenv\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "D:\test-rpa\myenv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\test-rpa\myenv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\test-rpa\myenv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\test-rpa\myenv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FFA2FB05+28789]
+	(No symbol) [0x00007FF6FF9986E0]
+	(No symbol) [0x00007FF6FF83592A]
+	(No symbol) [0x00007FF6FF8890C5]
+	(No symbol) [0x00007FF6FF8895FC]
+	(No symbol) [0x00007FF6FF8D28A7]
+	(No symbol) [0x00007FF6FF8AF47F]
+	(No symbol) [0x00007FF6FF8CF654]
+	(No symbol) [0x00007FF6FF8AF1E3]
+	(No symbol) [0x00007FF6FF87A938]
+	(No symbol) [0x00007FF6FF87BAA1]
+	GetHandleVerifier [0x00007FF6FFD6933D+3410093]
+	GetHandleVerifier [0x00007FF6FFD7E7DD+3497293]
+	GetHandleVerifier [0x00007FF6FFD72A73+3448803]
+	GetHandleVerifier [0x00007FF6FFAF7BBB+848171]
+	(No symbol) [0x00007FF6FF9A3C3F]
+	(No symbol) [0x00007FF6FF99F6E4]
+	(No symbol) [0x00007FF6FF99F87D]
+	(No symbol) [0x00007FF6FF98ED49]
+	BaseThreadInitThunk [0x00007FFAD4387374+20]
+	RtlUserThreadStart [0x00007FFAD569CC91+33]
+
+
+2024-12-27 17:54:39 - Logger - ERROR: 예상치 못한 예외 발생: InvalidArgumentException
+2024-12-27 17:54:39 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_<selenium.webdriver.remote.webelement.WebElement(session="ea117c77d45f5091220aaf5fb0be0544",element="f.41005F1A7788BCCD1D6C53C2BC50B703.d.35028C30539300DCE59C16DEF0D1D1C4.e.5161")>:가입/사용현황(을)를찾지못했습니다._20241227175439.png
+2024-12-27 17:54:39 - Logger - ERROR:  가입/사용 현황를 찾을 수 없어 마우스를 이동하지 못했습니다.
+2024-12-27 17:54:39 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-27 17:59:58 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-27 17:59:58 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-27 17:59:59 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-27 17:59:59 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-27 17:59:59 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-27 17:59:59 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-27 18:00:00 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-27 18:00:00 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-27 18:00:01 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-27 18:00:01 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-27 18:00:01 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-27 18:00:01 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-27 18:00:01 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-27 18:00:01 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-27 18:00:01 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-27 18:00:02 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-27 18:00:02 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-27 18:00:06 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-27 18:00:06 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-27 18:00:07 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-27 18:00:07 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-27 18:00:07 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 사이드바 메뉴: 요금/납부
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 세부메뉴 없음
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 사이드바 메뉴: 가입/사용 현황
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 가입/사용 현황 | 가입 정보 조회/변경
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 가입/사용 현황 | 요금제 조회/변경
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 가입/사용 현황 | 부가서비스 조회/변경/해지
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 가입/사용 현황 | 사용내역 조회
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 가입/사용 현황 | 해외로밍 조회
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 가입/사용 현황 | 휴대폰 결제
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 가입/사용 현황 | 일시정지/해제
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 가입/사용 현황 | 서비스 해지
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 가입/사용 현황 | 회원 정보
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 사이드바 메뉴: 데이터 선물/충전
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 데이터 선물/충전 | 참 쉬운 가족 데이터
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 주고 받기
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 2GB 쿠폰
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 데이터 선물/충전 | 가족사랑 데이터
+2024-12-27 18:00:07 - Logger - INFO: 마이페이지 데이터 선물/충전 | 링(홀) 요금제
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 사이드바 메뉴: 마이샵
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 마이샵 | 사전예약내역
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 마이샵 | 가입 신청 내역
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 마이샵 | 액세서리 주문 내역
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 마이샵 | 최근 본 상품
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 마이샵 | 나의 문의/리뷰
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 마이샵 | 입고알림
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 사이드바 메뉴: ez포인트
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 안내
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 조회
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 사용
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 요금/납부 []
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 가입/사용 현황 ['가입 정보 조회/변경', '요금제 조회/변경', '부가서비스 조회/변경/해지', '사용내역 조회', '해외로밍 조회', '휴대폰 결제', '일시정지/해제', '서비스 해지', '회원 정보']
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 데이터 선물/충전 ['참 쉬운 가족 데이터', '데이터 주고 받기', '데이터 2GB 쿠폰', '가족사랑 데이터', '링(홀) 요금제']
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 마이샵 ['사전예약내역', '가입 신청 내역', '액세서리 주문 내역', '최근 본 상품', '나의 문의/리뷰', '입고알림']
+2024-12-27 18:00:08 - Logger - INFO: 마이페이지 ez포인트 ['ez포인트 안내', 'ez포인트 조회', 'ez포인트 사용']
+2024-12-27 18:00:08 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-27 18:00:08 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-27 18:00:08 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-27 18:00:25 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-27 18:00:25 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-27 18:00:25 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-27 18:00:26 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-27 18:00:26 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-27 18:00:26 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-27 18:00:27 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-27 18:00:27 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-27 18:00:27 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-27 18:00:27 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-27 18:00:27 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-27 18:00:28 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-27 18:00:28 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-27 18:00:28 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-27 18:00:28 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-27 18:00:28 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-27 18:00:28 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-27 18:00:33 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-27 18:00:34 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-27 18:00:35 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-27 18:00:35 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-27 18:00:35 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 사이드바 메뉴: 요금/납부
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 세부메뉴 없음
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 사이드바 메뉴: 가입/사용 현황
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 가입/사용 현황 | 가입 정보 조회/변경
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 가입/사용 현황 | 요금제 조회/변경
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 가입/사용 현황 | 부가서비스 조회/변경/해지
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 가입/사용 현황 | 사용내역 조회
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 가입/사용 현황 | 해외로밍 조회
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 가입/사용 현황 | 휴대폰 결제
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 가입/사용 현황 | 일시정지/해제
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 가입/사용 현황 | 서비스 해지
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 가입/사용 현황 | 회원 정보
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 사이드바 메뉴: 데이터 선물/충전
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 데이터 선물/충전 | 참 쉬운 가족 데이터
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 주고 받기
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 2GB 쿠폰
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 데이터 선물/충전 | 가족사랑 데이터
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 데이터 선물/충전 | 링(홀) 요금제
+2024-12-27 18:00:35 - Logger - INFO: 마이페이지 사이드바 메뉴: 마이샵
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 마이샵 | 사전예약내역
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 마이샵 | 가입 신청 내역
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 마이샵 | 액세서리 주문 내역
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 마이샵 | 최근 본 상품
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 마이샵 | 나의 문의/리뷰
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 마이샵 | 입고알림
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 사이드바 메뉴: ez포인트
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 안내
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 조회
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 사용
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 요금/납부 []
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 가입/사용 현황 ['가입 정보 조회/변경', '요금제 조회/변경', '부가서비스 조회/변경/해지', '사용내역 조회', '해외로밍 조회', '휴대폰 결제', '일시정지/해제', '서비스 해지', '회원 정보']
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 데이터 선물/충전 ['참 쉬운 가족 데이터', '데이터 주고 받기', '데이터 2GB 쿠폰', '가족사랑 데이터', '링(홀) 요금제']
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 마이샵 ['사전예약내역', '가입 신청 내역', '액세서리 주문 내역', '최근 본 상품', '나의 문의/리뷰', '입고알림']
+2024-12-27 18:00:36 - Logger - INFO: 마이페이지 ez포인트 ['ez포인트 안내', 'ez포인트 조회', 'ez포인트 사용']
+2024-12-27 18:00:36 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-27 18:00:36 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-27 18:00:36 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 15:57:15 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase07===================================
+2024-12-28 15:57:15 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 15:57:15 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 15:57:16 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 15:57:16 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 15:57:16 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 15:57:16 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 15:57:16 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 15:57:17 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 15:57:17 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 15:57:17 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 15:57:17 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 15:57:17 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 15:57:17 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 15:57:17 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 15:57:17 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 15:57:17 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 15:57:21 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 15:57:21 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 15:57:22 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 15:57:22 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 15:57:22 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 15:57:42 - Logger - ERROR: 리다이렉션 시간초과: Message: 
+
+2024-12-28 15:57:42 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 15:57:42 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 15:57:42 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_리다이렉션시간초과_20241228155742.png
+2024-12-28 15:57:42 - Logger - ERROR: 청구내역 확인 테스트 실패: Message: 
+
+2024-12-28 15:57:42 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 39, in execute
+    page_redirect_confirm(self.driver, self.by_type, mypage_menu, "마이페이지")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 15:57:42 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 15:57:42 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase07_청구내역확인테스트실패_20241228155742.png
+2024-12-28 15:57:42 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase07 - Message: 
+===================================
+2024-12-28 15:57:42 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 15:57:42 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 15:57:42 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 15:58:03 - Logger - ERROR: 리다이렉션 시간초과: Message: 
+
+2024-12-28 15:58:03 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 15:58:03 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 15:58:03 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_리다이렉션시간초과_20241228155803.png
+2024-12-28 15:58:03 - Logger - ERROR: 월별 사용량 조회 테스트 실패: Message: 
+
+2024-12-28 15:58:03 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 128, in execute
+    page_redirect_confirm(self.driver, self.by_type, mypage_menu, f"마이페이지")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 15:58:03 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 15:58:03 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase08_월별사용량조회테스트실패_20241228155803.png
+2024-12-28 15:58:03 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase08 - Message: 
+===================================
+2024-12-28 15:58:40 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase07===================================
+2024-12-28 15:58:40 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 15:58:40 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 15:58:41 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 15:58:41 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 15:58:41 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 15:58:41 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 15:58:41 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 15:58:42 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 15:58:42 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 15:58:42 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 15:58:42 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 15:58:42 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 15:58:42 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 15:58:42 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 15:58:42 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 15:58:42 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 15:59:02 - Logger - ERROR: 리다이렉션 시간초과: Message: 
+
+2024-12-28 15:59:02 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 15:59:02 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 15:59:02 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_리다이렉션시간초과_20241228155902.png
+2024-12-28 15:59:02 - Logger - ERROR: 로그인 테스트 실패: Message: 
+
+2024-12-28 15:59:02 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\login.py", line 72, in _perform_login
+    page_redirect_confirm(self.driver, self.by_type, self.locators['login_submit_button'], f"U+ID로그인")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 15:59:02 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 15:59:03 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase01_로그인테스트실패_20241228155902.png
+2024-12-28 15:59:03 - Logger - ERROR: 리다이렉션 페이지 로그인 실패: Message: 
+
+2024-12-28 15:59:03 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\login.py", line 51, in login_from_redirect
+    self._perform_login()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "d:\test-rpa\pages\login.py", line 72, in _perform_login
+    page_redirect_confirm(self.driver, self.by_type, self.locators['login_submit_button'], f"U+ID로그인")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 15:59:03 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 15:59:03 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase01_리다이렉션페이지로그인실패_20241228155903.png
+2024-12-28 15:59:03 - Logger - ERROR: 청구내역 확인 테스트 실패: Message: 
+
+2024-12-28 15:59:03 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 36, in execute
+    UPlusLogin(self.driver, self.logger).login_from_redirect()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "d:\test-rpa\pages\login.py", line 51, in login_from_redirect
+    self._perform_login()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "d:\test-rpa\pages\login.py", line 72, in _perform_login
+    page_redirect_confirm(self.driver, self.by_type, self.locators['login_submit_button'], f"U+ID로그인")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 15:59:03 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 15:59:03 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase07_청구내역확인테스트실패_20241228155903.png
+2024-12-28 15:59:03 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase07 - Message: 
+===================================
+2024-12-28 15:59:03 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 15:59:03 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 15:59:03 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 15:59:03 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 15:59:03 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 15:59:03 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 15:59:04 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_210', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 15:59:04 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 15:59:04 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 15:59:04 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 15:59:04 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 15:59:04 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 15:59:04 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 15:59:04 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 15:59:04 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 15:59:05 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_217', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 15:59:05 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 15:59:07 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 15:59:07 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 15:59:08 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 15:59:08 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 15:59:08 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 사이드바 메뉴: 요금/납부
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 세부메뉴 없음
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 사이드바 메뉴: 가입/사용 현황
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 가입/사용 현황 | 가입 정보 조회/변경
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 가입/사용 현황 | 요금제 조회/변경
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 가입/사용 현황 | 부가서비스 조회/변경/해지
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 가입/사용 현황 | 사용내역 조회
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 가입/사용 현황 | 해외로밍 조회
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 가입/사용 현황 | 휴대폰 결제
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 가입/사용 현황 | 일시정지/해제
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 가입/사용 현황 | 서비스 해지
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 가입/사용 현황 | 회원 정보
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 사이드바 메뉴: 데이터 선물/충전
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 데이터 선물/충전 | 참 쉬운 가족 데이터
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 주고 받기
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 2GB 쿠폰
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 데이터 선물/충전 | 가족사랑 데이터
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 데이터 선물/충전 | 링(홀) 요금제
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 사이드바 메뉴: 마이샵
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 마이샵 | 사전예약내역
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 마이샵 | 가입 신청 내역
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 마이샵 | 액세서리 주문 내역
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 마이샵 | 최근 본 상품
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 마이샵 | 나의 문의/리뷰
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 마이샵 | 입고알림
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 사이드바 메뉴: ez포인트
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 안내
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 조회
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 사용
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 요금/납부 []
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 가입/사용 현황 ['가입 정보 조회/변경', '요금제 조회/변경', '부가서비스 조회/변경/해지', '사용내역 조회', '해외로밍 조회', '휴대폰 결제', '일시정지/해제', '서비스 해지', '회원 정보']
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 데이터 선물/충전 ['참 쉬운 가족 데이터', '데이터 주고 받기', '데이터 2GB 쿠폰', '가족사랑 데이터', '링(홀) 요금제']
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 마이샵 ['사전예약내역', '가입 신청 내역', '액세서리 주문 내역', '최근 본 상품', '나의 문의/리뷰', '입고알림']
+2024-12-28 15:59:08 - Logger - INFO: 마이페이지 ez포인트 ['ez포인트 안내', 'ez포인트 조회', 'ez포인트 사용']
+2024-12-28 15:59:08 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-28 15:59:08 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 15:59:08 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 16:43:08 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase07===================================
+2024-12-28 16:43:08 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:43:08 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:43:09 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 16:43:09 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 16:43:09 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:43:09 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 16:43:09 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 16:43:09 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 16:43:09 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 16:43:09 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 16:43:10 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 16:43:10 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 16:43:10 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 16:43:10 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:43:10 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 16:43:10 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 16:43:13 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 16:43:13 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 16:43:14 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 16:43:14 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 16:43:14 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 16:43:35 - Logger - ERROR: 리다이렉션 시간초과: Message: 
+
+2024-12-28 16:43:35 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:43:35 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:43:35 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_리다이렉션시간초과_20241228164335.png
+2024-12-28 16:43:35 - Logger - ERROR: 청구내역 확인 테스트 실패: Message: 
+
+2024-12-28 16:43:35 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 42, in execute
+    page_redirect_confirm(self.driver, self.by_type, mypage_menu, "마이페이지")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:43:35 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:43:35 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase07_청구내역확인테스트실패_20241228164335.png
+2024-12-28 16:43:35 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase07 - Message: 
+===================================
+2024-12-28 16:43:35 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 16:43:35 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:43:35 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:43:55 - Logger - ERROR: 리다이렉션 시간초과: Message: 
+
+2024-12-28 16:43:55 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:43:55 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:43:55 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_리다이렉션시간초과_20241228164355.png
+2024-12-28 16:43:55 - Logger - ERROR: 월별 사용량 조회 테스트 실패: Message: 
+
+2024-12-28 16:43:55 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 129, in execute
+    page_redirect_confirm(self.driver, self.by_type, mypage_menu, f"마이페이지")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:43:55 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:43:55 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase08_월별사용량조회테스트실패_20241228164355.png
+2024-12-28 16:43:55 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase08 - Message: 
+===================================
+2024-12-28 16:44:39 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase07===================================
+2024-12-28 16:44:39 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:44:39 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:44:40 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 16:44:40 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 16:44:40 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:44:40 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_191', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 16:44:40 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 16:44:41 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 16:44:41 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 16:44:41 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 16:44:41 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 16:44:41 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 16:44:41 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 16:44:41 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:44:42 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 16:44:42 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 16:44:44 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 16:44:44 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 16:44:45 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 16:44:45 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 16:44:45 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 16:45:06 - Logger - ERROR: 리다이렉션 시간초과: Message: 
+
+2024-12-28 16:45:06 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:45:06 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:45:06 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_리다이렉션시간초과_20241228164506.png
+2024-12-28 16:45:06 - Logger - ERROR: 청구내역 확인 테스트 실패: Message: 
+
+2024-12-28 16:45:06 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 42, in execute
+    page_redirect_confirm(self.driver, self.by_type, mypage_menu, "마이페이지")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:45:06 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:45:06 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase07_청구내역확인테스트실패_20241228164506.png
+2024-12-28 16:45:06 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase07 - Message: 
+===================================
+2024-12-28 16:45:06 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 16:45:06 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:45:06 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:45:26 - Logger - ERROR: 리다이렉션 시간초과: Message: 
+
+2024-12-28 16:45:26 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:45:26 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:45:26 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_리다이렉션시간초과_20241228164526.png
+2024-12-28 16:45:26 - Logger - ERROR: 월별 사용량 조회 테스트 실패: Message: 
+
+2024-12-28 16:45:26 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 129, in execute
+    page_redirect_confirm(self.driver, self.by_type, mypage_menu, f"마이페이지")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:45:26 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:45:26 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase08_월별사용량조회테스트실패_20241228164526.png
+2024-12-28 16:45:26 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase08 - Message: 
+===================================
+2024-12-28 16:46:07 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase07===================================
+2024-12-28 16:46:07 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:46:08 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:46:08 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 16:46:08 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 16:46:08 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:46:08 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 16:46:08 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 16:46:09 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 16:46:09 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 16:46:09 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 16:46:09 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 16:46:09 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 16:46:09 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 16:46:09 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:46:09 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 16:46:09 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 16:46:12 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 16:46:12 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 16:46:14 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 16:46:14 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 16:46:14 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 16:46:14 - Logger - INFO: 청구 및 납부 정보 섹션 css selector: div.c-content-wrap > div:nth-child(1)(을)를 찾았습니다.
+2024-12-28 16:46:15 - Logger - INFO: 청구 및 납부 정보 섹션 div.c-content-wrap > div:nth-child(1)로 마우스를 이동했습니다.
+2024-12-28 16:46:15 - Logger - ERROR: 청구내역 확인 테스트 실패: '.ul.my-payment-section li'
+2024-12-28 16:46:15 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 48, in execute
+    before_value = show_elements_list(self.driver, self.by_type, self.combine_locators('billing_info_section', '.ul.my-payment-section li'), "text", f"청구 및 납부 정보")
+                                                                 ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\pages\GNB_m3.py", line 19, in combine_locators
+    return ' '.join(self.locators[key] for key in locator_keys)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\pages\GNB_m3.py", line 19, in <genexpr>
+    return ' '.join(self.locators[key] for key in locator_keys)
+                    ~~~~~~~~~~~~~^^^^^
+KeyError: '.ul.my-payment-section li'
+
+2024-12-28 16:46:15 - Logger - ERROR: 예상치 못한 예외 발생: KeyError
+2024-12-28 16:46:15 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase07_청구내역확인테스트실패_20241228164615.png
+2024-12-28 16:46:15 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase07 - '.ul.my-payment-section li'===================================
+2024-12-28 16:46:15 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 16:46:15 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:46:15 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:46:36 - Logger - ERROR: 리다이렉션 시간초과: Message: 
+
+2024-12-28 16:46:36 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:46:36 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:46:36 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_리다이렉션시간초과_20241228164636.png
+2024-12-28 16:46:36 - Logger - ERROR: 월별 사용량 조회 테스트 실패: Message: 
+
+2024-12-28 16:46:36 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 129, in execute
+    page_redirect_confirm(self.driver, self.by_type, mypage_menu, f"마이페이지")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:46:36 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:46:36 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase08_월별사용량조회테스트실패_20241228164636.png
+2024-12-28 16:46:36 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase08 - Message: 
+===================================
+2024-12-28 16:47:55 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase07===================================
+2024-12-28 16:47:55 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:47:55 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:47:56 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 16:47:56 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 16:47:56 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:47:56 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 16:47:56 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 16:47:57 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 16:47:57 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 16:47:57 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 16:47:57 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 16:47:57 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 16:47:57 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 16:47:57 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:47:57 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 16:47:57 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 16:48:00 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 16:48:00 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 16:48:01 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 16:48:01 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 16:48:01 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 16:48:01 - Logger - INFO: 청구 및 납부 정보 섹션 css selector: div.c-content-wrap > div:nth-child(1)(을)를 찾았습니다.
+2024-12-28 16:48:03 - Logger - INFO: 청구 및 납부 정보 섹션 div.c-content-wrap > div:nth-child(1)로 마우스를 이동했습니다.
+2024-12-28 16:48:03 - Logger - ERROR: 청구내역 확인 테스트 실패: '.ul.my-payment-section li'
+2024-12-28 16:48:03 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 48, in execute
+    before_value = show_elements_list(self.driver, self.by_type, self.combine_locators('billing_info_section', '.ul.my-payment-section li'), "text", f"청구 및 납부 정보")
+                                                                 ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\pages\GNB_m3.py", line 19, in combine_locators
+    return ' '.join(self.locators[key] for key in locator_keys)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\pages\GNB_m3.py", line 19, in <genexpr>
+    return ' '.join(self.locators[key] for key in locator_keys)
+                    ~~~~~~~~~~~~~^^^^^
+KeyError: '.ul.my-payment-section li'
+
+2024-12-28 16:48:03 - Logger - ERROR: 예상치 못한 예외 발생: KeyError
+2024-12-28 16:48:03 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase07_청구내역확인테스트실패_20241228164803.png
+2024-12-28 16:48:03 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase07 - '.ul.my-payment-section li'===================================
+2024-12-28 16:48:03 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 16:48:03 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:48:03 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:48:23 - Logger - ERROR: 리다이렉션 시간초과: Message: 
+
+2024-12-28 16:48:23 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:48:23 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:48:23 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_리다이렉션시간초과_20241228164823.png
+2024-12-28 16:48:23 - Logger - ERROR: 월별 사용량 조회 테스트 실패: Message: 
+
+2024-12-28 16:48:23 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 129, in execute
+    page_redirect_confirm(self.driver, self.by_type, mypage_menu, f"마이페이지")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:48:23 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:48:23 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase08_월별사용량조회테스트실패_20241228164823.png
+2024-12-28 16:48:23 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase08 - Message: 
+===================================
+2024-12-28 16:49:20 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase07===================================
+2024-12-28 16:49:20 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:49:20 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:49:20 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 16:49:20 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 16:49:20 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:49:21 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 16:49:21 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 16:49:21 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 16:49:21 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 16:49:21 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 16:49:21 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 16:49:21 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 16:49:21 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 16:49:21 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:49:22 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 16:49:22 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 16:49:42 - Logger - ERROR: 리다이렉션 시간초과: Message: 
+
+2024-12-28 16:49:42 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:49:42 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:49:42 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_리다이렉션시간초과_20241228164942.png
+2024-12-28 16:49:42 - Logger - ERROR: 로그인 테스트 실패: Message: 
+
+2024-12-28 16:49:42 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\login.py", line 72, in _perform_login
+    page_redirect_confirm(self.driver, self.by_type, self.locators['login_submit_button'], f"U+ID로그인")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:49:42 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:49:42 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase01_로그인테스트실패_20241228164942.png
+2024-12-28 16:49:42 - Logger - ERROR: 리다이렉션 페이지 로그인 실패: Message: 
+
+2024-12-28 16:49:42 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\login.py", line 51, in login_from_redirect
+    self._perform_login()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "d:\test-rpa\pages\login.py", line 72, in _perform_login
+    page_redirect_confirm(self.driver, self.by_type, self.locators['login_submit_button'], f"U+ID로그인")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:49:42 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:49:42 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase01_리다이렉션페이지로그인실패_20241228164942.png
+2024-12-28 16:49:42 - Logger - ERROR: 청구내역 확인 테스트 실패: Message: 
+
+2024-12-28 16:49:42 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 36, in execute
+    UPlusLogin(self.driver, self.logger).login_from_redirect()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "d:\test-rpa\pages\login.py", line 51, in login_from_redirect
+    self._perform_login()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "d:\test-rpa\pages\login.py", line 72, in _perform_login
+    page_redirect_confirm(self.driver, self.by_type, self.locators['login_submit_button'], f"U+ID로그인")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:49:42 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:49:42 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase07_청구내역확인테스트실패_20241228164942.png
+2024-12-28 16:49:42 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase07 - Message: 
+===================================
+2024-12-28 16:49:42 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 16:49:42 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:49:42 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:49:43 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 16:49:43 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 16:49:43 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:49:43 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_211', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 16:49:43 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 16:49:44 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 16:49:44 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 16:49:44 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 16:49:44 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 16:49:44 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 16:49:44 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 16:49:44 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:49:44 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_218', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 16:49:44 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 16:49:46 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 16:49:46 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 16:49:48 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 16:49:48 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 16:49:48 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 사이드바 메뉴: 요금/납부
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 세부메뉴 없음
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 사이드바 메뉴: 가입/사용 현황
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 가입/사용 현황 | 가입 정보 조회/변경
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 가입/사용 현황 | 요금제 조회/변경
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 가입/사용 현황 | 부가서비스 조회/변경/해지
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 가입/사용 현황 | 사용내역 조회
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 가입/사용 현황 | 해외로밍 조회
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 가입/사용 현황 | 휴대폰 결제
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 가입/사용 현황 | 일시정지/해제
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 가입/사용 현황 | 서비스 해지
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 가입/사용 현황 | 회원 정보
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 사이드바 메뉴: 데이터 선물/충전
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 데이터 선물/충전 | 참 쉬운 가족 데이터
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 주고 받기
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 2GB 쿠폰
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 데이터 선물/충전 | 가족사랑 데이터
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 데이터 선물/충전 | 링(홀) 요금제
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 사이드바 메뉴: 마이샵
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 마이샵 | 사전예약내역
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 마이샵 | 가입 신청 내역
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 마이샵 | 액세서리 주문 내역
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 마이샵 | 최근 본 상품
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 마이샵 | 나의 문의/리뷰
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 마이샵 | 입고알림
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 사이드바 메뉴: ez포인트
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 안내
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 조회
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 사용
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 요금/납부 []
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 가입/사용 현황 ['가입 정보 조회/변경', '요금제 조회/변경', '부가서비스 조회/변경/해지', '사용내역 조회', '해외로밍 조회', '휴대폰 결제', '일시정지/해제', '서비스 해지', '회원 정보']
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 데이터 선물/충전 ['참 쉬운 가족 데이터', '데이터 주고 받기', '데이터 2GB 쿠폰', '가족사랑 데이터', '링(홀) 요금제']
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 마이샵 ['사전예약내역', '가입 신청 내역', '액세서리 주문 내역', '최근 본 상품', '나의 문의/리뷰', '입고알림']
+2024-12-28 16:49:48 - Logger - INFO: 마이페이지 ez포인트 ['ez포인트 안내', 'ez포인트 조회', 'ez포인트 사용']
+2024-12-28 16:49:48 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-28 16:49:48 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 16:49:48 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 16:50:03 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase07===================================
+2024-12-28 16:50:03 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:50:03 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:50:04 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 16:50:04 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 16:50:04 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:50:04 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 16:50:04 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 16:50:05 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 16:50:05 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 16:50:05 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 16:50:05 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 16:50:05 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 16:50:05 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 16:50:05 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:50:05 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 16:50:05 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 16:50:08 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 16:50:08 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 16:50:09 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 16:50:09 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 16:50:09 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 16:50:09 - Logger - INFO: 청구 및 납부 정보 섹션 css selector: div.c-content-wrap > div:nth-child(1)(을)를 찾았습니다.
+2024-12-28 16:50:11 - Logger - INFO: 청구 및 납부 정보 섹션 div.c-content-wrap > div:nth-child(1)로 마우스를 이동했습니다.
+2024-12-28 16:50:31 - Logger - ERROR:  div.c-content-wrap > div:nth-child(1) .ul.my-payment-section li들을 찾지못했습니다.: Message: 
+
+2024-12-28 16:50:31 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 53, in find_elements
+    elements = WebDriverWait(driver, EXPLICIT_WAIT).until(
+        EC.presence_of_all_elements_located((by, locator))
+    )
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:50:31 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:50:31 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_div.c-content-wrap>div:nth-child(1).ul.my-payment-sectionli들을찾지못했습니다._20241228165031.png
+2024-12-28 16:50:31 - Logger - INFO: : []
+2024-12-28 16:50:31 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase07===================================
+2024-12-28 16:50:33 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 16:50:33 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:50:33 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:50:48 - Logger - ERROR: 리다이렉션 시간초과: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6414BFB05+28789]
+	(No symbol) [0x00007FF6414286E0]
+	(No symbol) [0x00007FF6412C592A]
+	(No symbol) [0x00007FF64129F505]
+	(No symbol) [0x00007FF641346477]
+	(No symbol) [0x00007FF64135EF42]
+	(No symbol) [0x00007FF64133F1E3]
+	(No symbol) [0x00007FF64130A938]
+	(No symbol) [0x00007FF64130BAA1]
+	GetHandleVerifier [0x00007FF6417F933D+3410093]
+	GetHandleVerifier [0x00007FF64180E7DD+3497293]
+	GetHandleVerifier [0x00007FF641802A73+3448803]
+	GetHandleVerifier [0x00007FF641587BBB+848171]
+	(No symbol) [0x00007FF641433C3F]
+	(No symbol) [0x00007FF64142F6E4]
+	(No symbol) [0x00007FF64142F87D]
+	(No symbol) [0x00007FF64141ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-28 16:50:48 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 138, in _predicate
+    return url != driver.current_url
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 474, in current_url
+    return self.execute(Command.GET_CURRENT_URL)["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6414BFB05+28789]
+	(No symbol) [0x00007FF6414286E0]
+	(No symbol) [0x00007FF6412C592A]
+	(No symbol) [0x00007FF64129F505]
+	(No symbol) [0x00007FF641346477]
+	(No symbol) [0x00007FF64135EF42]
+	(No symbol) [0x00007FF64133F1E3]
+	(No symbol) [0x00007FF64130A938]
+	(No symbol) [0x00007FF64130BAA1]
+	GetHandleVerifier [0x00007FF6417F933D+3410093]
+	GetHandleVerifier [0x00007FF64180E7DD+3497293]
+	GetHandleVerifier [0x00007FF641802A73+3448803]
+	GetHandleVerifier [0x00007FF641587BBB+848171]
+	(No symbol) [0x00007FF641433C3F]
+	(No symbol) [0x00007FF64142F6E4]
+	(No symbol) [0x00007FF64142F87D]
+	(No symbol) [0x00007FF64141ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-28 16:50:48 - Logger - ERROR: 예상치 못한 예외 발생: NoSuchWindowException
+2024-12-28 16:50:48 - Logger - ERROR: 월별 사용량 조회 테스트 실패: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6414BFB05+28789]
+	(No symbol) [0x00007FF6414286E0]
+	(No symbol) [0x00007FF6412C592A]
+	(No symbol) [0x00007FF64129F505]
+	(No symbol) [0x00007FF641346477]
+	(No symbol) [0x00007FF64135EF42]
+	(No symbol) [0x00007FF64133F1E3]
+	(No symbol) [0x00007FF64130A938]
+	(No symbol) [0x00007FF64130BAA1]
+	GetHandleVerifier [0x00007FF6417F933D+3410093]
+	GetHandleVerifier [0x00007FF64180E7DD+3497293]
+	GetHandleVerifier [0x00007FF641802A73+3448803]
+	GetHandleVerifier [0x00007FF641587BBB+848171]
+	(No symbol) [0x00007FF641433C3F]
+	(No symbol) [0x00007FF64142F6E4]
+	(No symbol) [0x00007FF64142F87D]
+	(No symbol) [0x00007FF64141ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-28 16:50:48 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 129, in execute
+    page_redirect_confirm(self.driver, self.by_type, mypage_menu, f"마이페이지")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 138, in _predicate
+    return url != driver.current_url
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 474, in current_url
+    return self.execute(Command.GET_CURRENT_URL)["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6414BFB05+28789]
+	(No symbol) [0x00007FF6414286E0]
+	(No symbol) [0x00007FF6412C592A]
+	(No symbol) [0x00007FF64129F505]
+	(No symbol) [0x00007FF641346477]
+	(No symbol) [0x00007FF64135EF42]
+	(No symbol) [0x00007FF64133F1E3]
+	(No symbol) [0x00007FF64130A938]
+	(No symbol) [0x00007FF64130BAA1]
+	GetHandleVerifier [0x00007FF6417F933D+3410093]
+	GetHandleVerifier [0x00007FF64180E7DD+3497293]
+	GetHandleVerifier [0x00007FF641802A73+3448803]
+	GetHandleVerifier [0x00007FF641587BBB+848171]
+	(No symbol) [0x00007FF641433C3F]
+	(No symbol) [0x00007FF64142F6E4]
+	(No symbol) [0x00007FF64142F87D]
+	(No symbol) [0x00007FF64141ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-28 16:50:48 - Logger - ERROR: 예상치 못한 예외 발생: NoSuchWindowException
+2024-12-28 16:50:48 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase08 - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6414BFB05+28789]
+	(No symbol) [0x00007FF6414286E0]
+	(No symbol) [0x00007FF6412C592A]
+	(No symbol) [0x00007FF64129F505]
+	(No symbol) [0x00007FF641346477]
+	(No symbol) [0x00007FF64135EF42]
+	(No symbol) [0x00007FF64133F1E3]
+	(No symbol) [0x00007FF64130A938]
+	(No symbol) [0x00007FF64130BAA1]
+	GetHandleVerifier [0x00007FF6417F933D+3410093]
+	GetHandleVerifier [0x00007FF64180E7DD+3497293]
+	GetHandleVerifier [0x00007FF641802A73+3448803]
+	GetHandleVerifier [0x00007FF641587BBB+848171]
+	(No symbol) [0x00007FF641433C3F]
+	(No symbol) [0x00007FF64142F6E4]
+	(No symbol) [0x00007FF64142F87D]
+	(No symbol) [0x00007FF64141ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+===================================
+2024-12-28 16:51:06 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase07===================================
+2024-12-28 16:51:06 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:51:06 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:51:07 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 16:51:07 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 16:51:07 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:51:07 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 16:51:07 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 16:51:08 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 16:51:08 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 16:51:08 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 16:51:08 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 16:51:08 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 16:51:08 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 16:51:08 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 16:51:08 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 16:51:08 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 16:51:11 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 16:51:11 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 16:51:12 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 16:51:12 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 16:51:12 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 16:51:12 - Logger - INFO: 청구 및 납부 정보 섹션 css selector: div.c-content-wrap > div:nth-child(1)(을)를 찾았습니다.
+2024-12-28 16:51:14 - Logger - INFO: 청구 및 납부 정보 섹션 div.c-content-wrap > div:nth-child(1)로 마우스를 이동했습니다.
+2024-12-28 16:51:34 - Logger - ERROR:  div.c-content-wrap > div:nth-child(1) .ul.my-payment-section li들을 찾지못했습니다.: Message: 
+
+2024-12-28 16:51:34 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 53, in find_elements
+    elements = WebDriverWait(driver, EXPLICIT_WAIT).until(
+        EC.presence_of_all_elements_located((by, locator))
+    )
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:51:34 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:51:34 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_div.c-content-wrap>div:nth-child(1).ul.my-payment-sectionli들을찾지못했습니다._20241228165134.png
+2024-12-28 16:51:34 - Logger - INFO: : []
+2024-12-28 16:51:34 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase07===================================
+2024-12-28 16:51:36 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 16:51:36 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 16:51:36 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 16:51:56 - Logger - ERROR: 리다이렉션 시간초과: Message: 
+
+2024-12-28 16:51:56 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:51:56 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:51:56 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_리다이렉션시간초과_20241228165156.png
+2024-12-28 16:51:56 - Logger - ERROR: 월별 사용량 조회 테스트 실패: Message: 
+
+2024-12-28 16:51:56 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 129, in execute
+    page_redirect_confirm(self.driver, self.by_type, mypage_menu, f"마이페이지")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\test-rpa\utils\custom_utils.py", line 202, in page_redirect_confirm
+    raise e
+  File "d:\test-rpa\utils\custom_utils.py", line 194, in page_redirect_confirm
+    WebDriverWait(driver, EXPLICIT_WAIT).until(EC.url_changes(driver.current_url))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2024-12-28 16:51:56 - Logger - INFO: 타임아웃 발생했습니다.
+2024-12-28 16:51:57 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase08_월별사용량조회테스트실패_20241228165156.png
+2024-12-28 16:51:57 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase08 - Message: 
+===================================
+2024-12-28 17:09:17 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:09:17 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:09:17 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:09:18 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:09:18 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:09:18 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:09:18 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:09:18 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:09:19 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:09:19 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:09:19 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:09:19 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:09:19 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:09:19 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:09:19 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:09:19 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:09:19 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:09:22 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:09:22 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:09:23 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:09:23 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:09:24 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 사이드바 메뉴: 요금/납부
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 세부메뉴 없음
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 사이드바 메뉴: 가입/사용 현황
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 가입/사용 현황 | 가입 정보 조회/변경
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 가입/사용 현황 | 요금제 조회/변경
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 가입/사용 현황 | 부가서비스 조회/변경/해지
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 가입/사용 현황 | 사용내역 조회
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 가입/사용 현황 | 해외로밍 조회
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 가입/사용 현황 | 휴대폰 결제
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 가입/사용 현황 | 일시정지/해제
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 가입/사용 현황 | 서비스 해지
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 가입/사용 현황 | 회원 정보
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 사이드바 메뉴: 데이터 선물/충전
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 데이터 선물/충전 | 참 쉬운 가족 데이터
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 주고 받기
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 데이터 선물/충전 | 데이터 2GB 쿠폰
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 데이터 선물/충전 | 가족사랑 데이터
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 데이터 선물/충전 | 링(홀) 요금제
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 사이드바 메뉴: 마이샵
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 마이샵 | 사전예약내역
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 마이샵 | 가입 신청 내역
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 마이샵 | 액세서리 주문 내역
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 마이샵 | 최근 본 상품
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 마이샵 | 나의 문의/리뷰
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 마이샵 | 입고알림
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 사이드바 메뉴: ez포인트
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 안내
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 조회
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 ez포인트 | ez포인트 사용
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 요금/납부 []
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 가입/사용 현황 ['가입 정보 조회/변경', '요금제 조회/변경', '부가서비스 조회/변경/해지', '사용내역 조회', '해외로밍 조회', '휴대폰 결제', '일시정지/해제', '서비스 해지', '회원 정보']
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 데이터 선물/충전 ['참 쉬운 가족 데이터', '데이터 주고 받기', '데이터 2GB 쿠폰', '가족사랑 데이터', '링(홀) 요금제']
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 마이샵 ['사전예약내역', '가입 신청 내역', '액세서리 주문 내역', '최근 본 상품', '나의 문의/리뷰', '입고알림']
+2024-12-28 17:09:24 - Logger - INFO: 마이페이지 ez포인트 ['ez포인트 안내', 'ez포인트 조회', 'ez포인트 사용']
+2024-12-28 17:09:24 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-28 17:09:24 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:09:24 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 17:12:33 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:12:33 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:12:33 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:12:33 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:12:33 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:12:33 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:12:34 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:12:34 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:12:34 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:12:34 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:12:34 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:12:34 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:12:34 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:12:34 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:12:34 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:12:35 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:12:35 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:12:38 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:12:38 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:12:39 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:12:39 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:12:39 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:12:39 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-28 17:12:39 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:12:39 - Logger - INFO: 가입/사용 현황div.card header.card-header a(이)가 화면에 보입니다.
+2024-12-28 17:12:39 - Logger - ERROR:  <selenium.webdriver.remote.webelement.WebElement (session="080b0252f7d3abaec3bc3e42c7e6da21", element="f.F23BB2EEB7DC6E5C2936D8607F435C39.d.918BFAA839C128252A3CDAEBEB0DC21F.e.5458")>: 가입/사용 현황(을)를 찾지못했습니다.: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6414BFB05+28789]
+	(No symbol) [0x00007FF6414286E0]
+	(No symbol) [0x00007FF6412C592A]
+	(No symbol) [0x00007FF6413190C5]
+	(No symbol) [0x00007FF6413195FC]
+	(No symbol) [0x00007FF6413628A7]
+	(No symbol) [0x00007FF64133F47F]
+	(No symbol) [0x00007FF64135F654]
+	(No symbol) [0x00007FF64133F1E3]
+	(No symbol) [0x00007FF64130A938]
+	(No symbol) [0x00007FF64130BAA1]
+	GetHandleVerifier [0x00007FF6417F933D+3410093]
+	GetHandleVerifier [0x00007FF64180E7DD+3497293]
+	GetHandleVerifier [0x00007FF641802A73+3448803]
+	GetHandleVerifier [0x00007FF641587BBB+848171]
+	(No symbol) [0x00007FF641433C3F]
+	(No symbol) [0x00007FF64142F6E4]
+	(No symbol) [0x00007FF64142F87D]
+	(No symbol) [0x00007FF64141ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-28 17:12:39 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 39, in find_element
+    element = WebDriverWait(driver, EXPLICIT_WAIT).until(
+        EC.presence_of_element_located((by, locator))  # by와 locator를 튜플로 묶어서 전달
+    )
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6414BFB05+28789]
+	(No symbol) [0x00007FF6414286E0]
+	(No symbol) [0x00007FF6412C592A]
+	(No symbol) [0x00007FF6413190C5]
+	(No symbol) [0x00007FF6413195FC]
+	(No symbol) [0x00007FF6413628A7]
+	(No symbol) [0x00007FF64133F47F]
+	(No symbol) [0x00007FF64135F654]
+	(No symbol) [0x00007FF64133F1E3]
+	(No symbol) [0x00007FF64130A938]
+	(No symbol) [0x00007FF64130BAA1]
+	GetHandleVerifier [0x00007FF6417F933D+3410093]
+	GetHandleVerifier [0x00007FF64180E7DD+3497293]
+	GetHandleVerifier [0x00007FF641802A73+3448803]
+	GetHandleVerifier [0x00007FF641587BBB+848171]
+	(No symbol) [0x00007FF641433C3F]
+	(No symbol) [0x00007FF64142F6E4]
+	(No symbol) [0x00007FF64142F87D]
+	(No symbol) [0x00007FF64141ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-28 17:12:39 - Logger - ERROR: 예상치 못한 예외 발생: InvalidArgumentException
+2024-12-28 17:12:39 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_<selenium.webdriver.remote.webelement.WebElement(session="080b0252f7d3abaec3bc3e42c7e6da21",element="f.F23BB2EEB7DC6E5C2936D8607F435C39.d.918BFAA839C128252A3CDAEBEB0DC21F.e.5458")>:가입/사용현황(을)를찾지못했습니다._20241228171239.png
+2024-12-28 17:12:39 - Logger - ERROR:  가입/사용 현황를 찾을 수 없어 마우스를 이동하지 못했습니다.
+2024-12-28 17:12:39 - Logger - INFO: 사용내역 조회 css selector: #accordion-1 > div > ul > li:nth-child(4)(을)를 찾았습니다.
+2024-12-28 17:12:39 - Logger - INFO: 사용내역 조회(을)를 클릭하였습니다.
+2024-12-28 17:12:39 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 17:19:40 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:19:40 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:19:40 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:19:41 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:19:41 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:19:41 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:19:41 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:19:41 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:19:41 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:19:41 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:19:41 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:19:41 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:19:41 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:19:42 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:19:42 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:19:42 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:19:42 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:19:45 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:19:45 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:19:46 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:19:46 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:19:46 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:19:46 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-28 17:19:46 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:19:46 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 17:20:06 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:20:06 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:20:06 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:20:07 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:20:07 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:20:07 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:20:07 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:20:07 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:20:08 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:20:08 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:20:08 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:20:08 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:20:08 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:20:08 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:20:08 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:20:08 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:20:08 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:20:11 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:20:11 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:20:13 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:20:13 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:20:13 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:20:13 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-28 17:20:13 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:20:13 - Logger - INFO: 가입/사용 현황div.card header.card-header a(이)가 화면에 보입니다.
+2024-12-28 17:20:13 - Logger - ERROR:  <selenium.webdriver.remote.webelement.WebElement (session="efaa4a2937a60e0ba0c844a8c2da966c", element="f.3611D5DECBE02F7CCC8B9766FBA5B42D.d.B606F909B943F982AD5D13C287307C57.e.5412")>: 가입/사용 현황(을)를 찾지못했습니다.: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6414BFB05+28789]
+	(No symbol) [0x00007FF6414286E0]
+	(No symbol) [0x00007FF6412C592A]
+	(No symbol) [0x00007FF6413190C5]
+	(No symbol) [0x00007FF6413195FC]
+	(No symbol) [0x00007FF6413628A7]
+	(No symbol) [0x00007FF64133F47F]
+	(No symbol) [0x00007FF64135F654]
+	(No symbol) [0x00007FF64133F1E3]
+	(No symbol) [0x00007FF64130A938]
+	(No symbol) [0x00007FF64130BAA1]
+	GetHandleVerifier [0x00007FF6417F933D+3410093]
+	GetHandleVerifier [0x00007FF64180E7DD+3497293]
+	GetHandleVerifier [0x00007FF641802A73+3448803]
+	GetHandleVerifier [0x00007FF641587BBB+848171]
+	(No symbol) [0x00007FF641433C3F]
+	(No symbol) [0x00007FF64142F6E4]
+	(No symbol) [0x00007FF64142F87D]
+	(No symbol) [0x00007FF64141ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+2024-12-28 17:20:13 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 39, in find_element
+    element = WebDriverWait(driver, EXPLICIT_WAIT).until(
+        EC.presence_of_element_located((by, locator))  # by와 locator를 튜플로 묶어서 전달
+    )
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\kasun\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6414BFB05+28789]
+	(No symbol) [0x00007FF6414286E0]
+	(No symbol) [0x00007FF6412C592A]
+	(No symbol) [0x00007FF6413190C5]
+	(No symbol) [0x00007FF6413195FC]
+	(No symbol) [0x00007FF6413628A7]
+	(No symbol) [0x00007FF64133F47F]
+	(No symbol) [0x00007FF64135F654]
+	(No symbol) [0x00007FF64133F1E3]
+	(No symbol) [0x00007FF64130A938]
+	(No symbol) [0x00007FF64130BAA1]
+	GetHandleVerifier [0x00007FF6417F933D+3410093]
+	GetHandleVerifier [0x00007FF64180E7DD+3497293]
+	GetHandleVerifier [0x00007FF641802A73+3448803]
+	GetHandleVerifier [0x00007FF641587BBB+848171]
+	(No symbol) [0x00007FF641433C3F]
+	(No symbol) [0x00007FF64142F6E4]
+	(No symbol) [0x00007FF64142F87D]
+	(No symbol) [0x00007FF64141ED49]
+	BaseThreadInitThunk [0x00007FFC121D259D+29]
+	RtlUserThreadStart [0x00007FFC13EAAF38+40]
+
+
+2024-12-28 17:20:13 - Logger - ERROR: 예상치 못한 예외 발생: InvalidArgumentException
+2024-12-28 17:20:13 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_<selenium.webdriver.remote.webelement.WebElement(session="efaa4a2937a60e0ba0c844a8c2da966c",element="f.3611D5DECBE02F7CCC8B9766FBA5B42D.d.B606F909B943F982AD5D13C287307C57.e.5412")>:가입/사용현황(을)를찾지못했습니다._20241228172013.png
+2024-12-28 17:20:13 - Logger - ERROR:  가입/사용 현황를 찾을 수 없어 마우스를 이동하지 못했습니다.
+2024-12-28 17:20:13 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 17:24:14 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:24:14 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:24:14 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:24:15 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:24:15 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:24:15 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:24:15 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:24:15 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:24:16 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:24:16 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:24:16 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:24:16 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:24:16 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:24:16 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:24:16 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:24:16 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:24:16 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:24:19 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:24:19 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:24:20 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:24:21 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:24:21 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:24:21 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-28 17:24:21 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:24:21 - Logger - INFO: 가입/사용 현황div.card header.card-header a(이)가 화면에 보입니다.
+2024-12-28 17:24:21 - Logger - INFO: 가입/사용 현황(이)가 비활성화 상태입니다.
+2024-12-28 17:24:21 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 17:35:44 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:35:44 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:35:44 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:35:45 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:35:45 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:35:45 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:35:45 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:35:45 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:35:46 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:35:46 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:35:46 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:35:46 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:35:46 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:35:46 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:35:46 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:35:46 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:35:46 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:35:49 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:35:49 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:35:51 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:35:51 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:35:51 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:35:51 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-28 17:35:51 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:35:51 - Logger - ERROR: 월별 사용량 조회 테스트 실패: check_active() takes from 3 to 4 positional arguments but 5 were given
+2024-12-28 17:35:51 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\pages\GNB_m3.py", line 148, in execute
+    check_active(self.driver, self.by_type, self.locators['side_title_menu'], "show", f"가입/사용 현황")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: check_active() takes from 3 to 4 positional arguments but 5 were given
+
+2024-12-28 17:35:51 - Logger - ERROR: 예상치 못한 예외 발생: TypeError
+2024-12-28 17:35:51 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\TestCase08_월별사용량조회테스트실패_20241228173551.png
+2024-12-28 17:35:51 - Logger - ERROR: ===================================테스트 케이스 실행 실패: TestCase08 - check_active() takes from 3 to 4 positional arguments but 5 were given===================================
+2024-12-28 17:36:14 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:36:14 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:36:14 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:36:15 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:36:15 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:36:15 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:36:15 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:36:15 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:36:16 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:36:16 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:36:16 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:36:16 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:36:16 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:36:16 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:36:16 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:36:16 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:36:16 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:36:19 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:36:19 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:36:21 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:36:21 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:36:21 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:36:21 - Logger - INFO: 가입/사용 현황 div.card header.card-header a들을 5개 찾았습니다.
+2024-12-28 17:36:21 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:36:21 - Logger - INFO: 가입/사용 현황div.card header.card-header a(이)가 화면에 보입니다.
+2024-12-28 17:36:21 - Logger - INFO: 가입/사용 현황(이)가 비활성화 상태입니다.
+2024-12-28 17:36:21 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 17:45:58 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:45:58 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:45:58 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:45:59 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:45:59 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:45:59 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:45:59 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:45:59 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:46:00 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:46:00 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:46:00 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:46:00 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:46:00 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:46:00 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:46:00 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:46:00 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:46:00 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:46:03 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:46:03 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:46:05 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:46:05 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:46:05 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:46:05 - Logger - INFO: 가입/사용 현황 div.card header.card-header들을 5개 찾았습니다.
+2024-12-28 17:46:05 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:46:05 - Logger - INFO: 가입/사용 현황div.card header.card-header(이)가 화면에 보입니다.
+2024-12-28 17:46:05 - Logger - INFO: 가입/사용 현황(이)가 비활성화 상태입니다.
+2024-12-28 17:46:05 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 17:46:51 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:46:51 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:46:52 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:46:52 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:46:52 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:46:52 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:46:52 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:46:52 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:46:53 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:46:53 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:46:53 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:46:53 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:46:53 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:46:53 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:46:53 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:46:53 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:46:53 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:46:56 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:46:56 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:46:58 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:46:58 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:46:58 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:46:58 - Logger - INFO: 가입/사용 현황 div.card header.card-header들을 5개 찾았습니다.
+2024-12-28 17:46:58 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:46:58 - Logger - INFO: 가입/사용 현황div.card header.card-header(이)가 화면에 보입니다.
+2024-12-28 17:46:58 - Logger - INFO: 가입/사용 현황(이)가 비활성화 상태입니다.
+2024-12-28 17:46:58 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 17:47:12 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:47:12 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:47:12 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:47:13 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:47:13 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:47:13 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:47:13 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:47:13 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:47:14 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:47:14 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:47:14 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:47:14 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:47:14 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:47:14 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:47:14 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:47:14 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:47:14 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:47:17 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:47:17 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:47:18 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:47:18 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:47:18 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:47:18 - Logger - INFO: 가입/사용 현황 div.card header.card-header들을 5개 찾았습니다.
+2024-12-28 17:47:18 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:47:18 - Logger - INFO: 가입/사용 현황div.card header.card-header(이)가 화면에 보입니다.
+2024-12-28 17:47:18 - Logger - INFO: 가입/사용 현황(이)가 비활성화 상태입니다.
+2024-12-28 17:47:18 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 17:54:08 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:54:08 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:54:08 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:54:09 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:54:09 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:54:09 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:54:09 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_192', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:54:09 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:54:10 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:54:10 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:54:10 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:54:10 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:54:10 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:54:10 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:54:10 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:54:10 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_199', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:54:10 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:54:13 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:54:13 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:54:14 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:54:14 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:54:14 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:54:14 - Logger - INFO: 가입/사용 현황 div.card header.card-header들을 5개 찾았습니다.
+2024-12-28 17:54:15 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:54:15 - Logger - ERROR: 가입/사용 현황의 다음 형제 요소가 활성화 상태인지 확인하지 못했습니다.: 'WebElement' object has no attribute 'find_element_by_xpath'
+2024-12-28 17:54:15 - Logger - ERROR: Traceback (most recent call last):
+  File "d:\test-rpa\utils\custom_utils.py", line 396, in check_active
+    sibling_element = element.find_element_by_xpath("following-sibling::*[1]")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WebElement' object has no attribute 'find_element_by_xpath'
+
+2024-12-28 17:54:15 - Logger - ERROR: 예상치 못한 예외 발생: AttributeError
+2024-12-28 17:54:15 - Logger - INFO: 스크린샷 저장 완료: d:\test-rpa\screenshots\NoneType_가입/사용현황의다음형제요소가활성화상태인지확인하지못했습니다._20241228175415.png
+2024-12-28 17:54:15 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================
+2024-12-28 17:55:04 - Logger - INFO: ===================================테스트 케이스 실행 시작: TestCase08===================================
+2024-12-28 17:55:04 - Logger - INFO: 마이페이지 메뉴 css selector: header > div.header-gnb-wrap > div.header-inner > nav > ul > li.m3 a(을)를 찾았습니다.
+2024-12-28 17:55:04 - Logger - INFO: 마이페이지 메뉴(을)를 클릭하였습니다.
+2024-12-28 17:55:05 - Logger - INFO: 마이페이지 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login
+2024-12-28 17:55:05 - Logger - INFO: 로그인 페이지로 리다이렉션 되었습니다.
+2024-12-28 17:55:05 - Logger - INFO: U+ID 버튼 section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:55:05 - Logger - INFO: U+ID 버튼 {'tag_name': 'button', 'id': '_uid_189', 'class': ''}(을)를 클릭하였습니다.
+2024-12-28 17:55:05 - Logger - INFO: U+ID 로그인 css selector: section.new-mem-section ul.iconLoginList li:nth-of-type(4) button(을)를 찾았습니다.
+2024-12-28 17:55:06 - Logger - INFO: U+ID 로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/login/onid-login
+2024-12-28 17:55:06 - Logger - INFO: 로그인 폼 css selector: div.nm-loginPage(을)를 찾았습니다.
+2024-12-28 17:55:06 - Logger - INFO: 아이디 입력창 css selector: #username-1-6(을)를 찾았습니다.
+2024-12-28 17:55:06 - Logger - INFO: 아이디 입력창 #username-1-6에 'tmk3602@naver.com' 텍스트를 입력하였습니다.
+2024-12-28 17:55:06 - Logger - INFO: 비밀번호 입력창 css selector: #password-1(을)를 찾았습니다.
+2024-12-28 17:55:06 - Logger - INFO: 비밀번호 입력창 #password-1에 'rlaxorals1!' 텍스트를 입력하였습니다.
+2024-12-28 17:55:06 - Logger - INFO: U+ID로그인 버튼 button.c-btn-solid-1.nm-login-btn(이)가 클릭가능한 상태입니다. 
+2024-12-28 17:55:06 - Logger - INFO: U+ID로그인 버튼 {'tag_name': 'button', 'id': '_uid_198', 'class': 'c-btn-solid-1 nm-login-btn'}(을)를 클릭하였습니다.
+2024-12-28 17:55:06 - Logger - INFO: U+ID로그인 css selector: button.c-btn-solid-1.nm-login-btn(을)를 찾았습니다.
+2024-12-28 17:55:09 - Logger - INFO: U+ID로그인 페이지 리다이렉션 확인 URL: https://www.lguplus.com/mypage
+2024-12-28 17:55:09 - Logger - INFO: 마이메뉴 아이콘 css selector: ul.header-menu-list-1 > li:last-child a.icon-myInfo-1(을)를 찾았습니다.
+2024-12-28 17:55:11 - Logger - INFO: 마이메뉴 아이콘 ul.header-menu-list-1 > li:last-child a.icon-myInfo-1로 마우스를 이동했습니다.
+2024-12-28 17:55:11 - Logger - INFO: 마이메뉴 정보 텍스트 css selector:  .login-info-txt(을)를 찾았습니다.
+2024-12-28 17:55:11 - Logger - INFO: 마이메뉴 정보 텍스트 p 요소에서 .text를 사용하여 텍스트 '김*민님 반갑습니다.'를 가져왔습니다.
+2024-12-28 17:55:11 - Logger - INFO: 가입/사용 현황 div.card header.card-header들을 5개 찾았습니다.
+2024-12-28 17:55:11 - Logger - INFO: 가입/사용 현황(을)를 클릭하였습니다.
+2024-12-28 17:55:11 - Logger - INFO: 가입/사용 현황의 다음 형제 요소가 활성화 상태입니다.
+2024-12-28 17:55:11 - Logger - INFO: ===================================테스트 케이스 실행 완료: TestCase08===================================

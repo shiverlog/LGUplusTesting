@@ -11,8 +11,8 @@ class TestCase02(Base):
         self.locators = LocatorLoader.load_locators('main')
         self.by_type = self.get_by_type("css")
     
-    """메인 페이지 KV 영역 테스트 케이스"""
     def execute(self):
+        """메인 페이지 KV 영역 테스트 케이스"""
         try:
             # 메인 페이지 영역 활성화 확인
             find_visible_sections(self.driver, self.by_type, self.locators, "메인페이지")
@@ -32,8 +32,8 @@ class TestCase03(Base):
         self.locators = LocatorLoader.load_locators('main')
         self.by_type = self.get_by_type("css")
         
-    """기기 추천 영역 테스트 케이스"""
     def execute(self):
+        """기기 추천 영역 테스트 케이스"""
         try:
             # device_section으로 포커싱
             move_to_element(self.driver, self.by_type, self.locators['device_section'], f"기기추천 영역")

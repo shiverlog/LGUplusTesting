@@ -36,7 +36,6 @@ class TestCase07(Base):
                 UPlusLogin(self.driver, self.logger).login_from_redirect()
 
                 # 로그인 후 마이페이지 리다이렉션 확인
-                page_redirect_confirm(self.driver, self.by_type, mypage_menu, "마이페이지")
             else:
                 custom_logger.info("현재 로그인 상태입니다.")
 
@@ -44,63 +43,21 @@ class TestCase07(Base):
             move_to_element(self.driver, self.by_type, self.locators['billing_info_section'], f"청구 및 납부 정보 섹션")
             
             # 청구 및 납부 정보 섹션 내 [사용기간, 사용년월, 청구요금] 확인
-            before_value = show_elements_list(self.driver, self.by_type, self.combine_locators('billing_info_section', '.ul.my-payment-section li'), "text", f"청구 및 납부 정보")
+            before_values = show_elements_list(self.driver, self.by_type, self.locators['billing_info_section'] + " ul.my-payment-section li","text", f"청구 및 납부 정보")
             
-            # 
-            
-            # move_toelement()
-            
-            # get_text(self.driver, self.by_type, self.locators['billing_info'], f"청구 및 납부 정보")
-
-            # billing_info = mypage_list.find_element(By.CSS_SELECTOR, self.locators['billing_info'])
-            # usage_period = billing_info.find_element(By.CSS_SELECTOR, self.locators['usage_period']).text.strip()
-            # usage_month = ''.join(filter(str.isdigit, billing_info.find_element(By.CSS_SELECTOR, self.locators['usage_month']).text.strip()))
-            # current_year = time.strftime("%Y")
-            # formatted_date = f"{current_year}-{usage_month.zfill(2)}"
-            # billing_amount = ''.join(filter(str.isdigit, billing_info.find_element(By.CSS_SELECTOR, self.locators['billing_amount']).text.strip()))
-
-            # self.logger.info(f"마이페이지내 사용기간: {usage_period}")
-            # self.logger.info(f"마이페이지내 사용년월: {formatted_date}")
-            # self.logger.info(f"마이페이지내 청구요금: {billing_amount}원")
-
             # 요금/납부 메뉴 클릭
-            billing_menu = WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, self.locators['billing_menu']))
-            )
-            billing_menu.click()
-            time.sleep(5)
+            clickable_link_click(self.driver, self.by_type, self.locators['billing_menu'], f"요금/납부 메뉴")
+        
+            # 요금/납부 페이지 리다이렉션 확인
+            page_redirect_confirm(self.driver, self.by_type, self.locators['billing_menu'], f"요금/납부 페이지")
 
-            # 요금/납부 페이지 확인
-            payinfo_url = self.driver.current_url
-            if "/mypage/payinfo" in payinfo_url:
-                self.logger.info(f"요금/납부 메뉴로 이동 URL: {payinfo_url}")
-            else:
-                self.logger.info(f"요금/납부 메뉴로 이동 실패 URL: {payinfo_url}")
-
-            # 청구내역 정보 확인
-            billing_table = WebDriverWait(self.driver, 30).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, self.locators['billing_table']))
-            )
-            time.sleep(5)
-            billing_rows = billing_table.find_elements(By.CSS_SELECTOR, self.locators['billing_rows'])
-            self.logger.info(f"보여지는 테이블 열 갯수: {len(billing_rows)}")
-
-            first_row = self.driver.find_elements(By.CSS_SELECTOR, self.locators['first_billing_row'])
-            if first_row:
-                billing_1 = first_row[0].find_element(By.CSS_SELECTOR, 'td a').get_attribute('textContent').strip()
-                billing_2 = first_row[0].find_element(By.CSS_SELECTOR, 'td span.font-xs').get_attribute('textContent').strip()
-                billing_3 = ''.join(filter(str.isdigit, first_row[0].find_element(By.CSS_SELECTOR, 'td:nth-child(2)').get_attribute('textContent').strip()))
-                self.logger.info(f"요금/납부 사용년월: {billing_1}")
-                self.logger.info(f"요금/납부 사용기간: {billing_2}")
-                self.logger.info(f"요금/납부 청구금액: {billing_3}원")
-
-                if formatted_date in billing_1 and billing_amount == billing_3:
-                    self.logger.info(f"마이페이지 내 사용년월: {formatted_date}와 요금/납부 최근 청구월: {billing_1}으로 일치합니다.")
-                    self.logger.info(f"마이페이지 내 청구요금: {billing_amount}원과 요금/납부 최근 청구금액: {billing_3}원으로 일치합니다.")
-                else:
-                    self.logger.info(f"데이터 불일치")
-            else:
-                self.logger.info("첫번째 행을 찾을 수 없습니다.")
+            # 가장 최근 청구월, 청구금액 데이터 추출
+            after_values = show_elements_list(self.driver, self.by_type, self.combine_locators('billing_table','first_billing_row'), "text", f"청구내역 테이블")
+        
+            # 청구 및 납부 정보 섹션 내 [사용기간, 사용년월, 청구요금]과 청구내역 테이블의 가장 최근 청구월, 청구금액 일치 여부 확인
+            results = compare_billing_data(before_values, after_values)
+            for result in results:
+                print(result)
 
         except Exception as e:
             eh.exception_handler(self.driver, e, "청구내역 확인 테스트 실패")
@@ -138,52 +95,36 @@ class TestCase08(Base):
                 # page_redirect_confirm(self.driver, self.by_type, mypage_menu, "마이페이지")
             else:
                 custom_logger.info("현재 로그인 상태입니다.")
- 
-            # 마이페이지 사이드바 메뉴 클릭
-            print_sidebar_menu_info(self.driver, "div.card", "마이페이지")
 
             # 마이페이지 가입/사용 현황 클릭
             side_title_menu = find_elements(self.driver, self.by_type, self.locators['side_title_menu'], f"가입/사용 현황")
             click(self.driver, side_title_menu[1], f"가입/사용 현황")
 
-            # 가입/사용 현황 페이지로 리다이렉션 확인
-            # check_active(self.driver, self.by_type, self.locators['side_title_menu'], "show", f"가입/사용 현황")
+            # 가입/사용 현황 탭 아코디언 활성화 상태 확인
+            check_active(self.driver, side_title_menu[1], f"가입/사용 현황")
+
+            # 사용내역 조회 클릭
+            sibling_element = side_title_menu[1].find_element(By.XPATH, "following-sibling::*[1]")
+            fourth_li_a = sibling_element.find_element(By.XPATH, ".//div/ul/li[4]/a")
+            click(self.driver, fourth_li_a, f"사용내역 조회")
+
+            # 사용내역 조회 페이지 리다이렉션 확인
+            page_redirect_confirm(self.driver, self.by_type, fourth_li_a, f"사용내역 조회")
+
+            # 가입/사용 현황 탭 종류
+            show_elements_list(self.driver, self.by_type, self.locators['tab_list'],"text", f"사용내역 조회 탭")
+            tab_list = find_elements(self.driver, self.by_type, self.locators['tab_list'], f"사용내역 조회 탭")
+            click(self.driver, tab_list[1], f"월별사용량조회")
+
+            # 월별 사용량 상세조회 클릭
+            move_to_element(self.driver, self.by_type, self.locators['usage_details_button'], f"월별 사용량 상세조회")
+            click_element(self.driver, self.by_type, self.locators['usage_details_button'], f"월별 사용량 상세조회")
             
-            # # 사용내역 조회 클릭
-            # button_click = find_element(self.driver, self.by_type,  "#accordion-1 > div > ul > li:nth-child(4)", f"사용내역 조회")
-            # click(self.driver, button_click, f"사용내역 조회")
+            # 월별 사용량 상세조회 안 탭 리스트(국내통화 이용내역, 데이터 이용내역 등) 정상 노출 확인
+            move_to_element(self.driver, self.by_type, self.locators['usage_detail_tabs'], f"월별 사용량 상세조회 탭")
+            show_elements_list(self.driver, self.by_type, self.locators['usage_detail_tabs'], "text", f"월별 사용량 상세조회 탭")
 
-            # page_redirect_confirm(self.driver, self.by_type, button_click, "사용내역 조회")
-
-            # # 6. 가입/사용 현황 탭 종류
-            # tab_lists = self.driver.find_elements(By.CSS_SELECTOR, 'div.swiper-container.c-tab-slidemenu ul li')
-            # tabs = self.driver.find_elements(By.CSS_SELECTOR, 'ul.swiper-wrapper li a')
-            # self.logger.info(f"탭 리스트 수: {len(tab_lists)}")
-            # for tab in tabs:
-            #     self.logger.info(f"탭 텍스트: {tab.text}")
-            
-            # # 7. 탭 리스트 중 월별사용량 조회 클릭
-
-            # usage_tab = tabs[1]
-            # click(self.driver, usage_tab)
-            
-            # custom_logger.info("월별 사용량 조회 탭 클릭 완료")
-            # time.sleep(2)
-            # detail_button = self.driver.find_element(By.CSS_SELECTOR, 'div.c-btn-group button.c-btn-solid-1')
-            # click(self.driver, detail_button)
-
-            # custom_logger.info("월별 사용량 상세조회 클릭 완료")
-            # time.sleep(2)
-
-            # # 8. 탭 리스트(국내통화 이용내역, 데이터 이용내역 등) 정상 노출 확인
-            # usage_details = self.driver.find_element(By.CSS_SELECTOR, '#MyPageSection > div.c-content-wrap > div')
-            # usage_detail_tabs = usage_details.find_elements(By.CSS_SELECTOR, 'div.c-tabmenu-tab.c-tab-slide > div > ul > li')
-
-            # for tab in usage_detail_tabs:
-            #     tab_text = tab.find_element(By.TAG_NAME, 'a').text
-            #     self.logger.info(f"탭 클릭: {tab_text}")
-            #     click(self.driver, tab)
-            #     time.sleep(2)
+            click_all_items(self.driver, self.by_type, self.locators['usage_detail_tabs'], "text", f"월별 사용량 상세조회 탭")
 
         except Exception as e:
             eh.exception_handler(self.driver, e, "월별 사용량 조회 테스트 실패")

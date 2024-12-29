@@ -1,5 +1,6 @@
 
 from selenium.webdriver.common.by import By
+from functools import wraps
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
@@ -8,8 +9,30 @@ from selenium.webdriver.remote.webelement import WebElement
 from utils import exception_handler as eh
 from config.config import EXPLICIT_WAIT, EXPLICIT_WAIT
 from selenium.common.exceptions import StaleElementReferenceException
-import random, time
+import random, time, re
 
+# def element_interaction(func):
+#     @wraps(func)
+#     def wrapper(*args, **kwargs):
+#         # driver, by_or_element, locator, text
+#         driver = args[0]
+#         by_or_element = args[1] if len(args) > 1 else kwargs.get('by_or_element')
+#         locator = args[2] if len(args) > 2 else kwargs.get('locator')
+#         text = kwargs.get('text', '')
+
+#         try:
+#             if isinstance(by_or_element, WebElement):
+#                 element = by_or_element
+#             else:
+#                 element = WebDriverWait(driver, EXPLICIT_WAIT).until(
+#                     EC.presence_of_element_located((by_or_element, locator))
+#                 )
+#             custom_logger.info(f"{text} 요소를 찾았습니다.")
+#             return func(driver, element, **kwargs)
+#         except (TimeoutException, NoSuchElementException) as e:
+#             eh.exception_handler(driver, e, f"{text} 요소를 찾지 못했습니다.")
+#             return None
+#     return wrapper
 
 # unpack_by_locator
 def _unpack_by_locator(*args):
@@ -333,6 +356,37 @@ def select_random_item(driver, by, locator, attribute, text=""):
         return None, None
 
 
+# 요소들을 찾아 순차적으로 클릭하는 함수
+def click_all_items(driver, by, locator, attribute, text=""):
+    """
+    1. show_elements_list로 요소들 찾기
+    2. 요소 text 정보 가져와서 리스트로 출력
+    3. 모든 요소를 차례대로 클릭
+    4. 각 클릭 후 요소와 텍스트 반환
+    """
+    custom_logger.info(f"{text} 요소들을 순차적으로 클릭합니다.")
+    try:
+        # 모든 요소 찾기
+        elements = find_elements(driver, by, locator, text)
+        elements_text = show_elements_list(driver, by, locator, attribute, text)
+        
+        for index, element_text in enumerate(elements_text):
+            custom_logger.info(f"{text} {element_text}(을)를 클릭합니다. ({index + 1}/{len(elements_text)})")
+            
+            # 텍스트에 해당하는 요소 찾기 및 클릭
+            for element in elements:
+                if element.text.strip() == element_text or element.get_attribute('textContent').strip() == element_text:
+                    element.click()
+                    yield element, element_text
+                    break
+
+        else:
+            custom_logger.warning(f"{text} 클릭할 요소가 없습니다.")
+
+    except Exception as e:
+        eh.exception_handler(driver, e, f"{text} {locator} 요소들을 순차적으로 클릭하는 중 오류가 발생했습니다.")
+
+
 # click
 def click(driver, element, text=""):
     """요소를 클릭하는 단일함수"""
@@ -389,25 +443,30 @@ def get_text(driver, by, locator, text=""):
 
 
 # check_active
-def check_active(driver, by, locator, condition, text=""):
-    """활성화 상태(active, show, collapse 클래스 등)인지 확인하는 함수"""
+def check_active(driver, element, text=""):
+    """활성화 상태(active, show, block 클래스 또는 display: block 스타일)인지 확인하는 함수"""
     try:
-        element = find_visible_element(driver, by, locator, text)
-        if element:
-            move_to_element(driver, element, text)  # by, locator 제거
-            class_name = element.get_attribute("class")
+        # 입력받은 요소의 다음 형제 요소를 찾습니다.
+        sibling_element = element.find_element(By.XPATH, "following-sibling::*[1]")
+        
+        class_name = sibling_element.get_attribute("class")
+        style = sibling_element.get_attribute("style")
 
-            # 조건에 맞는 클래스가 포함되어 있는지 확인
-            if condition in class_name:
-                custom_logger.info(f"{text}(이)가 활성화 상태입니다.")
-                return True
-            else:
-                return False
+        # 클래스 또는 스타일을 확인하여 활성화 상태 판단
+        if ('show' in class_name or 
+            'active' in class_name or 
+            'is-active' in class_name or 
+            'block' in class_name or
+            'display: block' in style
+            ):
+            custom_logger.info(f"{text}의 다음 형제 요소가 활성화 상태입니다.")
+            return True
         else:
-            return False  # 요소를 찾지 못한 경우
+            custom_logger.info(f"{text}의 다음 형제 요소가 비활성화 상태입니다.")
+            return False
 
     except Exception as e:
-        eh.exception_handler(driver, e, f"{text}(이)가 활성화 상태인지 확인하지 못했습니다.")
+        eh.exception_handler(driver, e, f"{text}의 다음 형제 요소가 활성화 상태인지 확인하지 못했습니다.")
         return False
     
 
@@ -648,6 +707,57 @@ def click_specific_side_menu(driver, by, locator, target_text):
 
     except Exception as e:
         eh.exception_handler(driver, e, "사이드 메뉴 클릭 실패")
+
+
+# compare_billing_data
+def compare_billing_data(billing_table, billing_info):
+    def extract_data(data):
+        date_range = ''
+        billing_month = ''
+        amount = ''
+        
+        for item in data:
+            if '~' in item:
+                date_range = item.strip()
+            elif re.match(r'\d{4}-\d{2}', item):
+                billing_month = item[:7]  # YYYY-MM 형식으로 저장
+            elif '월' in item:
+                billing_month = item[:2]  # 월 정보만 저장
+            elif '원' in item:
+                amount = re.sub(r'[^\d]', '', item)  # 숫자만 추출
+        
+        return date_range, billing_month, amount
+
+    table_data = extract_data(billing_table)
+    info_data = extract_data(billing_info)
+
+    comparison_results = []
+    
+    # 날짜 범위 비교
+    if table_data[0] == info_data[0]:
+        comparison_results.append("날짜 범위 일치")
+    else:
+        comparison_results.append(f"날짜 범위 불일치: {table_data[0]} vs {info_data[0]}")
+    
+    # 청구 월 비교
+    table_month = table_data[1]
+    info_month = info_data[1]
+    if table_month and info_month:
+        if table_month[-2:] == info_month:
+            comparison_results.append("청구 월 일치")
+        else:
+            comparison_results.append(f"청구 월 불일치: {table_month[-2:]} vs {info_month}")
+    else:
+        comparison_results.append("청구 월 정보 부족")
+    
+    # 금액 비교
+    if table_data[2] == info_data[2]:
+        comparison_results.append("금액 일치")
+    else:
+        comparison_results.append(f"금액 불일치: {table_data[2]} vs {info_data[2]}")
+    
+    return comparison_results
+
 
 # def click_and_hold(driver, element):
 #     """요소를 클릭하고 누른 상태를 유지하는 함수"""
