@@ -1,0 +1,173 @@
+{
+  "common": {
+    "app": "mobileCS_release_v6.0.38(342)_20240724_1040.apk",
+    "chromedriverExecutable": ".wdm\\drivers\\chromedriver\\win32\\130.0.6723.58\\chromedriver-win64\\chromedriver.exe",
+    "_chromedriverExecutable": ".wdm\\drivers\\chromedriver\\win32\\102.0.5005.61\\chromedriver.exe",
+    "_chromedriverExecutable_appium_mw": "C:\\Users\\유닉솔루션(주)\\.wdm\\drivers\\chromedriver\\win32\\125.0.6422.41_beta\\chromedriver.exe",
+    "chromedriverExecutable_appium_mw": "C:\\Users\\PC2308\\.wdm\\drivers\\chromedriver\\win32\\125.0.6422.41_beta\\chromedriver.exe"
+  },
+
+  "A30": {
+    "platformName": "Android",
+    "appium:options": {
+      "printPageSourceOnFindFailure": true,
+      "automationName": "UiAutomator2",
+      "udid": "R39M20A6WQ",
+      "platformVersion": "11",
+      "isRealMobile": true,
+      "_app": "{os.path.join(os.getcwd(),'mobileCS_lt_v6.0.27(330)_20230619_1051.apk')}",
+      "_appActivity": "com.lguplus.mobile.cs.activity.main.MainActivity",
+      "appActivity": "com.lguplus.mobile.cs.activity.splash.SplashActivity",
+      "appPackage": "com.lguplus.mobile.cs",
+      "_chromedriverExecutable": "{get_chrome_driver()}",
+      "screenshotWaitTimeout": 30,
+      "_chromedriverExecutableDir": "C:/Users/User/.wdm/drivers/chromedriver/win32/115.0.5790.98",
+      "_chromedriverExecutableDir-2": "C:/Users/User/node_modules/appium-uiautomator2-driver/node_modules/appium-chromedriver/chromedriver/win",
+      "_chromedriverChromeMappingFile": "C:/dev/remotePC_batchfiles/pubsub/appium_aos/base/chrome_mapping.json",
+      "setWebContentsDebuggingEnabled": true,
+      "_showChromedriverLog": true,
+      "_clearDeviceLogsOnStart": false,
+      "_recreateChromeDriverSessions": true,
+      "_appWaitActivity": "com.lguplus.mobile.cs.activity.splash.SplashActivity",
+      "_appWaitActivity-2": "com.lguplus.mobile.cs.activity.popup.PopupActivity",
+      "_appWaitPackage": "com.lguplus.mobile.cs",
+      "_fullReset": true,
+      "_skipUnlock": true,
+      "_autoWebview ": true,
+      "newCommandTimeout": 3000,
+      "enablePerformanceLogging": true,
+      "adbExecTimeout": 500000
+    }
+  },
+
+  "A12": {
+    "platformName": "Android",
+    "appium:options": {
+      "printPageSourceOnFindFailure": true,
+      "automationName": "UiAutomator2",
+      "udid": "R39NC008CR",
+      "platformVersion": "10",
+      "isRealMobile": true,
+      "_app": "{os.path.join(os.getcwd(),'mobileCS_release_v6.0.27(330)_20230807_1509.apk')}",
+      "appActivity": "com.lguplus.mobile.cs.activity.main.MainActivity",
+      "appPackage": "com.lguplus.mobile.cs",
+      "_chromedriverExecutable": "{get_chrome_driver()}",
+      "screenshotWaitTimeout": 30,
+      "_chromedriverExecutableDir": "C:/Users/User/.wdm/drivers/chromedriver/win32/115.0.5790.98",
+      "_chromedriverExecutableDir-2": "C:/Users/User/node_modules/appium-uiautomator2-driver/node_modules/appium-chromedriver/chromedriver/win",
+      "_chromedriverChromeMappingFile": "C:/dev/remotePC_batchfiles/pubsub/appium_aos/base/chrome_mapping.json",
+      "setWebContentsDebuggingEnabled": true,
+      "_showChromedriverLog": true,
+      "_clearDeviceLogsOnStart": false,
+      "_recreateChromeDriverSessions": true,
+      "_appWaitActivity": "com.lguplus.mobile.cs.activity.splash.SplashActivity",
+      "_appWaitActivity-2": "com.lguplus.mobile.cs.activity.popup.PopupActivity",
+      "_appWaitPackage": "com.lguplus.mobile.cs",
+      "_fullReset": true,
+      "_skipUnlock": true,
+      "_autoWebview ": true,
+      "newCommandTimeout": 3000,
+      "enablePerformanceLogging": true,
+      "adbExecTimeout": 500000
+    }
+  },
+
+  "S23": {
+    "platformName": "Android",
+    "appium:options": {
+      "printPageSourceOnFindFailure": true,
+      "automationName": "UiAutomator2",
+      "udid": "R3CW20MW9QH",
+      "platformVersion": "13",
+      "isRealMobile": true,
+      "_app": "{os.path.join(os.getcwd(),'mobileCS_release_v6.0.30(333)_20231018_1047.apk')}",
+      "appActivity": "com.lguplus.mobile.cs.activity.main.MainActivity",
+      "appPackage": "com.lguplus.mobile.cs",
+      "_chromedriverExecutable": "{get_chrome_driver()}",
+      "setWebContentsDebuggingEnabled": true,
+      "_showChromedriverLog": true,
+      "_clearDeviceLogsOnStart": false,
+      "_recreateChromeDriverSessions": true,
+      "_appWaitActivity": "com.lguplus.mobile.cs.activity.splash.SplashActivity",
+      "_appWaitActivity-2": "com.lguplus.mobile.cs.activity.popup.PopupActivity",
+      "_appWaitPackage": "com.lguplus.mobile.cs",
+      "_fullReset": true,
+      "_skipUnlock": true,
+      "_autoWebview ": true,
+      "newCommandTimeout": 3000,
+      "enablePerformanceLogging": true,
+      "adbExecTimeout": 500000
+    }
+  },
+
+  "Z_FLIP3": {
+    "platformName": "Android",
+    "appium:options": {
+      "automationName": "UiAutomator2",
+      "udid": "R3CR30SD5R",
+      "platformVersion": "13",
+      "isRealMobile": true,
+      "app": "{os.path.join(os.getcwd(),'mobileCS_release_v6.0.30(333)_20231018_1047.apk')}",
+      "appActivity": "com.lguplus.mobile.cs.activity.main.MainActivity",
+      "appPackage": "com.lguplus.mobile.cs",
+      "chromedriverExecutable": "{get_chrome_driver()}",
+      "setWebContentsDebuggingEnabled": true,
+      "appWaitPackage": "com.lguplus.mobile.cs",
+      "noReset": true,
+      "_chromeOptions": {
+        "androidDeviceSerial": "R3CR30SD5R",
+        "androidPackage": "com.android.settings",
+        "androidProcess": "com.testapp.package",
+        "androidUseRunningApp": true,
+        "w3c": false
+      }
+    }
+  },
+
+  "Z_FLIP4": {
+    "platformName": "Android",
+    "appium:options": {
+      "automationName": "UiAutomator2",
+      "udid": "R3CTA081TAW",
+      "platformVersion": "14",
+      "isRealMobile": true,
+      "appActivity": "com.lguplus.mobile.cs.activity.main.MainActivity",
+      "appPackage": "com.lguplus.mobile.cs",
+      "setWebContentsDebuggingEnabled": true,
+      "appWaitPackage": "com.lguplus.mobile.cs",
+      "noReset": true,
+      "disableWindowAnimation": true,
+      "ensureWebviewsHavePages": true,
+      "adbExecTimeout": 120000
+    }
+  },
+  
+  "갤럭시_S24_PLUS_속도측정": {
+    "_browserName": "Chrome",
+    "platformName": "Android",
+    "androidDeviceSocket": "Terrace_devtools_remote",
+    "androidExecName": "Terrace",
+    "appium:options": {
+      "automationName": "UiAutomator2",
+      "udid": "R3CX20M45VH",
+      "platformVersion": "14",
+      "isRealMobile": true,
+      "appActivity": "com.sec.android.app.sbrowser.SBrowserMainActivity",
+      "_appWaitActivity": "com.sec.android.app.sbrowser.SBrowserMainActivity",
+      "appWaitDuration": 30000,
+      "appPackage": "com.sec.android.app.sbrowser.beta",
+      "appWaitPackage": "com.sec.android.app.sbrowser.beta",
+      "setWebContentsDebuggingEnabled": true,
+      "adbExecTimeout": 120000,
+      "autoWebView": true,
+      "enableMultiWindows": true,
+      "noReset": true
+    },
+    "chromeOptions": {
+      "androidPackage": "com.sec.android.app.sbrowser.beta",
+      "androidActivity": "com.sec.android.app.sbrowser.SBrowserMainActivity",
+      "androidExecName": "Terrace",
+      "androidDeviceSocket": "Terrace_devtools_remote"
+    }
+  }
+}

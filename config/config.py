@@ -9,6 +9,9 @@ BACKUP_COUNT = 3
 LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s: %(message)s'
 DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
 
+# 재시도 횟수
+RETRY_COUNT = 3
+
 # 스크린샷
 SCREENSHOT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "screenshots")
 

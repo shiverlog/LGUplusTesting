@@ -55,11 +55,11 @@ class NoStacktraceFormatter(logging.Formatter):
 
 class Logger:
     """ 커스텀 로깅 기능을 제공하는 메인 로거 클래스 """
-    def __init__(self, logger_name="Logger", log_level=LOG_LEVEL, log_to_console=True, 
-                 log_file=LOG_FILE, json_file=JSON_FILE,
-                 max_bytes=MAX_BYTES, backup_count=BACKUP_COUNT, when='midnight',
-                 fmt='%(asctime)s - %(name)s - %(levelname)s: %(message)s',
-                 datefmt='%Y-%m-%d %H:%M:%S'):
+    def __init__(self, logger_name = "Logger", log_level = LOG_LEVEL, log_to_console = True, 
+                 log_file = LOG_FILE, json_file = JSON_FILE,
+                 max_bytes = MAX_BYTES, backup_count = BACKUP_COUNT, when = 'midnight',
+                 fmt ='%(asctime)s - %(name)s - %(levelname)s: %(message)s',
+                 datefmt = '%Y-%m-%d %H:%M:%S'):
         """ 로거 초기화 및 설정값 지정 """
         
         if not isinstance(log_level, int):
@@ -93,13 +93,13 @@ class Logger:
         log_file = os.path.join(os.getcwd(), self.log_file)
         if self.when:
             file_handler = TimedRotatingFileHandler(
-                log_file, when=self.when, backupCount=self.backup_count, 
-                encoding='utf-8', atTime=datetime.time(0, 0, 0)
+                log_file, when = self.when, backupCount=self.backup_count, 
+                encoding = 'utf-8', atTime = datetime.time(0, 0, 0)
             )
         else:
             file_handler = RotatingFileHandler(
-                log_file, mode='a', maxBytes=self.max_bytes, 
-                backupCount=self.backup_count, encoding='utf-8'
+                log_file, mode = 'a', maxBytes = self.max_bytes, 
+                backupCount = self.backup_count, encoding = 'utf-8'
             )
         
         file_handler.setLevel(self.logger.level)
@@ -117,7 +117,7 @@ class Logger:
 
         # JSON 핸들러 추가
         json_file = os.path.join(os.getcwd(), self.json_file)
-        json_handler = logging.FileHandler(json_file, mode='a', encoding='utf-8')
+        json_handler = logging.FileHandler(json_file, mode = 'a', encoding = 'utf-8')
         json_handler.setLevel(self.logger.level)
         json_formatter = JSONFormatter()
         json_handler.setFormatter(json_formatter)

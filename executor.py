@@ -7,8 +7,7 @@ from pages.GNB_m4 import TestCase09, TestCase10
 from pages.GNB_m5 import TestCase11, TestCase12
 import time
 
-class TestExecutor(
-    Base):
+class TestExecutor(Base):
     """ 테스트 케이스 실행을 관리하는 실행기 클래스 """
     def __init__(self):
         super().__init__()  # Base 클래스 초기화
@@ -19,21 +18,18 @@ class TestExecutor(
         """테스트 케이스 초기화"""
         self.test_cases = [
             # 테스트 케이스 클래스 추가
-            # TestCase01(self.driver, self.logger),
-            # TestCase02(self.driver, self.logger),
-            # TestCase03(self.driver, self.logger),
-            # TestCase04(self.driver, self.logger),
-
-            # TestCase05(self.driver, self.logger),
-            # TestCase06(self.driver, self.logger),
-            # 
-            TestCase07(self.driver, self.logger),
-            
-            # TestCase08(self.driver, self.logger),
-            # TestCase09(self.driver, self.logger),
-            # TestCase10(self.driver, self.logger),
-            # TestCase11(self.driver, self.logger),
-            # TestCase12(self.driver, self.logger)
+            TestCase01(self.driver, self.logger),
+            TestCase02(self.driver, self.logger),
+            TestCase03(self.driver, self.logger),
+            TestCase04(self.driver, self.logger),
+            TestCase05(self.driver, self.logger),
+            TestCase06(self.driver, self.logger),
+            TestCase07(self.driver, self.logger), 
+            TestCase08(self.driver, self.logger),
+            TestCase09(self.driver, self.logger),
+            TestCase10(self.driver, self.logger),
+            TestCase11(self.driver, self.logger),
+            TestCase12(self.driver, self.logger)
         ]
 
     def run_tests(self):

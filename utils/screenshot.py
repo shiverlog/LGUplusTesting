@@ -5,7 +5,7 @@ from config.config import SCREENSHOT_DIR
 # screenshot.py
 class Screenshot:
     """스크린샷 캡처 클래스"""
-    def __init__(self, driver, directory=SCREENSHOT_DIR):
+    def __init__(self, driver, directory = SCREENSHOT_DIR):
         self.driver = driver
         self.directory = directory
         self.logger = Logger().get_logger()
@@ -29,8 +29,18 @@ class Screenshot:
                 
         except Exception as screenshot_error:
             self.logger.error(f"스크린샷 저장 실패: {str(screenshot_error)}")
+    
+    def capture_success(self, test_class, message):
+        """테스트 성공 시 스크린샷 캡처"""
+        try:
+            success_msg = message.replace(" ", "")
+            filepath = self.capture(test_class, success_msg, "success")
+            if filepath:
+                self.logger.info(f"성공 스크린샷 저장 완료: {filepath}")
+        except Exception as screenshot_error:
+            self.logger.error(f"성공 스크린샷 저장 실패: {str(screenshot_error)}")
 
-    def capture(self, test_name=None, error_msg=None):
+    def capture(self, test_name = None, error_msg = None):
         """스크린샷 캡처 및 저장"""
         try:
             timestamp = time.strftime("%Y%m%d%H%M%S")

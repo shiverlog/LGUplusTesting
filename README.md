@@ -25,6 +25,7 @@ TEST-RPA/
 │   ├── GNB_m1.py              # GNB 메뉴 1번 테스트
 │   ├── GNB_m3.py              # GNB 메뉴 3번 테스트
 │   ├── GNB_m4.py              # GNB 메뉴 4번 테스트
+│   ├── GNB_m5.py              # GNB 메뉴 5번 테스트
 │   ├── login.py               # 로그인 관련 테스트
 │   └── main.py                # 메인 페이지 테스트
 ├── screenshots/               # 테스트 중 캡처된 스크린샷
