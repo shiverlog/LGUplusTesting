@@ -41,3 +41,51 @@ TEST-RPA/
 ├── requirements.txt           # 프로젝트 의존성 목록
 └── runner.py                  # 테스트 실행 스크립트
 ```
+```
+TEST-RPA/
+├── common/                     # 공통 모듈 및 서비스
+│   ├── api/                    # API 테스트 관련 파일 (Swagger, Postman 포함)
+│   │   ├── swagger/            # Swagger API 문서 및 설정
+│   │   ├── postman/            # Postman 컬렉션 및 테스트
+│   ├── notifications/          # 알림 시스템 연동 (Slack, Teams 분리)
+│   │   ├── slack/              # Slack 연동 모듈
+│   │   ├── teams/              # Microsoft Teams 연동 모듈
+│   ├── pubsub/                 # Pub/Sub 메시징 시스템
+│   │   ├── publisher.ts        # 메시지 발행 모듈
+│   │   ├── subscriber.ts       # 메시지 구독 모듈
+│   ├── db/                     # 공통 DB 관련 설정 및 JSON 오류 저장
+│   ├── docker/                 # Docker 설정 및 CI/CD 환경 구성 (공통으로 유지)
+│   │   ├── Dockerfile          # 공통 Docker 설정
+│   │   ├── docker-compose.yml  # Docker Compose 설정 파일
+│   ├── scripts/                # 공통 실행 스크립트 (배치파일, 쉘 스크립트 등)
+│   │   ├── run_tests.bat       # Windows 환경에서 Playwright 테스트 실행
+│   │   ├── run_tests.sh        # Linux/macOS 환경에서 Playwright 테스트 실행
+│   │   ├── run_tests.ps1       # PowerShell 실행 스크립트
+│   │   ├── start_services.sh   # 공통 서비스 실행 스크립트
+│   │   ├── stop_services.sh    # 공통 서비스 종료 스크립트
+│   ├── utils/                  # 공통 유틸리티 함수 모음
+│   │   ├── logging.ts          # 로깅 유틸리티
+│   │   ├── requestHandler.ts   # API 요청 처리 유틸리티
+│   │   ├── validation.ts       # 데이터 검증 유틸리티
+│   ├── requirements.txt        # 공통 패키지 목록 (Playwright, API 관련 라이브러리 포함)
+│   ├── README.md               # 공통 모듈 설명 문서
+│
+├── chrome-pc/                  # Chrome (Windows/Linux) 테스트 프로젝트
+│   ├── src/
+│   │   ├── tests/              # Playwright 테스트 스크립트
+│   ├── pages/                  # POM 기반 페이지 객체
+│   ├── locators/               # Chrome PC 전용 요소 위치 정보 (JSON 형식)
+│   │   ├── loginPage.json      # 로그인 페이지 로케이터
+│   │   ├── mainPage.json       # 메인 페이지 로케이터
+│   ├── config/                 # 설정 파일
+│   │   ├── playwright.config.ts # Playwright 설정 파일
+│   ├── utils/                  # 테스트 유틸리티 모음
+│   ├── components/             # Chrome PC 전용 UI 컴포넌트 모음
+│   ├── logs/                   # 테스트 실행 로그
+│   ├── test-results/           # 테스트 결과 저장소
+│   ├── screenshots/            # 스크린샷 저장소
+│   ├── requirements.txt        # Chrome PC 전용 추가 패키지
+│   ├── Dockerfile              # Chrome PC 테스트용 Docker 설정
+│   ├── README.md               # Chrome PC 테스트 프로젝트 설명 문서
+│
+```
