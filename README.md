@@ -89,3 +89,35 @@ TEST-RPA/
 │   ├── README.md               # Chrome PC 테스트 프로젝트 설명 문서
 │
 ```
+```
+PLAYWRIGHT-SAMPLE-PROJECT/
+│── docs/                          # 문서화 관련 파일
+│
+├── src/                           # 소스 코드 폴더
+│   ├── advantage/                 # UI 테스트 관련 폴더 (POM + Steps)
+│   │   ├── constants/             # 상수 관리
+│   │   ├── pages/                 # Page Object Model (POM) 폴더
+│   │   ├── steps/                 # 테스트 실행 단계 관리
+│   │   │   ├── DatabaseStep.ts    # DB 관련 Step 정의
+│   │   ├── API/                    # API 테스트 관련 폴더
+│   │
+│   ├── database/                   # 데이터베이스 관련 모듈
+│   │   ├── constants/               # DB 관련 상수
+│   │   ├── steps/                   # DB 테스트 실행 단계
+│   │
+│   ├── framework/                   # 테스트 프레임워크 관련 설정
+│   │   ├── config/                   # Playwright 설정 및 환경 설정
+│   │   ├── constants/                # 전역 상수
+│   │   ├── logger/                   # 로깅 시스템
+│   │   ├── manager/                  # 브라우저 및 테스트 실행 매니저
+│   │   ├── playwright/               # Playwright 관련 설정 및 실행 파일
+│   │   ├── reporter/                 # 테스트 리포트 생성기
+│   │   ├── template/                 # 템플릿 관련 파일 (예: 이메일 템플릿)
+│   │   ├── utils/                    # 공통 유틸리티 함수 모음
+│   │
+│   ├── resources/                    # 기타 리소스 파일 (예: 데이터 파일)
+│   ├── tests/                         # 테스트 실행 코드 (E2E 테스트 실행)
+│
+├── .env                               # 환경 변수 파일 (테스트 URL, API Key 등)
+├── .eslintignore                      # ESLint 무시 파일
+```
